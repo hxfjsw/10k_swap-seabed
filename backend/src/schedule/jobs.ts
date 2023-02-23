@@ -126,6 +126,18 @@ export function jobPairTransactionPurify(provider: Provider) {
   ).schedule()
 }
 
+export function jobPairTransactionAccountAddress(provider: Provider) {
+  const callback = async () => {
+    await new PairTransactionService(provider).purifyAccountAddress()
+  }
+
+  new MJobPessimism(
+    '*/5 * * * * *',
+    callback,
+    jobPairTransactionAccountAddress.name
+  ).schedule()
+}
+
 export function jobPoolCollect(provider: Provider) {
   const callback = async () => {
     await new PoolService(provider).collect()

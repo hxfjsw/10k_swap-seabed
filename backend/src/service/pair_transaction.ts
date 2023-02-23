@@ -1,6 +1,6 @@
 import { PromisePool } from '@supercharge/promise-pool'
 import { AxiosInstance } from 'axios'
-import { Provider } from 'starknet'
+import { addAddressPadding, Provider } from 'starknet'
 import { uint256ToBN } from 'starknet/dist/utils/uint256'
 import { In, Repository } from 'typeorm'
 import { PairEvent } from '../model/pair_event'
@@ -9,6 +9,8 @@ import { sleep } from '../util'
 import { Core } from '../util/core'
 import { errorLogger } from '../util/logger'
 import { StarkscanService } from './starkscan'
+import { ViewblockService } from './viewblock'
+import { VoyagerService } from './voyager'
 
 const TRANSACTION_FEE_RATIO = 3
 
@@ -47,7 +49,8 @@ export class PairTransactionService {
       pairTransaction.event_time = pairEvent.event_time
 
       // Account address
-      pairTransaction.account_address = await this.getAccountAddress(pairEvent)
+      // pairTransaction.account_address = await this.getAccountAddress(pairEvent.transaction_hash)
+      pairTransaction.account_address = ''
 
       switch (pairEvent.key_name) {
         case 'Swap':
@@ -75,7 +78,102 @@ export class PairTransactionService {
     }
   }
 
-  private async getAccountAddress(pairEvent: PairEvent) {
+  async purifyAccountAddress() {
+    const pairTransactions = await this.repoPairTransaction.find({
+      where: { account_address: '' },
+      order: { id: 'ASC' },
+      select: ['id', 'transaction_hash'],
+      take: 400,
+    })
+
+    const updateAccount = async (
+      index: number,
+      pairTransaction: PairTransaction
+    ) => {
+      try {
+        let accountAddress = await this.getAccountAddress(
+          index,
+          pairTransaction.transaction_hash
+        )
+        if (!accountAddress) {
+          return
+        }
+
+        accountAddress = addAddressPadding(accountAddress)
+
+        await this.repoPairTransaction.update(pairTransaction.id, {
+          account_address: accountAddress,
+        })
+      } catch (err) {
+        errorLogger.error(
+          'PurifyAccountAddress failed:',
+          err.message,
+          ', transaction_hash:',
+          pairTransaction.transaction_hash
+        )
+      }
+    }
+
+    const updateAccountGroup = async (
+      pairTransactionGroup: (PairTransaction & { index: number })[]
+    ) => {
+      if (!pairTransactionGroup) {
+        return
+      }
+
+      for (const pairTransaction of pairTransactionGroup) {
+        await updateAccount(pairTransaction.index, pairTransaction)
+      }
+    }
+
+    const pairTransactionGroups: (PairTransaction & { index: number })[][] = []
+    for (let index = 0; index < pairTransactions.length; index++) {
+      const mod = index % this.totalGroupGetAccountAddress
+      if (!pairTransactionGroups[mod]) pairTransactionGroups[mod] = []
+      pairTransactionGroups[mod].push({
+        ...pairTransactions[index],
+        index,
+      } as any)
+    }
+
+    await PromisePool.withConcurrency(this.totalGroupGetAccountAddress)
+      .for(pairTransactionGroups)
+      .process(updateAccountGroup.bind(this))
+  }
+
+  private totalGroupGetAccountAddress = 4
+  private async getAccountAddress(index: number, transaction_hash: string) {
+    if (index % this.totalGroupGetAccountAddress === 0) {
+      const tx = await this.provider.getTransaction(transaction_hash)
+      if (tx?.transaction['contract_address']) {
+        return tx.transaction['contract_address'] as string
+      }
+    }
+
+    if (index % this.totalGroupGetAccountAddress === 1) {
+      const voyagerService = new VoyagerService(this.provider)
+      const resp = await voyagerService
+        .getAxiosClient()
+        .get(`/api/txn/${transaction_hash}`)
+
+      if (resp.data?.header?.contract_address) {
+        return resp.data.header.contract_address
+      }
+    }
+
+    if (index % this.totalGroupGetAccountAddress === 2) {
+      const viewblockService = new ViewblockService(this.provider)
+      const resp = await viewblockService
+        .getAxiosClient()
+        .get(`/starknet/txs/${transaction_hash}`)
+
+      await sleep(300)
+
+      if (resp.data?.extra?.contractAddress) {
+        return resp.data.extra.contractAddress as string
+      }
+    }
+
     const userAgent =
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
     const headers = { 'user-agent': userAgent }
@@ -84,7 +182,7 @@ export class PairTransactionService {
       operationName: 'transaction',
       variables: {
         input: {
-          transaction_hash: pairEvent.transaction_hash,
+          transaction_hash,
         },
       },
       query:
@@ -96,9 +194,9 @@ export class PairTransactionService {
       '') as string
     if (!contract_address) {
       errorLogger.error(
-        `Response miss contract_address. transaction_hash: ${
-          pairEvent.transaction_hash
-        }. Response: ${JSON.stringify(resp)}`
+        `Response miss contract_address. transaction_hash: ${transaction_hash}. Response: ${JSON.stringify(
+          resp
+        )}`
       )
     }
 

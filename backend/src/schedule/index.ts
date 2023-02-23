@@ -4,7 +4,8 @@ import {
   jobFaucetTwitter,
   jobPairEventStartWork,
   jobPairTransactionPurify,
-  jobPoolCollect
+  jobPairTransactionAccountAddress,
+  jobPoolCollect,
 } from './jobs'
 
 export const startMasterJobs = async () => {
@@ -19,6 +20,7 @@ export const startMasterJobs = async () => {
 
   jobPairEventStartWork(provider)
   jobPairTransactionPurify(provider)
+  jobPairTransactionAccountAddress(provider)
 }
 
 export const startWorkerJobs = async () => {}
