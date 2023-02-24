@@ -122,7 +122,7 @@ export class PoolService {
       variables: {
         input: {
           from_address: this.factoryAddress,
-          sort_by: 'TIMESTAMP',
+          sort_by: 'timestamp',
           order_by: 'desc',
         },
         first: 100,

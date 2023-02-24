@@ -39,7 +39,7 @@ export class PairEventService {
       variables: {
         input: {
           from_address: pair.pairAddress,
-          sort_by: 'TIMESTAMP',
+          sort_by: 'timestamp',
           order_by: 'asc',
         },
         first: 100,

@@ -41,7 +41,7 @@ __metadata:
     node-schedule: ^2.1.0
     reflect-metadata: ^0.1.13
     semver: ^7.3.5
-    starknet: ^3.18.2
+    starknet: 3.18.2
     ts-jest: ^27.1.0
     ts-node: ^10.2.1
     ts-node-dev: ^1.1.8
@@ -5527,7 +5527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"starknet@npm:^3.18.2":
+"starknet@npm:3.18.2":
   version: 3.18.2
   resolution: "starknet@npm:3.18.2"
   dependencies:
