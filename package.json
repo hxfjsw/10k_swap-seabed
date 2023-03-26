@@ -4,6 +4,5 @@
   "main": "index.js",
   "repository": "https://gitee.com/fengwanqing/l0k_swap-seabed.git",
   "author": "wanqing <1799476517@qq.com>",
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }

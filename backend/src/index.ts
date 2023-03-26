@@ -1,4 +1,5 @@
 import cluster from 'cluster'
+import { Redis } from 'ioredis'
 import Koa from 'koa'
 import koaBodyparser from 'koa-bodyparser'
 import cors from 'koa2-cors'
@@ -6,6 +7,7 @@ import 'reflect-metadata'
 import semver from 'semver'
 import { createConnection } from 'typeorm'
 import { appConfig, ormConfig } from './config'
+import { redisConfig } from './config/redis'
 import controller from './controller'
 import middlewareGlobal from './middleware/global'
 import { startMasterJobs, startWorkerJobs } from './schedule'
@@ -53,7 +55,6 @@ const startKoa = () => {
 const main = async () => {
   try {
     // initialize mysql connect, waiting for mysql server started
-    // accessLogger.info(`process: ${process.pid}. Connecting to the database...`)
     const reconnectTotal = 18
     for (let index = 1; index <= reconnectTotal; index++) {
       try {
@@ -78,6 +79,25 @@ const main = async () => {
         await sleep(1500)
       }
     }
+
+    // Connet redis
+    Core.redis = new Redis({
+      host: redisConfig.host,
+      port: redisConfig.port,
+      // username: redisConfig.username,
+      password: redisConfig.password,
+      retryStrategy: (times) => {
+        return Math.min(times * 1000, 15000)
+      },
+    })
+      .on('error', (event) => {
+        errorLogger.error(`process: ${process.pid}. Redis failed: ${event}`)
+      })
+      .on('connect', () => {
+        accessLogger.info(
+          `process: ${process.pid}. Connect to the redis succeed!`
+        )
+      })
 
     const clusterIsPrimary = () => {
       if (semver.gte(process.version, 'v16.0.0')) {
