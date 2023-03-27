@@ -42,7 +42,7 @@ export class PairEventService {
           sort_by: 'timestamp',
           order_by: 'asc',
         },
-        first: 100,
+        first: 1000,
         after: afterCursor,
       },
       query:
@@ -50,17 +50,15 @@ export class PairEventService {
     }
 
     const resp = await this.axiosClient.post('/graphql', postData, { headers })
-    const edges = resp.data?.data?.events?.edges
+    const edges: any[] = resp.data?.data?.events?.edges
     if (!edges || edges.length < 1) {
       return
     }
 
+    PairEventService.pairCursors[pair.pairAddress] = edges[edges.length - 1]?.cursor || ''
+
     const saveWhenNoExist = async (edge: any) => {
       const { cursor, node } = edge
-
-      if (cursor) {
-        PairEventService.pairCursors[pair.pairAddress] = cursor
-      }
 
       if (!node.id) {
         return
