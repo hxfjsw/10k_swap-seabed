@@ -13,18 +13,9 @@ services:
       NODE_ENV: 'development'
       PROMETHEUS_ALERTMANAGER: '{"api":"http://alertmanager:9093"}' # {"api":"http://alertmanager:9093"}
       DB_HOST: db
-      DB_PORT: '${DB_PORT}'
-      DB_USER: '${DB_USER}'
-      DB_PASSWORD: '${DB_PASSWORD}'
-      DB_NAME: '${DB_NAME}'
-      APP_OPTIONS_PORT: '${APP_OPTIONS_PORT}'
-      APP_OPTIONS_HOST: '${APP_OPTIONS_HOST}'
-      PRODUCT_ENV: '${PRODUCT_ENV}'
-      FAUCET_PRIVATE_KEYS: '${FAUCET_PRIVATE_KEYS}' # split with symbol: ,
-      FAUCET_ACCOUNTS: '${FAUCET_ACCOUNTS}' # split with symbol: ,
-      ESTIMATED_FEES_ACCOUNT: '${ESTIMATED_FEES_ACCOUNT}'
-      ESTIMATED_FEES_PRIVATE_KEY: '${ESTIMATED_FEES_PRIVATE_KEY}'
-      ESTIMATED_FEES_PAIR: '${ESTIMATED_FEES_PAIR}'
+      REDIS_HOST: redis
+    env_file:
+      - .env
     volumes:
       - './backend/logs:/app/logs'
     #   - './backend:/app'

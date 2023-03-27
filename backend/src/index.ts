@@ -6,8 +6,7 @@ import cors from 'koa2-cors'
 import 'reflect-metadata'
 import semver from 'semver'
 import { createConnection } from 'typeorm'
-import { appConfig, ormConfig } from './config'
-import { redisConfig } from './config/redis'
+import { appConfig, ormConfig, redisConfig } from './config'
 import controller from './controller'
 import middlewareGlobal from './middleware/global'
 import { startMasterJobs, startWorkerJobs } from './schedule'
@@ -82,10 +81,7 @@ const main = async () => {
 
     // Connet redis
     Core.redis = new Redis({
-      host: redisConfig.host,
-      port: redisConfig.port,
-      // username: redisConfig.username,
-      password: redisConfig.password,
+      ...redisConfig.options,
       retryStrategy: (times) => {
         return Math.min(times * 1000, 15000)
       },

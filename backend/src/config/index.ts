@@ -5,6 +5,7 @@ dotenv.config({ path: path.resolve(__dirname, '..', '..', '..', '.env') })
 import { ListenOptions } from 'net'
 import * as logConfig from './log'
 import * as ormConfig from './orm'
+import * as redisConfig from './redis'
 import networkConfig from './network'
 import * as contractConfig from './contract'
 import faucetConfig from './faucet'
@@ -19,6 +20,7 @@ const appConfig = {
 export {
   appConfig,
   ormConfig,
+  redisConfig,
   logConfig,
   networkConfig,
   contractConfig,
