@@ -1,6 +1,10 @@
 import path from 'path'
-import * as dotenv from 'dotenv'
-dotenv.config({ path: path.resolve(__dirname, '..', '..', '..', '.env') })
+
+// In a production environment, environment variables come from either the system or Docker
+if (process.env.NODE_ENV == 'development') {
+  const dotenv = require('dotenv')
+  dotenv.config({ path: path.resolve(__dirname, '..', '..', '..', '.env') })
+}
 
 import { ListenOptions } from 'net'
 import * as logConfig from './log'

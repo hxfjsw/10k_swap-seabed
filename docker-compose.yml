@@ -10,7 +10,6 @@ services:
     build: ./backend
     command: yarn run start
     environment:
-      NODE_ENV: 'development'
       PROMETHEUS_ALERTMANAGER: '{"api":"http://alertmanager:9093"}' # {"api":"http://alertmanager:9093"}
       DB_HOST: db
       REDIS_HOST: redis

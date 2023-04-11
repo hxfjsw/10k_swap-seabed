@@ -11,10 +11,6 @@ export async function sleep(ms: number) {
   })
 }
 
-export function isDevelopment() {
-  return process.env.NODE_ENV === 'development'
-}
-
 /**
  * Normal format date: (YYYY-MM-DD HH:mm:ss)
  * @param date Date

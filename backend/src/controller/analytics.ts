@@ -7,8 +7,10 @@ export default function (router: KoaRouter<DefaultState, Context>) {
   const analyticsService = new AnalyticsService()
 
   router.get('analytics', async ({ restful }) => {
-    const tvls = await analyticsService.getTVLsByDay()
-    const volumes = await analyticsService.getVolumesByDay()
+    const [tvls, volumes] = await Promise.all([
+      analyticsService.getTVLsByDay(),
+      analyticsService.getVolumesByDay(),
+    ])
 
     restful.json({ tvls, volumes })
   })
@@ -59,7 +61,8 @@ export default function (router: KoaRouter<DefaultState, Context>) {
   })
 
   router.get('analytics/top_tvl_accounts', async ({ restful }) => {
-    const tvls = await analyticsService.getTVLsByAccount()
+    // const tvls = await analyticsService.getTVLsByAccount()
+    const tvls = []
 
     restful.json({ tvls })
   })

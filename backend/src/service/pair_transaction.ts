@@ -109,7 +109,9 @@ export class PairTransactionService {
           'PurifyAccountAddress failed:',
           err.message,
           ', transaction_hash:',
-          pairTransaction.transaction_hash
+          pairTransaction.transaction_hash,
+          ', index:',
+          index
         )
       }
     }
@@ -157,7 +159,7 @@ export class PairTransactionService {
         .get(`/api/txn/${transaction_hash}`)
 
       if (resp.data?.header?.contract_address) {
-        return resp.data.header.contract_address
+        return resp.data.header.contract_address as string
       }
     }
 
@@ -174,6 +176,7 @@ export class PairTransactionService {
       }
     }
 
+    // From starkscan ⬇⬇⬇
     const userAgent =
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
     const headers = { 'user-agent': userAgent }
@@ -186,21 +189,24 @@ export class PairTransactionService {
         },
       },
       query:
-        'query transaction($input: TransactionInput!) {\n  transaction(input: $input) {\n    transaction_hash\n    contract_address\n}\n}',
+        'query transaction($input: TransactionInput!) {\n  transaction(input: $input) {\n    transaction_hash\n    contract_address\n    sender_address\n}\n}',
     }
 
-    const resp = await this.axiosClient.post('/graphql', postData, { headers })
-    const contract_address = (resp.data?.data?.transaction?.contract_address ||
+    const { data } = await this.axiosClient.post('/graphql', postData, {
+      headers,
+    })
+    const account_address = (data?.data?.transaction?.contract_address ||
+      data?.data?.transaction?.sender_address ||
       '') as string
-    if (!contract_address) {
+    if (!account_address) {
       errorLogger.error(
-        `Response miss contract_address. transaction_hash: ${transaction_hash}. Response: ${JSON.stringify(
-          resp
+        `Response miss contract_address. transaction_hash: ${transaction_hash}. Response data: ${JSON.stringify(
+          data
         )}`
       )
     }
 
-    return contract_address
+    return account_address
   }
 
   // Swap
