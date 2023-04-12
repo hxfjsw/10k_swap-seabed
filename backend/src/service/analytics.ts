@@ -152,6 +152,7 @@ export class AnalyticsService {
 
     // QueryBuilder
     const queryBuilder = this.repoPairTransaction.createQueryBuilder()
+    queryBuilder.andWhere(`account_address != ''`)
     if (keyName) {
       queryBuilder.andWhere('key_name = :keyName', { keyName })
     }

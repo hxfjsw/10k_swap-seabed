@@ -6,6 +6,7 @@ import {
   jobPairTransactionPurify,
   jobPairTransactionAccountAddress,
   jobPoolCollect,
+  jobCacheTVLsByDayAndVolumesByDay,
 } from './jobs'
 
 export const startMasterJobs = async () => {
@@ -21,6 +22,8 @@ export const startMasterJobs = async () => {
   jobPairEventStartWork(provider)
   jobPairTransactionPurify(provider)
   jobPairTransactionAccountAddress(provider)
+
+  jobCacheTVLsByDayAndVolumesByDay()
 }
 
 export const startWorkerJobs = async () => {}

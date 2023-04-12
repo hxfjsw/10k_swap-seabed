@@ -6,6 +6,7 @@ import { PairEventService } from '../service/pair_event'
 import { PairTransactionService } from '../service/pair_transaction'
 import { PoolService } from '../service/pool'
 import { errorLogger } from '../util/logger'
+import { AnalyticsServiceCache } from '../service/analytics_cache'
 
 // import { doSms } from '../sms/smsSchinese'
 class MJob {
@@ -144,4 +145,13 @@ export function jobPoolCollect(provider: Provider) {
   }
 
   new MJobPessimism('*/10 * * * * *', callback, jobPoolCollect.name).schedule()
+}
+
+export function jobCacheTVLsByDayAndVolumesByDay() {
+  const callback = async () => {
+    const analyticsServiceCache = new AnalyticsServiceCache()
+    await analyticsServiceCache.cacheTVLsByDayAndVolumesByDay()
+  }
+
+  new MJobPessimism('*/5 */10 * * * *', callback, jobCacheTVLsByDayAndVolumesByDay.name).schedule()
 }

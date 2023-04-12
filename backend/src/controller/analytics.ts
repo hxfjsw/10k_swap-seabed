@@ -2,15 +2,14 @@ import { plainToInstance } from 'class-transformer'
 import { Context, DefaultState } from 'koa'
 import KoaRouter from 'koa-router'
 import { AnalyticsService } from '../service/analytics'
+import { AnalyticsServiceCache } from '../service/analytics_cache'
 
 export default function (router: KoaRouter<DefaultState, Context>) {
   const analyticsService = new AnalyticsService()
 
   router.get('analytics', async ({ restful }) => {
-    const [tvls, volumes] = await Promise.all([
-      analyticsService.getTVLsByDay(),
-      analyticsService.getVolumesByDay(),
-    ])
+    const tvls = AnalyticsServiceCache.tvlsByDay
+    const volumes = AnalyticsServiceCache.volumesByDay
 
     restful.json({ tvls, volumes })
   })
@@ -45,17 +44,15 @@ export default function (router: KoaRouter<DefaultState, Context>) {
       request.query
     )
 
-    const transactions = await analyticsService.getTransactions(
-      params.startTime,
-      params.endTime,
-      params.keyName,
-      params.page
-    )
-
-    const summary = await analyticsService.getTransactionsSummary(
-      params.startTime,
-      params.endTime
-    )
+    const [transactions, summary] = await Promise.all([
+      analyticsService.getTransactions(
+        params.startTime,
+        params.endTime,
+        params.keyName,
+        params.page
+      ),
+      analyticsService.getTransactionsSummary(params.startTime, params.endTime),
+    ])
 
     restful.json({ transactions, summary })
   })

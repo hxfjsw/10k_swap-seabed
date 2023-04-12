@@ -55,7 +55,9 @@ export class PairEventService {
       return
     }
 
-    PairEventService.pairCursors[pair.pairAddress] = edges[edges.length - 1]?.cursor || ''
+    if (edges[edges.length - 1]?.cursor) {
+      PairEventService.pairCursors[pair.pairAddress] = edges[edges.length - 1].cursor
+    }
 
     const saveWhenNoExist = async (edge: any) => {
       const { cursor, node } = edge
