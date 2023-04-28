@@ -15,17 +15,17 @@ export const addresses = {
     parirClassHash:
       '0x231adde42526bad434ca2eb983efdd64472638702f87f97e6e3c084f264e06f',
     factory:
-      '0x01c0a36e26a8f822e0d81f20a5a562b16a8f8a3dfd99801367dd2aea8f1a87a2',
+      '0x00d018832f3b2b082f7ebaa3eae2a5323708a7bb7598db620c0dba0e985e9a53',
     router:
-      '0x07a6f98c03379b9513ca84cca1373ff452a7462a3b61598f0af5bb27ad7f76d1',
+      '0x02db369f4fdd98815f0566c0d0ec8f4de09c3500739699e9652e0b1d67974c57',
   },
 
   goerli: {
     parirClassHash:
       '0x231adde42526bad434ca2eb983efdd64472638702f87f97e6e3c084f264e06f',
     factory:
-      '0x06c31f39524388c982045988de3788530605ed08b10389def2e7b1dd09d19308',
+      '0x021b9f5ea693def6bcf563f088008bd0db0b8ed80763dd7a0fbea112742578ab',
     router:
-      '0x00975910cd99bc56bd289eaaa5cee6cd557f0ddafdb2ce6ebea15b158eb2c664',
+      '0x027d32f6c2b45c6d9fad20c7e07068061fb593e5d934058cca30bf41839b9306',
   },
 }
