@@ -98,6 +98,7 @@ export function isAddress(address: any): string | false {
 
 export function isDevelopEnv() {
   const productEnv = process.env['PRODUCT_ENV'] || ''
+  console.log('productEnv', productEnv);
   return productEnv.toLowerCase() != 'production'
 }
 
