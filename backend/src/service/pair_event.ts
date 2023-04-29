@@ -29,8 +29,11 @@ export class PairEventService {
 
   async collect(pair: Pair) {
     const userAgent =
-      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
-    const headers = { 'user-agent': userAgent }
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
+    const headers = {
+      'user-agent': userAgent,
+      'content-type': 'application/json',
+    }
 
     const afterCursor = await this.getAfterCursor(pair)
 
@@ -46,10 +49,8 @@ export class PairEventService {
         after: afterCursor,
       },
       query:
-        'query events($first: Int, $last: Int, $before: String, $after: String, $input: EventsInput!) {\n  events(\n    first: $first\n    last: $last\n    before: $before\n    after: $after\n    input: $input\n  ) {\n    edges {\n      cursor\n      node {\n        event_id\n        block_hash\n        transaction_hash\n        event_index\n        from_address\n        keys\n        data\n        timestamp\n        key_name\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      __typename\n    }\n    __typename\n  }\n}',
+          'query events($first: Int, $last: Int, $before: String, $after: String, $input: EventsInput!) {\n  events(\n    first: $first\n    last: $last\n    before: $before\n    after: $after\n    input: $input\n  ) {\n    edges {\n      cursor\n      node {\n        event_id\n        block_hash\n        block_number\n        transaction_hash\n        event_index\n        from_address\n        keys\n        data\n        timestamp\n        key_name\n        data_decoded\n        from_contract {\n          contract_address\n          class_hash\n          deployed_at_transaction_hash\n          deployed_at_timestamp\n          name_tag\n          implementation_type\n          is_social_verified\n          starknet_id {\n            domain\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      __typename\n    }\n    __typename\n  }\n}',
     }
-
-    console.log(JSON.stringify(postData));
 
     const resp = await this.axiosClient.post('/graphql', postData, { headers })
     const edges: any[] = resp.data?.data?.events?.edges
@@ -58,25 +59,26 @@ export class PairEventService {
     }
 
     if (edges[edges.length - 1]?.cursor) {
-      PairEventService.pairCursors[pair.pairAddress] = edges[edges.length - 1].cursor
+      PairEventService.pairCursors[pair.pairAddress] =
+          edges[edges.length - 1].cursor
     }
 
     const saveWhenNoExist = async (edge: any) => {
       const { cursor, node } = edge
 
-      if (!node.id) {
+      if (!node.event_id) {
         return
       }
 
       const one = await this.repoPairEvent.findOne({
-        where: { event_id: node.id },
+        where: { event_id: node.event_id },
       })
       if (one) {
         return
       }
 
       const pairEvent = new PairEvent()
-      pairEvent.event_id = node.id
+      pairEvent.event_id = node.event_id
       pairEvent.pair_address = pair.pairAddress
       pairEvent.transaction_hash = node.transaction_hash
       pairEvent.event_data = JSON.stringify(node.data)
