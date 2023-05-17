@@ -13,11 +13,11 @@ export const abis = {
 export const addresses = {
   mainnet: {
     parirClassHash:
-      '0x231adde42526bad434ca2eb983efdd64472638702f87f97e6e3c084f264e06f',
+      '0x525f513c79c6affa761d7adc8f4083e3fe23de697cbc923e2e8c884ce3751a2',
     factory:
-      '0x00d018832f3b2b082f7ebaa3eae2a5323708a7bb7598db620c0dba0e985e9a53',
+      '0x07df3bce30857e8f9c08bcd9d9668df34166e94dd968db6e2920b870c4410e34',
     router:
-      '0x02db369f4fdd98815f0566c0d0ec8f4de09c3500739699e9652e0b1d67974c57',
+      '0x07ebd0e95dfc4411045f9424d45a0f132d3e40642c38fdfe0febacf78cc95e76',
   },
 
   goerli: {
