@@ -14,7 +14,7 @@ export abstract class CommonEntity extends BaseEntity {
   @Column('bigint', { default: 0, unsigned: true })
   updated_by: number
 
-  @Column('datetime', { precision: 6, default: null })
+  @Column('timestamp', { precision: 6, default: null })
   published_at?: Date
 
   @CreateDateColumn()

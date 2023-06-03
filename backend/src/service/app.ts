@@ -1,8 +1,13 @@
 import { utils } from 'ethers'
-import { Account, Call, ec, Provider } from 'starknet'
-import { StarknetChainId } from 'starknet/dist/constants'
-import { toBN } from 'starknet/dist/utils/number'
-import { bnToUint256 } from 'starknet/dist/utils/uint256'
+import {
+  Account,
+  Call,
+  Provider,
+  constants,
+  ec,
+  number as sNumber,
+  uint256,
+} from 'starknet'
 import { contractConfig } from '../config'
 import { equalsIgnoreCase } from '../util'
 import { PoolService } from './pool'
@@ -38,12 +43,12 @@ export class AppService {
     const account = new Account(this.provider, estimatedFeesAccount, keyPair)
 
     const routerAddress =
-      this.provider.chainId === StarknetChainId.MAINNET
+      this.provider.chainId === constants.StarknetChainId.MAINNET
         ? contractConfig.addresses.mainnet.router
         : contractConfig.addresses.goerli.router
 
-    const amount = bnToUint256(
-      toBN(utils.parseUnits('0.01', targetPair.decimals) + '')
+    const amount = uint256.bnToUint256(
+      sNumber.toBN(utils.parseUnits('0.01', targetPair.decimals) + '')
     )
     const swapCalls: Call[] = [
       {

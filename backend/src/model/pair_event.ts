@@ -4,6 +4,7 @@ import { CommonEntity } from './common'
 @Index(['event_id'])
 @Index(['key_name', 'status'])
 @Index(['pair_address'])
+@Index(['block_number'])
 @Entity()
 export class PairEvent extends CommonEntity {
   @PrimaryGeneratedColumn({ type: 'bigint', unsigned: true })
@@ -24,8 +25,11 @@ export class PairEvent extends CommonEntity {
   @Column('text')
   event_data: string
 
-  @Column('datetime', { precision: 6, default: null })
+  @Column('timestamp', { precision: 6, default: null })
   event_time: Date
+
+  @Column('int', { width: 11 })
+  block_number: number
 
   @Column('varchar', { length: 256 })
   cursor: string
@@ -33,6 +37,6 @@ export class PairEvent extends CommonEntity {
   @Column('text')
   source_data: string
 
-  @Column('tinyint', { default: 0 })
+  @Column('int2', { default: 0 })
   status: number // 0: not purify, 1: purified, 2: purify failed
 }

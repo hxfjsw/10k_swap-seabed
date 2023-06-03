@@ -1,15 +1,11 @@
 import axios, { AxiosInstance } from 'axios'
 import axiosRetry from 'axios-retry'
-import { Provider } from 'starknet'
-import { StarknetChainId } from 'starknet/dist/constants'
+import { Provider, constants } from 'starknet'
 
 export class ViewblockService {
-  private provider: Provider
   private axiosClient: AxiosInstance
 
-  constructor(provider: Provider) {
-    this.provider = provider
-
+  constructor(private provider: Provider) {
     this.axiosClient = axios.create({
       baseURL: 'https://api.viewblock.io',
       headers: {
@@ -21,15 +17,15 @@ export class ViewblockService {
     })
 
     this.axiosClient.interceptors.request.use(
-      function (config) {
+      (config) => {
         config.params = { ...config.params, network: 'mainnet' }
-        if (provider.chainId === StarknetChainId.TESTNET) {
+        if (this.provider.chainId === constants.StarknetChainId.TESTNET) {
           config.params.network = 'goerli'
         }
 
         return config
       },
-      function (error) {
+      (error) => {
         return Promise.reject(error)
       }
     )

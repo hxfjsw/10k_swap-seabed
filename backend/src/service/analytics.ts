@@ -1,6 +1,6 @@
 import dayjs from 'dayjs'
-import { BigNumber, utils } from 'ethers'
-import { BigNumberish, toBN } from 'starknet/dist/utils/number'
+import { utils } from 'ethers'
+import { number as sNumber } from 'starknet'
 import { Repository } from 'typeorm'
 import { PairTransaction } from '../model/pair_transaction'
 import { dateFormatNormal } from '../util'
@@ -16,19 +16,20 @@ export class AnalyticsService {
     this.repoPairTransaction = Core.db.getRepository(PairTransaction)
   }
 
-  async getTVLsByDay() {
+  async getTVLsByDay(startTime: Date | undefined = undefined) {
     // QueryBuilder
     const queryBuilder = this.repoPairTransaction.createQueryBuilder()
     queryBuilder.select(
-      `DATE_FORMAT(event_time, '%Y-%m-%d') as event_time_day, pair_address, CONCAT(ROUND(SUM(amount0), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1), 0), '') as sum_amount1, key_name`
+      `to_char(event_time, 'YYYY-MM-DD') as event_time_day, pair_address, CONCAT(ROUND(SUM(CAST(amount0 as numeric)), 0), '') as sum_amount0, CONCAT(ROUND(SUM(CAST(amount1 as numeric)), 0), '') as sum_amount1, key_name, swap_reverse`
     ) // CONCAT ''. Prevent automatic conversion to scientific notation
     queryBuilder.where('key_name IN (:...keynames)', {
-      keynames: ['Mint', 'Burn'],
+      keynames: ['Mint', 'Burn', 'Swap'],
     })
     queryBuilder
       .addGroupBy('event_time_day')
       .addGroupBy('pair_address')
       .addGroupBy('key_name')
+      .addGroupBy('swap_reverse')
     queryBuilder.addOrderBy('event_time_day', 'ASC')
 
     const rawMany = await queryBuilder.getRawMany<{
@@ -37,6 +38,7 @@ export class AnalyticsService {
       sum_amount0: string
       sum_amount1: string
       key_name: string
+      swap_reverse: number
     }>()
 
     const tvls: { date: string; tvl: number }[] = []
@@ -61,16 +63,34 @@ export class AnalyticsService {
             continue
           }
 
-          const _usd = await this.amount0AddAmount1ForUsd(
-            item.sum_amount0,
-            item.sum_amount1,
-            targetPair
-          )
+          if (item.key_name == 'Swap') {
+            if (item.swap_reverse == 0) {
+              tvl_usd += await this.amount0AddAmount1ForUsd(
+                item.sum_amount0,
+                '-' + item.sum_amount1,
+                targetPair
+              )
+            } else {
+              tvl_usd += await this.amount0AddAmount1ForUsd(
+                '-' + item.sum_amount0,
+                item.sum_amount1,
+                targetPair
+              )
+            }
+          } else {
+            const _usd = await this.amount0AddAmount1ForUsd(
+              item.sum_amount0,
+              item.sum_amount1,
+              targetPair
+            )
 
-          // TODO: Excessive values may overflow
-          if (item.key_name === 'Mint') tvl_usd += _usd
-          if (item.key_name === 'Burn') tvl_usd -= _usd
+            // TODO: Excessive values may overflow
+            if (item.key_name === 'Mint') tvl_usd += _usd
+            if (item.key_name === 'Burn') tvl_usd -= _usd
+          }
         }
+
+        if (startTime && currentDate.diff(startTime) < 0) continue
 
         tvls.push({ date: currentDate.format('YYYY-MM-DD'), tvl: tvl_usd })
       }
@@ -79,11 +99,11 @@ export class AnalyticsService {
     return tvls
   }
 
-  async getVolumesByDay() {
+  async getVolumesByDay(startTime: Date | undefined = undefined) {
     // QueryBuilder
     const queryBuilder = this.repoPairTransaction.createQueryBuilder()
     queryBuilder.select(
-      `DATE_FORMAT(event_time, '%Y-%m-%d') as event_time_day, pair_address, CONCAT(ROUND(SUM(amount0), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1), 0), '') as sum_amount1, swap_reverse`
+      `to_char(event_time, 'YYYY-MM-DD') as event_time_day, pair_address, CONCAT(ROUND(SUM(CAST(amount0 as numeric)), 0), '') as sum_amount0, CONCAT(ROUND(SUM(CAST(amount1 as numeric)), 0), '') as sum_amount1, swap_reverse`
     ) // CONCAT ''. Prevent automatic conversion to scientific notation
     queryBuilder.where('key_name = :keyname', { keyname: 'Swap' })
     queryBuilder
@@ -130,6 +150,8 @@ export class AnalyticsService {
             item.swap_reverse
           )
         }
+
+        if (startTime && currentDate.diff(startTime) < 0) continue
 
         volumes.push({
           date: currentDate.format('YYYY-MM-DD'),
@@ -192,7 +214,7 @@ export class AnalyticsService {
           pair.token1.decimals
         )
 
-        if (toBN(item.fee).gtn(0)) {
+        if (sNumber.toBN(item.fee).gtn(0)) {
           const coinbaseService = new CoinbaseService()
           const [_decimals, _symbol] =
             item.swap_reverse === 0
@@ -231,10 +253,10 @@ export class AnalyticsService {
       const targetProfit = profits.find(
         (profit) => profit.address == feeToken.address
       )
-      const amount = toBN(item.sum_fee + '')
+      const amount = sNumber.toBN(item.sum_fee + '')
 
       if (targetProfit) {
-        targetProfit.amount = amount.add(toBN(targetProfit.amount)) + ''
+        targetProfit.amount = amount.add(sNumber.toBN(targetProfit.amount)) + ''
         targetProfit.amountHuman = utils.formatUnits(
           targetProfit.amount,
           feeToken.decimals
@@ -434,7 +456,7 @@ export class AnalyticsService {
     // QueryBuilder
     const queryBuilder = this.repoPairTransaction.createQueryBuilder()
     queryBuilder.select(
-      `pair_address, swap_reverse, CONCAT(ROUND(SUM(fee), 0), '') as sum_fee`
+      `pair_address, swap_reverse, CONCAT(ROUND(SUM(CAST(fee AS DECIMAL(256,0))), 0), '') as sum_fee`
     )
     queryBuilder.where('key_name = :key_name', { key_name: 'Swap' })
     if (startTime > 0) {
@@ -465,7 +487,7 @@ export class AnalyticsService {
     // QueryBuilder
     const queryBuilder = this.repoPairTransaction.createQueryBuilder()
     queryBuilder.select(
-      `pair_address, CONCAT(ROUND(SUM(amount0), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1), 0), '') as sum_amount1, swap_reverse`
+      `pair_address, CONCAT(ROUND(SUM(CAST(amount0 AS DECIMAL(256,0))), 0), '') as sum_amount0, CONCAT(ROUND(SUM(CAST(amount1 AS DECIMAL(256,0))), 0), '') as sum_amount1, swap_reverse`
     )
     queryBuilder.where('key_name = :key_name', { key_name: 'Swap' })
     if (startTime > 0) {
@@ -499,8 +521,8 @@ export class AnalyticsService {
   }
 
   private async getPairVolumeForUsd(
-    amount0: BigNumberish | undefined,
-    amount1: BigNumberish | undefined,
+    amount0: sNumber.BigNumberish | undefined,
+    amount1: sNumber.BigNumberish | undefined,
     pair: Pair,
     swap_reverse: number
   ) {
@@ -514,8 +536,8 @@ export class AnalyticsService {
   }
 
   private async amount0AddAmount1ForUsd(
-    amount0: BigNumberish | undefined,
-    amount1: BigNumberish | undefined,
+    amount0: sNumber.BigNumberish | undefined,
+    amount1: sNumber.BigNumberish | undefined,
     pair: Pair
   ) {
     const coinbaseService = new CoinbaseService()

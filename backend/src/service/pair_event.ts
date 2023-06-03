@@ -1,95 +1,145 @@
-import { AxiosInstance } from 'axios'
-import { Provider } from 'starknet'
-import { Repository } from 'typeorm'
+import { Provider, hash, number as sNumber } from 'starknet'
 import { PairEvent } from '../model/pair_event'
+import { SnBlock } from '../model/sn_block'
 import { Core } from '../util/core'
 import { Pair, PoolService } from './pool'
-import { StarkscanService } from './starkscan'
+import { StarknetService } from './starknet'
 
 export class PairEventService {
   private static pairCursors: { [key: string]: string } = {}
 
-  private provider: Provider
-  private axiosClient: AxiosInstance
-  private repoPairEvent: Repository<PairEvent>
-
-  constructor(provider: Provider) {
-    this.provider = provider
-    this.axiosClient = new StarkscanService(provider).getAxiosClient()
-    this.repoPairEvent = Core.db.getRepository(PairEvent)
-  }
+  constructor(
+    private provider: Provider,
+    private repoPairEvent = Core.db.getRepository(PairEvent),
+    private repoSnBlock = Core.db.getRepository(SnBlock)
+  ) {}
 
   async startWork() {
     if (PoolService.pairs.length < 1) {
       return
     }
 
-    await Promise.all(PoolService.pairs.map((pair) => this.collect(pair)))
-  }
-
-  async collect(pair: Pair) {
-    const userAgent =
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
-    const headers = {
-      'user-agent': userAgent,
-      'content-type': 'application/json',
+    const keyNames = {
+      [hash.getSelectorFromName('Approval')]: 'Approval',
+      [hash.getSelectorFromName('Burn')]: 'Burn',
+      [hash.getSelectorFromName('Mint')]: 'Mint',
+      [hash.getSelectorFromName('Swap')]: 'Swap',
+      [hash.getSelectorFromName('Sync')]: 'Sync',
+      [hash.getSelectorFromName('Transfer')]: 'Transfer',
     }
 
-    const afterCursor = await this.getAfterCursor(pair)
+    const saveWhenNoExist = async (data: any) => {
+      const { transaction_index, transaction_hash, event_index } = data
 
-    const postData = {
-      operationName: 'events',
-      variables: {
-        input: {
-          from_address: pair.pairAddress,
-          sort_by: 'timestamp',
-          order_by: 'asc',
-        },
-        first: 1000,
-        after: afterCursor,
-      },
-      query:
-          'query events($first: Int, $last: Int, $before: String, $after: String, $input: EventsInput!) {\n  events(\n    first: $first\n    last: $last\n    before: $before\n    after: $after\n    input: $input\n  ) {\n    edges {\n      cursor\n      node {\n        event_id\n        block_hash\n        block_number\n        transaction_hash\n        event_index\n        from_address\n        keys\n        data\n        timestamp\n        key_name\n        data_decoded\n        from_contract {\n          contract_address\n          class_hash\n          deployed_at_transaction_hash\n          deployed_at_timestamp\n          name_tag\n          implementation_type\n          is_social_verified\n          starknet_id {\n            domain\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      __typename\n    }\n    __typename\n  }\n}',
-    }
-
-    const resp = await this.axiosClient.post('/graphql', postData, { headers })
-    const edges: any[] = resp.data?.data?.events?.edges
-    if (!edges || edges.length < 1) {
-      return
-    }
-
-    if (edges[edges.length - 1]?.cursor) {
-      PairEventService.pairCursors[pair.pairAddress] =
-          edges[edges.length - 1].cursor
-    }
-
-    const saveWhenNoExist = async (edge: any) => {
-      const { cursor, node } = edge
-
-      if (!node.event_id) {
+      if (!transaction_hash) {
         return
       }
 
+      const event_id = `${transaction_hash}_${event_index}`
+
       const one = await this.repoPairEvent.findOne({
-        where: { event_id: node.event_id },
+        where: { event_id },
       })
       if (one) {
         return
       }
 
+      const cursor = Buffer.from(
+        `${transaction_hash}_${event_index}__${data.timestamp}${
+          transaction_index + ''.padStart(6, '0')
+        }${event_index + ''.padStart(6, '0')}`
+      ).toString('base64')
+
       const pairEvent = new PairEvent()
-      pairEvent.event_id = node.event_id
-      pairEvent.pair_address = pair.pairAddress
-      pairEvent.transaction_hash = node.transaction_hash
-      pairEvent.event_data = JSON.stringify(node.data)
-      pairEvent.key_name = node.key_name
-      pairEvent.event_time = new Date(node.timestamp * 1000)
+      pairEvent.event_id = event_id
+      pairEvent.pair_address = data.pairAddress
+      pairEvent.transaction_hash = transaction_hash
+      pairEvent.event_data = JSON.stringify(data.event_data)
+      pairEvent.key_name = data.name
+      pairEvent.block_number = data.block_number
+      pairEvent.event_time = new Date(data.timestamp * 1000)
       pairEvent.cursor = cursor
-      pairEvent.source_data = JSON.stringify(edge)
+      pairEvent.source_data = JSON.stringify(data)
       return this.repoPairEvent.save(pairEvent)
     }
 
-    await Promise.all(edges.map((edge: any) => saveWhenNoExist(edge)))
+    const lastPairEvent = await this.repoPairEvent.findOne(undefined, {
+      order: { block_number: 'DESC' },
+      select: ['block_number'],
+    })
+
+    let i = lastPairEvent?.block_number || 4000
+    for (; i <= StarknetService.latestBlockNumber; i++) {
+      const snBlock = await this.repoSnBlock.findOne(undefined, {
+        where: { block_number: i },
+      })
+      if (snBlock?.block_data === undefined) continue
+
+      const transaction_receipts: {
+        transaction_index: number
+        transaction_hash: string
+        events: { from_address: string; keys: string[]; data: any[] }[]
+      }[] = snBlock.block_data['transaction_receipts']
+      if (!(transaction_receipts instanceof Array)) {
+        continue
+      }
+
+      const datas: any[] = []
+      for (const item of transaction_receipts) {
+        if (!(item.events instanceof Array)) continue
+
+        for (const eventIndex in item.events) {
+          const event = item.events[eventIndex]
+
+          const targetPair = PoolService.pairs.find((p) =>
+            sNumber.toBN(event.from_address).eq(sNumber.toBN(p.pairAddress))
+          )
+          if (targetPair === undefined) continue
+
+          const key = event.keys.find((k) => keyNames[k] !== undefined)
+          if (key === undefined) continue
+
+          datas.push({
+            pairAddress: targetPair.pairAddress,
+            event_index: eventIndex,
+            transaction_index: item.transaction_index,
+            transaction_hash: item.transaction_hash,
+            name: keyNames[key],
+            block_number: snBlock.block_data.block_number,
+            event_data: event.data,
+            timestamp: snBlock.block_data['timestamp'],
+          })
+        }
+      }
+
+      await Promise.all(datas.map((data: any) => saveWhenNoExist(data)))
+    }
+
+    // let p = 1
+    // while (true) {
+    //   try {
+    //     const { data } = await voyagerService
+    //       .getAxiosClient()
+    //       .get(`/api/events?contract=${pair.pairAddress}&ps=50&p=${p}`, {
+    //         headers,
+    //       })
+
+    //     const items: any[] | undefined = data?.items
+    //     if (items == undefined) {
+    //       throw 'undefined items!'
+    //     }
+    //     if (items.length <= 0) {
+    //       break
+    //     }
+
+    //     await Promise.all(items.map((item: any) => saveWhenNoExist(item)))
+
+    //     p += 1
+    //   } catch (e) {
+    //     errorLogger.error(`PairEvent collect failed: ${e.message}`)
+    //     await sleep(1000)
+    //   }
+    // }
   }
 
   private async getAfterCursor(pair: Pair) {

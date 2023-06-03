@@ -1,12 +1,14 @@
 import { getProviderFromEnv, isDevelopEnv } from '../util'
 import {
+  jobCacheTVLsByDayAndVolumesByDay,
   jobCoinbaseCache,
+  jobCollectSNBlock,
   jobFaucetTwitter,
   jobPairEventStartWork,
-  jobPairTransactionPurify,
   jobPairTransactionAccountAddress,
+  jobPairTransactionPurify,
   jobPoolCollect,
-  jobCacheTVLsByDayAndVolumesByDay,
+  jobUpdateLatestBlockNumber,
 } from './jobs'
 
 export const startMasterJobs = async () => {
@@ -18,6 +20,9 @@ export const startMasterJobs = async () => {
   jobPoolCollect(provider)
 
   jobCoinbaseCache()
+
+  jobUpdateLatestBlockNumber(provider)
+  jobCollectSNBlock(provider)
 
   jobPairEventStartWork(provider)
   jobPairTransactionPurify(provider)

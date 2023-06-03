@@ -3,9 +3,9 @@ import { ConnectionOptions } from 'typeorm'
 import { isDevelopEnv } from '../util'
 
 export const options: ConnectionOptions = {
-  type: 'mysql',
+  type: 'postgres',
   host: process.env.DB_HOST || '127.0.0.1',
-  port: Number(process.env.DB_PORT) || 3306,
+  port: Number(process.env.DB_PORT) || 3308,
   username: process.env.DB_USER || 'l0k_swap_seabed',
   password: process.env.DB_PASSWORD || '123456',
   database: process.env.DB_NAME || 'l0k_swap_seabed',

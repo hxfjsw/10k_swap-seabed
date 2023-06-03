@@ -1,7 +1,5 @@
 import { utils } from 'ethers'
-import { Abi, Account, Call, ec, Provider } from 'starknet'
-import { toBN, toHex } from 'starknet/dist/utils/number'
-import { bnToUint256 } from 'starknet/dist/utils/uint256'
+import { Abi, Account, Call, ec, Provider, number as sNumber, uint256 } from 'starknet'
 import { In } from 'typeorm'
 import { faucetConfig } from '../config'
 import erc20 from '../config/abis/erc20.json'
@@ -107,9 +105,9 @@ export class FaucetService {
     const { aAddress, aAmount, bAddress, bAmount, ethAddress, ethAmount } =
       faucetConfig
 
-    const a = bnToUint256(toBN(aAmount.toString()))
-    const b = bnToUint256(toBN(bAmount.toString()))
-    const eth = bnToUint256(toBN(ethAmount.toString()))
+    const a = uint256.bnToUint256(sNumber.toBN(aAmount.toString()))
+    const b = uint256.bnToUint256(sNumber.toBN(bAmount.toString()))
+    const eth = uint256.bnToUint256(sNumber.toBN(ethAmount.toString()))
 
     const calls: Call[] = []
     const abis: Abi[] = []
@@ -146,7 +144,7 @@ export class FaucetService {
   }
 
   private getAccounts() {
-    const provider = new Provider({ network: 'goerli-alpha' })
+    const provider = new Provider({ sequencer: { network: 'goerli-alpha' } })
 
     const accounts: Account[] = []
 
@@ -157,7 +155,7 @@ export class FaucetService {
         continue
       }
 
-      const pk = toHex(toBN(privateKey))
+      const pk = sNumber.toHex(sNumber.toBN(privateKey))
       const keyPair = ec.getKeyPair(pk)
       accounts.push(new Account(provider, address.toLowerCase(), keyPair))
     }

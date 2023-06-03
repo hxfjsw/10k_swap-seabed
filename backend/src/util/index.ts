@@ -1,6 +1,5 @@
 import dayjs from 'dayjs'
-import { Provider } from 'starknet'
-import { validateAndParseAddress } from 'starknet/dist/utils/address'
+import { Provider, validateAndParseAddress } from 'starknet'
 import { ADDRESS_ZORE } from '../constants'
 
 export async function sleep(ms: number) {
@@ -98,12 +97,15 @@ export function isAddress(address: any): string | false {
 
 export function isDevelopEnv() {
   const productEnv = process.env['PRODUCT_ENV'] || ''
-  console.log('productEnv', productEnv);
   return productEnv.toLowerCase() != 'production'
 }
 
 export function getProviderFromEnv() {
   return new Provider({
-    network: isDevelopEnv() ? 'goerli-alpha' : 'mainnet-alpha',
+    sequencer: { network: isDevelopEnv() ? 'goerli-alpha' : 'mainnet-alpha' },
   })
+}
+
+export function isRpcTooManyRequests(err: Error) {
+  return /(Too Many Requests)/gi.test(err.message)
 }

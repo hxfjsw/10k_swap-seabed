@@ -24,7 +24,7 @@ export class PairTransaction extends CommonEntity {
   @Column('varchar', { length: 256 })
   account_address: string
 
-  @Column('datetime', { precision: 6, default: null })
+  @Column('timestamp', { precision: 6, default: null })
   event_time: Date
 
   @Column('varchar', { length: 256, default: '' })
@@ -33,7 +33,7 @@ export class PairTransaction extends CommonEntity {
   @Column('varchar', { length: 256, default: '' })
   amount1: string
 
-  @Column('tinyint', { default: 0 })
+  @Column('int2', { default: 0 })
   swap_reverse: number // 0: Swap token0 for token1, 1: Swap token1 for token0
 
   @Column('varchar', { length: 256, default: '' })

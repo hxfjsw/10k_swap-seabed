@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15.2
+    environment:
+      PGHOST: '127.0.0.1'
+      PGPORT: 3308
+      POSTGRES_USER: 'l0k_swap_seabed'
+      POSTGRES_PASSWORD: '123456'
+      POSTGRES_DB: 'l0k_swap_seabed'
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - 3308:3308
+    restart: always

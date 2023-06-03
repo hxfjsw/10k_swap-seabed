@@ -15,7 +15,7 @@ export class TwitterCrawl extends CommonEntity {
   @Column('varchar', { length: 256 })
   username: string
 
-  @Column('datetime', { precision: 6, default: null })
+  @Column('timestamp', { precision: 6, default: null })
   tweet_time: Date
 
   @Column('text')
@@ -24,6 +24,6 @@ export class TwitterCrawl extends CommonEntity {
   @Column('varchar', { length: 256, default: '' })
   recipient: string
 
-  @Column('tinyint', { default: 0 })
+  @Column('int2', { default: 0 })
   status: number // 0: not faucet, 1: faucet sent, 2:fail, 3: fauceting
 }

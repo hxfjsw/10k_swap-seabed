@@ -7,6 +7,7 @@ import { PairTransactionService } from '../service/pair_transaction'
 import { PoolService } from '../service/pool'
 import { errorLogger } from '../util/logger'
 import { AnalyticsServiceCache } from '../service/analytics_cache'
+import { StarknetService } from '../service/starknet'
 
 // import { doSms } from '../sms/smsSchinese'
 class MJob {
@@ -41,8 +42,8 @@ class MJob {
     this.jobName = jobName
   }
 
-  public schedule(): schedule.Job {
-    return schedule.scheduleJob(this.rule, async () => {
+  public schedule(immediate: boolean = false): schedule.Job {
+    const job = schedule.scheduleJob(this.rule, async () => {
       try {
         this.callback && (await this.callback())
       } catch (error) {
@@ -53,12 +54,16 @@ class MJob {
         errorLogger.error(message)
       }
     })
+
+    if (immediate) setImmediate(() => job.invoke())
+
+    return job
   }
 }
 
 // Pessimism Lock Job
 class MJobPessimism extends MJob {
-  public schedule(): schedule.Job {
+  public schedule(immediate: boolean = false): schedule.Job {
     let pessimismLock = false
 
     const _callback = this.callback
@@ -79,7 +84,7 @@ class MJobPessimism extends MJob {
       }
     }
 
-    return super.schedule()
+    return super.schedule(immediate)
   }
 }
 
@@ -100,7 +105,9 @@ export function jobCoinbaseCache() {
     await new CoinbaseService().cache()
   }
 
-  new MJobPessimism('*/5 * * * * *', callback, jobCoinbaseCache.name).schedule()
+  new MJobPessimism('*/5 * * * * *', callback, jobCoinbaseCache.name).schedule(
+    true
+  )
 }
 
 export function jobPairEventStartWork(provider: Provider) {
@@ -141,10 +148,16 @@ export function jobPairTransactionAccountAddress(provider: Provider) {
 
 export function jobPoolCollect(provider: Provider) {
   const callback = async () => {
-    await new PoolService(provider).collect()
+    try {
+      await new PoolService(provider).collect()
+    } catch (e) {
+      console.warn(e)
+    }
   }
 
-  new MJobPessimism('*/10 * * * * *', callback, jobPoolCollect.name).schedule()
+  new MJobPessimism('*/5 * * * * *', callback, jobPoolCollect.name).schedule(
+    true
+  )
 }
 
 export function jobCacheTVLsByDayAndVolumesByDay() {
@@ -153,5 +166,33 @@ export function jobCacheTVLsByDayAndVolumesByDay() {
     await analyticsServiceCache.cacheTVLsByDayAndVolumesByDay()
   }
 
-  new MJobPessimism('*/5 */10 * * * *', callback, jobCacheTVLsByDayAndVolumesByDay.name).schedule()
+  new MJobPessimism(
+    '*/5 * * * * *',
+    callback,
+    jobCacheTVLsByDayAndVolumesByDay.name
+  ).schedule()
+}
+
+export function jobUpdateLatestBlockNumber(provider: Provider) {
+  const callback = async () => {
+    await new StarknetService(provider).updateLatestBlockNumber()
+  }
+
+  new MJobPessimism(
+    '*/50 * * * * *',
+    callback,
+    jobUpdateLatestBlockNumber.name
+  ).schedule(true)
+}
+
+export function jobCollectSNBlock(provider: Provider) {
+  const callback = async () => {
+    await new StarknetService(provider).collectSNBlock()
+  }
+
+  new MJobPessimism(
+    '*/20 * * * * *',
+    callback,
+    jobCollectSNBlock.name
+  ).schedule()
 }
