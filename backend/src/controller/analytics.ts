@@ -29,6 +29,13 @@ export default function (router: KoaRouter<DefaultState, Context>) {
       params.page
     )
 
+      for(let i=0;i<pairs.pairs.length;i++){
+          if(pairs.pairs[i].liquidity <0.01){
+                pairs.pairs.splice(i,1);
+                i--;
+          }
+      }
+
     restful.json(pairs)
   })
 
@@ -57,8 +64,8 @@ export default function (router: KoaRouter<DefaultState, Context>) {
   })
 
   router.get('analytics/top_tvl_accounts', async ({ restful }) => {
-    // const tvls = await analyticsService.getTVLsByAccount()
-    const tvls = []
+    const tvls = await analyticsService.getTVLsByAccount()
+    // const tvls = []
 
     restful.json({ tvls })
   })

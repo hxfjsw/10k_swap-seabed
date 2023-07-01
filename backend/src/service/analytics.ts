@@ -377,19 +377,63 @@ export class AnalyticsService {
     return { pairs, total: 0, limit, page }
   }
 
+  async getVolumeByAccount(count = 100) {
+    const queryBuilder = this.repoPairTransaction.createQueryBuilder()
+    // queryBuilder.select(
+    //   `account_address, pair_address, CONCAT(ROUND(SUM(amount0), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1), 0), '') as sum_amount1, key_name`
+    // ) // CONCAT ''. Prevent automatic conversion to scientific notation
+
+    queryBuilder.select(
+        `account_address, pair_address, CONCAT(ROUND(SUM(amount0::numeric), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1::numeric), 0), '') as sum_amount1, key_name`
+    )
+    queryBuilder.where('key_name IN (:...keynames)', {
+      keynames: ['Swap'],
+    })
+    queryBuilder
+        .addGroupBy('account_address')
+        .addGroupBy('pair_address')
+        .addGroupBy('key_name')
+
+
+    const rawMany = await queryBuilder.getRawMany<{
+      account_address: string
+      pair_address: string
+      sum_amount0: string
+      sum_amount1: string
+      key_name: string
+    }>()
+
+
+    const volumes: {
+      account_address: string
+      volume: number
+      volumePairs: { [key: string]: number }
+    }[] = []
+
+
+
+
+    return volumes.sort((a, b) => b.volume - a.volume).slice(0, count)
+  }
+
   async getTVLsByAccount(count = 100) {
     // QueryBuilder
     const queryBuilder = this.repoPairTransaction.createQueryBuilder()
+    // queryBuilder.select(
+    //   `account_address, pair_address, CONCAT(ROUND(SUM(amount0), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1), 0), '') as sum_amount1, key_name`
+    // ) // CONCAT ''. Prevent automatic conversion to scientific notation
+
     queryBuilder.select(
-      `account_address, pair_address, CONCAT(ROUND(SUM(amount0), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1), 0), '') as sum_amount1, key_name`
-    ) // CONCAT ''. Prevent automatic conversion to scientific notation
-    queryBuilder.where('key_name IN (:...keynames)', {
+        `account_address, pair_address, CONCAT(ROUND(SUM(amount0::numeric), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1::numeric), 0), '') as sum_amount1, key_name`
+    )
+        queryBuilder.where('key_name IN (:...keynames)', {
       keynames: ['Mint', 'Burn'],
     })
     queryBuilder
       .addGroupBy('account_address')
       .addGroupBy('pair_address')
       .addGroupBy('key_name')
+
 
     const rawMany = await queryBuilder.getRawMany<{
       account_address: string
@@ -404,6 +448,7 @@ export class AnalyticsService {
       tvlTotal: number
       tvlPairs: { [key: string]: number }
     }[] = []
+
     if (rawMany.length > 1) {
       const tvlAccountMap: {
         [key: string]: { [key: string]: number }

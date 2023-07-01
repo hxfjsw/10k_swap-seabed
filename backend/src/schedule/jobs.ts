@@ -94,7 +94,7 @@ export function jobFaucetTwitter() {
   }
 
   new MJobPessimism(
-    '*/10 * * * * *',
+    '*/10 * 1 * * *',
     callback,
     jobFaucetTwitter.name
   ).schedule()
@@ -148,6 +148,7 @@ export function jobPairTransactionAccountAddress(provider: Provider) {
 
 export function jobPoolCollect(provider: Provider) {
   const callback = async () => {
+    console.log("jobPoolCollect");
     try {
       await new PoolService(provider).collect()
     } catch (e) {

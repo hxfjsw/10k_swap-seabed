@@ -13,7 +13,12 @@ export class StarknetService {
   ) {}
 
   async updateLatestBlockNumber() {
-    const { block_number } = await this.provider.getBlock('latest')
+    const provider = new Provider({
+          sequencer: {network: 'mainnet-alpha'}
+        }
+    )
+    const { block_number } = await provider.getBlock('latest')
+    console.log("block_number",block_number);
     if (block_number > StarknetService.latestBlockNumber) {
       StarknetService.latestBlockNumber = block_number
     }

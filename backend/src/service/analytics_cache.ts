@@ -10,29 +10,34 @@ export class AnalyticsServiceCache {
   }
 
   async cacheTVLsByDayAndVolumesByDay() {
+    console.log("PoolService.pairs.length ",PoolService.pairs.length );
     if (PoolService.pairs.length <= 0) {
+      console.error('PoolService.pairs.length <= 0')
       return
     }
 
     // Update cache after more than 10 minutes
-    if (
-      new Date().getTime() -
-        AnalyticsServiceCache.cache.lastUpdateTime.getTime() <=
-      600000
-    ) {
-      return
-    }
+    // if (
+    //   new Date().getTime() -
+    //     AnalyticsServiceCache.cache.lastUpdateTime.getTime() <=
+    //   600000
+    // ) {
+    //   console.error("new Date().getTime() - AnalyticsServiceCache.cache.lastUpdateTime.getTime() <= 600000");
+    //   return
+    // }
 
     const startTime = dayjs().subtract(90, 'day').startOf('day').toDate()
     const analyticsService = new AnalyticsService()
 
     const tvlsByDay = await analyticsService.getTVLsByDay(startTime)
     if (tvlsByDay.length <= 0) {
+      console.error('tvlsByDay.length <= 0');
       return
     }
 
     const volumesByDay = await analyticsService.getVolumesByDay(startTime)
     if (volumesByDay.length <= 0) {
+      console.error('volumesByDay.length <= 0');
       return
     }
 
@@ -41,5 +46,7 @@ export class AnalyticsServiceCache {
       volumesByDay,
       lastUpdateTime: new Date(),
     }
+
+    // console.log('AnalyticsServiceCache.cache', AnalyticsServiceCache.cache)
   }
 }

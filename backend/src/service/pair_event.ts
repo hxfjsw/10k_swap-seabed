@@ -70,6 +70,7 @@ export class PairEventService {
 
     let i = lastPairEvent?.block_number || 4000
     for (; i <= StarknetService.latestBlockNumber; i++) {
+      // console.log('PairEventService startWork', i);
       const snBlock = await this.repoSnBlock.findOne(undefined, {
         where: { block_number: i },
       })

@@ -140,15 +140,19 @@ export class PoolService {
 
   async collect() {
     // Do not update within 10 minutes
-    if (PoolService.pairs?.[0]?.lastUpdatedTime) {
-      const _time = new Date(PoolService.pairs[0].lastUpdatedTime).getTime()
-      if (new Date().getTime() - _time < 600000) return
-    }
+    // if (PoolService.pairs?.[0]?.lastUpdatedTime) {
+    //   const _time = new Date(PoolService.pairs[0].lastUpdatedTime).getTime()
+    //   if (new Date().getTime() - _time < 600000) return
+    // }
+    console.log("collect1");
 
     const edgerCacheKey = 'pool_service-collect-edges'
     const edgesCacheValue = await Core.redis.get(edgerCacheKey)
+    console.log("collect2",edgesCacheValue);
 
     let edges: any[] = edgesCacheValue ? JSON.parse(edgesCacheValue) || [] : []
+    console.log("collect3",edges);
+
     if (!Array.isArray(edges) || edges.length <= 0) {
       const userAgent =
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
@@ -171,17 +175,24 @@ export class PoolService {
           'query events($first: Int, $last: Int, $before: String, $after: String, $input: EventsInput!) {\n  events(\n    first: $first\n    last: $last\n    before: $before\n    after: $after\n    input: $input\n  ) {\n    edges {\n      cursor\n      node {\n        event_id\n        block_hash\n        block_number\n        transaction_hash\n        event_index\n        from_address\n        keys\n        data\n        timestamp\n        key_name\n        data_decoded\n        from_contract {\n          contract_address\n          class_hash\n          deployed_at_transaction_hash\n          deployed_at_timestamp\n          name_tag\n          implementation_type\n          is_social_verified\n          starknet_id {\n            domain\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      __typename\n    }\n    __typename\n  }\n}',
       }
 
+      console.log('Post data: ', postData);
+
       const resp = await this.axiosClient.post('/graphql', postData, {
         headers,
       })
+
+      console.log("response",resp.data);
+
       edges = resp.data?.data?.events?.edges
 
+      console.log("edges",edges);
+      console.log("collect4",edges.length);
       if (!edges || edges.length < 1) {
         errorLogger.error('Get factory events failed')
         return
       }
 
-      await Core.redis.setex(edgerCacheKey, 3_600, JSON.stringify(edges))
+      await Core.redis.setex(edgerCacheKey, 300, JSON.stringify(edges))
     }
 
     const _pairs: Pair[] = []
@@ -194,6 +205,14 @@ export class PoolService {
 
       const token0 = sNumber.toHex(sNumber.toBN(data[0]))
       const token1 = sNumber.toHex(sNumber.toBN(data[1]))
+
+      if(token0==="0x3a4d424cc9cea77f7f04cb756f97c89dd7c4e90dc57dd7138970071cd9f94a1" || token1==="0x3a4d424cc9cea77f7f04cb756f97c89dd7c4e90dc57dd7138970071cd9f94a1"){
+        continue;
+      }
+
+      console.log("token0",token0);
+      console.log("token1",token1);
+
       const pairAddress = sNumber.toHex(sNumber.toBN(data[2]))
 
       const [token0Info, token1Info, pairInfo] = await Promise.all([
