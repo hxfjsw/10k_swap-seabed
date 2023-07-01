@@ -406,14 +406,51 @@ export class AnalyticsService {
 
     const volumes: {
       account_address: string
-      volume: number
+      volumeTotal: number
       volumePairs: { [key: string]: number }
     }[] = []
 
 
+    if (rawMany.length > 1) {
+        const volumeAccountMap: {
+            [key: string]: { [key: string]: number }
+        } = {}
+
+        for (const item of rawMany) {
+            const targetPair = this.getTargetPair(item.pair_address)
+            if (!targetPair) {
+                continue
+            }
+
+            const usd = await this.amount0AddAmount1ForUsd(
+                item.sum_amount0,
+                item.sum_amount1,
+                targetPair
+            )
+
+            const target = volumeAccountMap[item.account_address] || {}
+            if (!target[item.pair_address]) target[item.pair_address] = 0
+
+            target[item.pair_address] += usd
+            volumeAccountMap[item.account_address] = target
+
+        }
+
+        for (const key in volumeAccountMap) {
+            const volumePairs = volumeAccountMap[key]
+
+            let volumeTotal = 0
+            for (const key1 in volumePairs) {
+                volumeTotal += volumePairs[key1]
+            }
+
+            volumes.push({ account_address: key, volumeTotal, volumePairs })
+        }
+
+    }
 
 
-    return volumes.sort((a, b) => b.volume - a.volume).slice(0, count)
+    return volumes.sort((a, b) => b.volumeTotal - a.volumeTotal).slice(0, count)
   }
 
   async getTVLsByAccount(count = 100) {
@@ -446,6 +483,8 @@ export class AnalyticsService {
     const tvls: {
       account_address: string
       tvlTotal: number
+      score:number
+      since: number
       tvlPairs: { [key: string]: number }
     }[] = []
 
@@ -486,7 +525,18 @@ export class AnalyticsService {
           tvlTotal += tvlPairs[key1]
         }
 
-        tvls.push({ account_address: key, tvlTotal, tvlPairs })
+        const firstMintTimestamp = await this.getAccountFirstMintTimestamp(key)
+        const duration_days = (Date.now() - firstMintTimestamp) /86400;
+
+        let score = 0;
+        if(duration_days >=30 && tvlTotal >= 20){
+          //x * ((day-29)^1.25)
+          score =  (Number)((tvlTotal * ((duration_days -29)^1.25)).toFixed(4));
+        }
+
+
+
+        tvls.push({ account_address: key, tvlTotal, tvlPairs,score ,since:firstMintTimestamp})
       }
     }
 
@@ -603,5 +653,22 @@ export class AnalyticsService {
       )
     }
     return amount0Usd + amount1Usd
+  }
+
+  private async getAccountFirstMintTimestamp(accountAddress: string) {
+
+      const queryBuilder = this.repoPairTransaction.createQueryBuilder()
+      queryBuilder.select("min(event_time) as min_time")
+
+    queryBuilder.andWhere('account_address = :accountAddress', { accountAddress })
+
+    let  res = await queryBuilder.getRawOne()
+     let time =  res?.min_time.getTime();
+      if(time===undefined){
+          return 0;
+      }else{
+            return time/1000;
+      }
+
   }
 }
