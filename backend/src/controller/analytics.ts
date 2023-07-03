@@ -63,9 +63,21 @@ export default function (router: KoaRouter<DefaultState, Context>) {
     restful.json({ transactions, summary })
   })
 
-  router.get('analytics/top_tvl_accounts', async ({ restful }) => {
+  router.get('analytics/top_tvl_accounts', async ({ restful,request }) => {
+      const params = plainToInstance(
+          class {
+              page: number
+          },
+          request.query
+      )
+
     const tvls = await analyticsService.getTVLsByAccount()
-    restful.json({ tvls })
+
+      restful.json({
+          page: params.page,
+          limit:25,
+          tvls:tvls.slice((params.page-1)*25,params.page*25),
+      })
   })
 
   router.get('analytics/top_volume_accounts', async ({ restful,request }) => {
