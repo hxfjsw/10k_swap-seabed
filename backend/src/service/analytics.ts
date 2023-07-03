@@ -8,12 +8,15 @@ import { Core } from '../util/core'
 import { CoinbaseService } from './coinbase'
 import type { Pair } from './pool'
 import { PoolService } from './pool'
+import {Snapshot} from "../model/snapshot";
 
 export class AnalyticsService {
   private repoPairTransaction: Repository<PairTransaction>
+  private repoSnapshot: Repository<Snapshot>
 
   constructor() {
     this.repoPairTransaction = Core.db.getRepository(PairTransaction)
+    this.repoSnapshot = Core.db.getRepository(Snapshot)
   }
 
   async getTVLsByDay(startTime: Date | undefined = undefined) {
