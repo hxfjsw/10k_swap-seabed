@@ -680,4 +680,194 @@ export class AnalyticsService {
       content:json_content
     })
   }
+
+  async getRankTVLsByAccount(account_address) {
+    // QueryBuilder
+    const queryBuilder = this.repoPairTransaction.createQueryBuilder()
+    // queryBuilder.select(
+    //   `account_address, pair_address, CONCAT(ROUND(SUM(amount0), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1), 0), '') as sum_amount1, key_name`
+    // ) // CONCAT ''. Prevent automatic conversion to scientific notation
+
+    queryBuilder.select(
+        `account_address, pair_address, CONCAT(ROUND(SUM(amount0::numeric), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1::numeric), 0), '') as sum_amount1, key_name`
+    )
+    queryBuilder.where('key_name IN (:...keynames)', {
+      keynames: ['Mint', 'Burn'],
+    })
+    queryBuilder
+        .addGroupBy('account_address')
+        .addGroupBy('pair_address')
+        .addGroupBy('key_name')
+
+
+    const rawMany = await queryBuilder.getRawMany<{
+      account_address: string
+      pair_address: string
+      sum_amount0: string
+      sum_amount1: string
+      key_name: string
+    }>()
+
+    const tvls: {
+      account_address: string
+      tvlTotal: number
+      score:number
+      since: number
+      tvlPairs: { [key: string]: number }
+    }[] = []
+
+    if (rawMany.length > 1) {
+      const tvlAccountMap: {
+        [key: string]: { [key: string]: number }
+      } = {}
+
+      for (const item of rawMany) {
+        const targetPair = this.getTargetPair(item.pair_address)
+        if (!targetPair) {
+          continue
+        }
+
+        const _usd = await this.amount0AddAmount1ForUsd(
+            item.sum_amount0,
+            item.sum_amount1,
+            targetPair
+        )
+
+        // TODO: Excessive values may overflow
+        let tvl_usd = 0
+        if (item.key_name === 'Mint') tvl_usd += _usd
+        if (item.key_name === 'Burn') tvl_usd -= _usd
+
+        const target = tvlAccountMap[item.account_address] || {}
+        if (!target[item.pair_address]) target[item.pair_address] = 0
+
+        target[item.pair_address] += tvl_usd
+        tvlAccountMap[item.account_address] = target
+      }
+
+      for (const key in tvlAccountMap) {
+        const tvlPairs = tvlAccountMap[key]
+
+        let tvlTotal = 0
+        for (const key1 in tvlPairs) {
+          tvlTotal += tvlPairs[key1]
+        }
+
+        const firstMintTimestamp = await this.getAccountFirstMintTimestamp(key)
+        const duration_days = (Date.now() - firstMintTimestamp) /86400;
+
+        let score = 0;
+        if(duration_days >=30 && tvlTotal >= 20){
+          //x * ((day-29)^1.25)
+          score =  (Number)((tvlTotal * ((duration_days -29)^1.25)).toFixed(4));
+        }
+
+
+
+        tvls.push({ account_address: key, tvlTotal, tvlPairs,score ,since:firstMintTimestamp})
+      }
+    }
+
+    const rank_list =   tvls.sort((a, b) => b.tvlTotal - a.tvlTotal);
+
+    for(let i=0;i<rank_list.length;i++){
+        if(rank_list[i].account_address == account_address){
+            let rank = i+1;
+            return {
+              rank:rank,
+              info:rank_list[i]
+            };
+        }
+    }
+
+    return null;
+  }
+
+  async getRankVolumeByAccount(account_address:string) {
+    const queryBuilder = this.repoPairTransaction.createQueryBuilder()
+    // queryBuilder.select(
+    //   `account_address, pair_address, CONCAT(ROUND(SUM(amount0), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1), 0), '') as sum_amount1, key_name`
+    // ) // CONCAT ''. Prevent automatic conversion to scientific notation
+
+    queryBuilder.select(
+        `account_address, pair_address, CONCAT(ROUND(SUM(amount0::numeric), 0), '') as sum_amount0, CONCAT(ROUND(SUM(amount1::numeric), 0), '') as sum_amount1, key_name`
+    )
+    queryBuilder.where('key_name IN (:...keynames)', {
+      keynames: ['Swap'],
+    })
+    queryBuilder
+        .addGroupBy('account_address')
+        .addGroupBy('pair_address')
+        .addGroupBy('key_name')
+
+
+    const rawMany = await queryBuilder.getRawMany<{
+      account_address: string
+      pair_address: string
+      sum_amount0: string
+      sum_amount1: string
+      key_name: string
+    }>()
+
+
+    const volumes: {
+      account_address: string
+      volumeTotal: number
+      volumePairs: { [key: string]: number }
+    }[] = []
+
+
+    if (rawMany.length > 1) {
+      const volumeAccountMap: {
+        [key: string]: { [key: string]: number }
+      } = {}
+
+      for (const item of rawMany) {
+        const targetPair = this.getTargetPair(item.pair_address)
+        if (!targetPair) {
+          continue
+        }
+
+        const usd = await this.amount0AddAmount1ForUsd(
+            item.sum_amount0,
+            item.sum_amount1,
+            targetPair
+        )
+
+        const target = volumeAccountMap[item.account_address] || {}
+        if (!target[item.pair_address]) target[item.pair_address] = 0
+
+        target[item.pair_address] += usd
+        volumeAccountMap[item.account_address] = target
+
+      }
+
+      for (const key in volumeAccountMap) {
+        const volumePairs = volumeAccountMap[key]
+
+        let volumeTotal = 0
+        for (const key1 in volumePairs) {
+          volumeTotal += volumePairs[key1]
+        }
+
+        volumes.push({ account_address: key, volumeTotal, volumePairs })
+      }
+
+    }
+
+
+    let rank_list = volumes.sort((a, b) => b.volumeTotal - a.volumeTotal);
+
+    for(let i=0;i<rank_list.length;i++){
+      if(rank_list[i].account_address == account_address){
+          let rank = i+1;
+          return {
+            rank:rank,
+            info:rank_list[i]
+          };
+      }
+    }
+
+    return null;
+  }
 }

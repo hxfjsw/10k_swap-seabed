@@ -1,734 +1,4125 @@
-{
-  "data": {
-    "volumes": [
-      {
-        "account_address": "0x0672e901042958066dddef68c4089c620046222ae019e9ea5c3e5fd7d8456b15",
-        "volumeTotal": 9133.492306667871,
-        "volumePairs": {
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 279.7987563046145,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1159.29553526265,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 7694.398015100607
-        }
-      },
-      {
-        "account_address": "0x062891b532bd095f983f4e189517f79ab4db584e6c5288826a260a4152a03bae",
-        "volumeTotal": 7515.858151506502,
-        "volumePairs": {
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1466.2456082220292,
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 643.399219637229,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 5406.213323647244
-        }
-      },
-      {
-        "account_address": "0x0419ce869a15d4d02fe5cac578533b4a14d3f816f8db311ece6fa868a5200d63",
-        "volumeTotal": 6050.38749657717,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 4400.195479834911,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 838.1326210555465,
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 812.0593956867134
-        }
-      },
-      {
-        "account_address": "0x03aca64105acb899836b7fb888a55ec73b613da15611e0d686c4ed6d9d2f7ff2",
-        "volumeTotal": 2421.107335108023,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2421.107335108023
-        }
-      },
-      {
-        "account_address": "0x05fe3822105abad28ca8df13e17c67b1bf8a0d286674bc5b7e8878d654a82da3",
-        "volumeTotal": 1882.960287970876,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1882.960287970876
-        }
-      },
-      {
-        "account_address": "0x02d0bdb5c474ed91fe3fc2ec5d3a3d89112e7a02e01a46ae408cf281646dcbb2",
-        "volumeTotal": 1507.5226707745721,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1507.5226707745721
-        }
-      },
-      {
-        "account_address": "0x0778a36227a2fd4639dffd18b860fe0253509f6e560e67eab463f5ee28856564",
-        "volumeTotal": 894.2222099171454,
-        "volumePairs": {
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 18.79285092171458,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 875.4293589954308
-        }
-      },
-      {
-        "account_address": "0x05ba697e5779bcbf65d47f79f8c627762f42d94e0e9333552555c205c5ba5457",
-        "volumeTotal": 880.4686960541871,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 880.4686960541871
-        }
-      },
-      {
-        "account_address": "0x05a0d4e5d076a2263e50808314ffc05b91ee07a710fa9070792c559a2435ec1c",
-        "volumeTotal": 834.4547505408503,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 834.4547505408503
-        }
-      },
-      {
-        "account_address": "0x0030f1a49d04815a72c237a0fbd45df06d1794f8c6da75792c833f4721dbf617",
-        "volumeTotal": 834.3371313330571,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 834.3371313330571
-        }
-      },
-      {
-        "account_address": "0x03dbec5cc35ff39d3dfffee4cfeed3f51d7b41832a807bb440b4e1d8c36d6578",
-        "volumeTotal": 787.7659576192868,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 787.7659576192868
-        }
-      },
-      {
-        "account_address": "0x0378d8ba380dc29baf9ec6b6de7175241e04ed98868585e3175a49dd5f8cd366",
-        "volumeTotal": 775.3024548191993,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 775.3024548191993
-        }
-      },
-      {
-        "account_address": "0x0369d61612abb454722a3cca2197efea87cd77502e14cb0d96dd8695d2c6b20e",
-        "volumeTotal": 727.7738649999833,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 727.7738649999833
-        }
-      },
-      {
-        "account_address": "0x038a5757ecce0b8c4fc0da8bdb2e049f0b41923bf702eaec889718bff850bb62",
-        "volumeTotal": 718.5995720608016,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 718.5995720608016
-        }
-      },
-      {
-        "account_address": "0x0066a5b1151365baff67276a108c2e4b3abbc283b80b0e5b7748495e0eb7aefb",
-        "volumeTotal": 693.5566061088922,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 693.5566061088922
-        }
-      },
-      {
-        "account_address": "0x06ce418fc4974cf4bdb2141005f511e934120aecf50a070608b7333391d63f82",
-        "volumeTotal": 669.7748513428883,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 669.7748513428883
-        }
-      },
-      {
-        "account_address": "0x035f2587b7f7f469ed36812ea84354a56f2f11f9ebc2e01c95666c5842b278ae",
-        "volumeTotal": 648.8009761804494,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 574.0080093584188,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 74.79296682203062
-        }
-      },
-      {
-        "account_address": "0x00ef1724ab7fb551b79004958b2b1c785d7dacf432b77c5380d5451baf925e96",
-        "volumeTotal": 615.8977829007699,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 615.8977829007699
-        }
-      },
-      {
-        "account_address": "0x01e1c510c5051a89f09ae7377af2830c7bfce12703f1c0d4685d9338269ad95e",
-        "volumeTotal": 608.7906722528635,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 608.7906722528635
-        }
-      },
-      {
-        "account_address": "0x009bf3cceb4c392d9e11e127608977f061c5618c87724bc3765c0f4426bcff01",
-        "volumeTotal": 586.9356944576581,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 586.9356944576581
-        }
-      },
-      {
-        "account_address": "0x07308e54777ac96b962961fa05e4301ee07c9bbd45f9e6500d58bbcf77cd15f4",
-        "volumeTotal": 582.1355412243586,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 582.1355412243586
-        }
-      },
-      {
-        "account_address": "0x01306de27241833c92afd6d719f6221c41a7c8ae9c92c034ea658c210c0c4e7b",
-        "volumeTotal": 573.2176719032163,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 550.8544424550524,
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 22.363229448163942
-        }
-      },
-      {
-        "account_address": "0x03e254d7cd9abea5eafa2413badb719ec9ceb258ea1ca9487ad07b32f5921cfc",
-        "volumeTotal": 563.1852655453249,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 563.1852655453249
-        }
-      },
-      {
-        "account_address": "0x01e0fbbd6c46e07a87f3ee4472ef555f7cb8063b0079ee9e3f6271dcc6a9599d",
-        "volumeTotal": 553.6352277414215,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 553.6352277414215
-        }
-      },
-      {
-        "account_address": "0x00cddeb2e8c03125a20d66a790a2803b94d30863a8f330120c11215fae4ca915",
-        "volumeTotal": 541.0844586615144,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 541.0844586615144
-        }
-      },
-      {
-        "account_address": "0x05eeea023f6a4ff5290c583490b5ef5238c9bd82bd6b549668770f7185e82fc3",
-        "volumeTotal": 540.4288888008518,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 540.4288888008518
-        }
-      },
-      {
-        "account_address": "0x00d1829bf182f210a8e0e468261c4e460c168db7894cf60cccfe632c53c4671f",
-        "volumeTotal": 536.7211932573373,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 536.7211932573373
-        }
-      },
-      {
-        "account_address": "0x01e44d799c5a7b9ae64911db583e4b0752d94fb5c2d5f8250470ee0ef3b7ce7b",
-        "volumeTotal": 519.5910788322429,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 519.5910788322429
-        }
-      },
-      {
-        "account_address": "0x026848db5c937e2e97a084ade3e448ac87639107a6612d5c5af2484589e3a560",
-        "volumeTotal": 509.8792226539139,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 509.8792226539139
-        }
-      },
-      {
-        "account_address": "0x036736a3b999536ed50d7ff8d5be85858f9c14c149eea2b837d2701a61b735cd",
-        "volumeTotal": 498.22615029020835,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 377.94842735334805,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 120.27772293686033
-        }
-      },
-      {
-        "account_address": "0x020cedb417d5e9424d7b0cf38d61ced8773c04a5937fa8dbb028c81b474e95f9",
-        "volumeTotal": 489.71559013970364,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 489.71559013970364
-        }
-      },
-      {
-        "account_address": "0x0035309b368fd4fb840538dd0ff7b4f4227beb4350f5eb0efd4bd5eb9cca4fef",
-        "volumeTotal": 484.91747656800726,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 484.91747656800726
-        }
-      },
-      {
-        "account_address": "0x025d1d0dcad68480d5aac87b13106651305c9431e2f87b5b92f259b7d15dae3e",
-        "volumeTotal": 479.4354241171545,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 426.2021479643822,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 53.23327615277228
-        }
-      },
-      {
-        "account_address": "0x05502210b4bf0f6570601dc520e555dfebeae907b2ef55c3422885f2ac4d17ca",
-        "volumeTotal": 473.6606688447097,
-        "volumePairs": {
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 22.309129755445525,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 451.3515390892642
-        }
-      },
-      {
-        "account_address": "0x0562bfc28235be764387c184744693972ef833ec77521674c55551d27f70a681",
-        "volumeTotal": 466.9592507570092,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 460.58158969998976,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 6.377661057019473
-        }
-      },
-      {
-        "account_address": "0x0587cf700d39f68b507e2b52cd8d56a5ba0205e849f264306d826a70a5ee7d6c",
-        "volumeTotal": 458.14638017110843,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 458.14638017110843
-        }
-      },
-      {
-        "account_address": "0x02d11df7f580a708226c7c8e014d7cff174eed043fc8432cfe998bb3790d7b47",
-        "volumeTotal": 453.93780041896014,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 453.93780041896014
-        }
-      },
-      {
-        "account_address": "0x06a3797d369263316342368e645637147b9805d5bb316a2eca5fc9a494be14dd",
-        "volumeTotal": 453.4212857942516,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 453.4212857942516
-        }
-      },
-      {
-        "account_address": "0x060f6b995aac6a2ff9e10ceb732bff3005427f3bffc257bc219011bd0b148243",
-        "volumeTotal": 422.2141919814105,
-        "volumePairs": {
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 83.48426705897064,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 338.72992492243986
-        }
-      },
-      {
-        "account_address": "0x06611cb45550bf10bf4fab595b7aef7e85acf8259b31d0bf0fdd5e8b02b4f273",
-        "volumeTotal": 414.56110991424174,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 128.77554241018333,
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 285.7855675040584
-        }
-      },
-      {
-        "account_address": "0x0449440a1b9b8dd8c040ffe9663ea13b18ecb6f985f2b41d45246cd6f8be8729",
-        "volumeTotal": 412.51284430457713,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 412.51284430457713
-        }
-      },
-      {
-        "account_address": "0x03fc2d6a64f7b98a8b1a971865117603f597a7edb6680b6386e001d3fb45ffcb",
-        "volumeTotal": 404.0689809915154,
-        "volumePairs": {
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 90.9861805463905,
-          "0x215d01e29721eb6ab10bbed2d15c33f168fa9e7587c071596cc72784bb74992": 56.85498046236816,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 256.2278199827567
-        }
-      },
-      {
-        "account_address": "0x02a4ba6b9a6bf7204b4aff859ebab08fb359ca1896c9dbed70f39aa404905512",
-        "volumeTotal": 385.79818586382953,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 385.79818586382953
-        }
-      },
-      {
-        "account_address": "0x051ce3a4780849782dc0fe417b706c39c9c1558af14d190e7a5d78050deb053c",
-        "volumeTotal": 380.740044588275,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 380.740044588275
-        }
-      },
-      {
-        "account_address": "0x076366a35c2bfbde1b1f3a9ea3b30d42b8d6bcdf1733f39ac305d92cd58fc715",
-        "volumeTotal": 377.75061605297526,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 377.75061605297526
-        }
-      },
-      {
-        "account_address": "0x008a6f588cd1ae19b21f4c31eb13aa2340b6a2f4f0b6d7fc724bf6b0664c8cc7",
-        "volumeTotal": 374.06593609050617,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 374.06593609050617
-        }
-      },
-      {
-        "account_address": "0x055180642c2fa25c59ea483df9b54cf48b83f24895620f32a52feb1b2320ef39",
-        "volumeTotal": 371.38387599999163,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 371.38387599999163
-        }
-      },
-      {
-        "account_address": "0x07513db12436185298e09b79c27208f922af7d6492e29f52b092c868289e55de",
-        "volumeTotal": 355.8533672349647,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 355.8533672349647
-        }
-      },
-      {
-        "account_address": "0x040342952a28d28511a7c1d7759ca97b8c2dcccf4fcf8c09de1a5c0a9a5ac291",
-        "volumeTotal": 354.22831218520196,
-        "volumePairs": {
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 354.22831218520196
-        }
-      },
-      {
-        "account_address": "0x07d2ef7d4a01f552557f98e89750a785a47dc7c122eeb18f9f98652c830be2da",
-        "volumeTotal": 350.3782446132939,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 350.3782446132939
-        }
-      },
-      {
-        "account_address": "0x001f3b0772824cc2231cd749aaf1b73a37aaafda17e27b88cf7afcd51ab9245e",
-        "volumeTotal": 337.07611699999245,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 337.07611699999245
-        }
-      },
-      {
-        "account_address": "0x02fb31c14f988bbbf9b0e80a7a8d5743ac71832167ebffc469e6e00ea1ae5644",
-        "volumeTotal": 336.7753809851457,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 336.7753809851457
-        }
-      },
-      {
-        "account_address": "0x00e8cf66d7ba70685bcee5e00fa672c3bcc51468d0e1f6320666fd00258275ef",
-        "volumeTotal": 333.20032382152226,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 333.20032382152226
-        }
-      },
-      {
-        "account_address": "0x078e0c911dd57991731a66227363e209956c6fc6a1246b7f5a06517c3d0ca0fb",
-        "volumeTotal": 331.1794383735196,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 331.1794383735196
-        }
-      },
-      {
-        "account_address": "0x050e52ce616607429c43bb646abbd6445e80c25e81533899f69bd6e6e410800c",
-        "volumeTotal": 322.58638788885764,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 322.58638788885764
-        }
-      },
-      {
-        "account_address": "0x01b76ad73f0505652c57efc58711ec75a834ca8bb5da2adc787982d05488d1d1",
-        "volumeTotal": 312.86405304802634,
-        "volumePairs": {
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 167.95085339228814,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 144.9131996557382
-        }
-      },
-      {
-        "account_address": "0x04c354f8b98a4c379faded497c0506facc34089d31818fbc073f6216e2482340",
-        "volumeTotal": 306.2210204525371,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 306.2210204525371
-        }
-      },
-      {
-        "account_address": "0x06e3554274b8ea8c3af598d5d5f2564fa5945ca685e428c1afd1d2c24299e13f",
-        "volumeTotal": 301.7075169342048,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 301.7075169342048
-        }
-      },
-      {
-        "account_address": "0x054e26ddfe340d1a7b4351739bd0a7afe71bb939ffaf1b68452a358489b3ffa4",
-        "volumeTotal": 300.79350336726753,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 300.79350336726753
-        }
-      },
-      {
-        "account_address": "0x0004f1385aaab12e3ad07f8dc743a1b48e4ce93fb76c3e5c55ac32c4f1c55d35",
-        "volumeTotal": 297.1894059999933,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 297.1894059999933
-        }
-      },
-      {
-        "account_address": "0x00d0a368feeb6df0ab3d973119291b9f962133eb4ab36e28e2292302819a2e5e",
-        "volumeTotal": 295.1283294325417,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 295.1283294325417
-        }
-      },
-      {
-        "account_address": "0x06250f4c5fecf0066b4858b6b7fcf1d8ebedc64a79de1178c0878ba9dccb164f",
-        "volumeTotal": 293.8690326996075,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 293.8690326996075
-        }
-      },
-      {
-        "account_address": "0x02a1b07c7e501601f8dcad7fdb0e507600c3a78882979c82c8ac6cd202ccd8dc",
-        "volumeTotal": 284.362770612309,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 284.362770612309
-        }
-      },
-      {
-        "account_address": "0x03e935409aea36a2f71cc325a36fe8ab156bea8e572e997325aaf5b696539f60",
-        "volumeTotal": 280.4437709058726,
-        "volumePairs": {
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 65.95837925758823,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 84.89843202714661,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 129.58695962113777
-        }
-      },
-      {
-        "account_address": "0x00791508d4e75590ae8cfcce2b284b813fa11c8350a302c76d2a5f09f458dbf1",
-        "volumeTotal": 275.62637685473345,
-        "volumePairs": {
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 80.52378434934059,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 195.10259250539286
-        }
-      },
-      {
-        "account_address": "0x025563bb59ca174a3bc57678c0f7010302b0a6cdebe851b844a1d6fb3550b2f1",
-        "volumeTotal": 275.3068012144003,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 275.3068012144003
-        }
-      },
-      {
-        "account_address": "0x00a04b8d7fb04967c0fed9355d96d2ed9609812fb3e42f8dce327b5b94ff2186",
-        "volumeTotal": 270.5784020615721,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 270.5784020615721
-        }
-      },
-      {
-        "account_address": "0x01a3aa3dcc6b9c933727d59510c7972d1813002717edb426264f1cdb06683027",
-        "volumeTotal": 270.0261312754941,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 270.0261312754941
-        }
-      },
-      {
-        "account_address": "0x0780392675a3b3731114066a43fc4a49dfdc27b0dd907db8e41bb295cb01bfa7",
-        "volumeTotal": 264.06488621075823,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 264.06488621075823
-        }
-      },
-      {
-        "account_address": "0x013157a8f92fca42578e9348cffde5f26e1f21416c61d8ac6858ce9cbbf5082a",
-        "volumeTotal": 261.2108238466848,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 187.73611979855602,
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 73.47470404812873
-        }
-      },
-      {
-        "account_address": "0x00b6d72fc754441606087937c60a3df9eb12b1edbbb6ff5f7a208ce65843d1a2",
-        "volumeTotal": 261.16971993490404,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 261.16971993490404
-        }
-      },
-      {
-        "account_address": "0x054c80dbf0aa9add49d5535de9d1256c08531759cd0ca1a085700f32d32d48e4",
-        "volumeTotal": 256.1316865476584,
-        "volumePairs": {
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 4.087873726870882,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 252.04381282078748
-        }
-      },
-      {
-        "account_address": "0x060901ddf95d2b3c4028250fcb37d6404c4afea061b05941721555e0a159f809",
-        "volumeTotal": 254.95036495872915,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 254.95036495872915
-        }
-      },
-      {
-        "account_address": "0x065e84d0788fceb84fbef38697309372e9b782ded5f6fb1a8e0fa977cd16ee50",
-        "volumeTotal": 254.0267534403664,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 254.0267534403664
-        }
-      },
-      {
-        "account_address": "0x058527fb467256e771f8bdb0957c34bf247377a21408832d440f448f4e87ee2c",
-        "volumeTotal": 247.7608420116124,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 247.7608420116124
-        }
-      },
-      {
-        "account_address": "0x019fe325d8ac7b342fb4eb2a49ee2103e4586f5e190d4e280c0fe30e50c953d4",
-        "volumeTotal": 245.73349213005207,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 245.73349213005207
-        }
-      },
-      {
-        "account_address": "0x0721ea173d366e3df5f18716029aabf68ca5e0e7c23d1a16345b8928eed1da1f",
-        "volumeTotal": 244.61542777491678,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 244.61542777491678
-        }
-      },
-      {
-        "account_address": "0x018ee35604610d59a3819ca29e84d05927219387d8860e88f0dd92e8d5822574",
-        "volumeTotal": 242.74173173343746,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 242.74173173343746
-        }
-      },
-      {
-        "account_address": "0x0090ccd0daced9dca3c7c7aaf74bbe862b90cce88c1611816a451caae95aba1e",
-        "volumeTotal": 241.3659697063211,
-        "volumePairs": {
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 20.023942468545616,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 221.34202723777548
-        }
-      },
-      {
-        "account_address": "0x06a601637cfd65f426803c4b75bad6aa025b1715eca0216052c4a328383e57e8",
-        "volumeTotal": 240.86631303159115,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 240.86631303159115
-        }
-      },
-      {
-        "account_address": "0x06ef988fdaa405f5da82deffa7ef97b004c20ee789600808824b4448e553c8b1",
-        "volumeTotal": 234.01794660582425,
-        "volumePairs": {
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 234.01794660582425
-        }
-      },
-      {
-        "account_address": "0x017a9d73905a8a28f1a339452265700b3d9ddaf28bdb57dfa96bd5d396cceb45",
-        "volumeTotal": 229.935470650951,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 229.935470650951
-        }
-      },
-      {
-        "account_address": "0x05f08a4750d85aaa1fa3dfd636a27fea7c271154c1c2dcc61f0c0afc40b45469",
-        "volumeTotal": 229.10730634182653,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 229.10730634182653
-        }
-      },
-      {
-        "account_address": "0x05c0ff6984faf52f8fc793b32c1c45ae865e22bf1f4fad64aa83c29ea7e677e8",
-        "volumeTotal": 228.43843036625748,
-        "volumePairs": {
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 228.43843036625748
-        }
-      },
-      {
-        "account_address": "0x05a0580146da41635d7f6c11053079d3a96fa971ebb1ac75a72c264dc70068dc",
-        "volumeTotal": 227.90359501567076,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 227.90359501567076
-        }
-      },
-      {
-        "account_address": "0x0110463c599b5fe9022883f544e52c8bff2d64886a4242cace3534d19e99bfdb",
-        "volumeTotal": 226.9818358531187,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 226.9818358531187
-        }
-      },
-      {
-        "account_address": "0x0229ac14d119c8cf4c740c8732b9798de4c3bdc300e3f8d5928cfaeb918f7511",
-        "volumeTotal": 226.24123682819214,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 226.24123682819214
-        }
-      },
-      {
-        "account_address": "0x049d2881d76013b88adfd6eb297dc50fba6e678c1e6a26f9df35ed2a1eadfa72",
-        "volumeTotal": 225.7136134083263,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 225.7136134083263
-        }
-      },
-      {
-        "account_address": "0x00ee21877b70a939f63e6ade29d742c0d9f577e8176098493f367ada83525059",
-        "volumeTotal": 223.06334410646014,
-        "volumePairs": {
-          "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 69.48385167624666,
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 153.57949243021346
-        }
-      },
-      {
-        "account_address": "0x05d0b2d2e8ab82a7060efa10a11bfebcff12b8b7c4a11efc5c3a0fbada395d2e",
-        "volumeTotal": 221.01955265901609,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 221.01955265901609
-        }
-      },
-      {
-        "account_address": "0x06e64515010558343c951131913396c6999c5fead88246bb289a8e2c87bf67e9",
-        "volumeTotal": 218.97618204808123,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 218.97618204808123
-        }
-      },
-      {
-        "account_address": "0x02812fb54dded79c2462c4951635905193324b43ac6c5231c6b88529bdae023d",
-        "volumeTotal": 218.959813999995,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 218.959813999995
-        }
-      },
-      {
-        "account_address": "0x0155b14b2094f41b4dd688000ab85ff263ea95a16476fb27b3c68ce497dede55",
-        "volumeTotal": 218.7162647291026,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 218.7162647291026
-        }
-      },
-      {
-        "account_address": "0x0585b4902f882ef6106d39e5237b0a7ff6af1872cc8c076099a40cf9ca25a254",
-        "volumeTotal": 216.62941097188917,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 216.62941097188917
-        }
-      },
-      {
-        "account_address": "0x038a0a11c738964d35577069659e5a2c3c4eb5a4cbaec5a3b0a1b614342e092a",
-        "volumeTotal": 216.01269330757174,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 216.01269330757174
-        }
-      },
-      {
-        "account_address": "0x036b921a09fde8a877147ddac1034fb58569b8fe60769dc92d7cff2ac0086646",
-        "volumeTotal": 215.10143130873237,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 215.10143130873237
-        }
-      },
-      {
-        "account_address": "0x059da6eb995398e2a3c7c430a71ca37083a643ed7b7d24ded2cf2b9a63cb130c",
-        "volumeTotal": 214.36174296937804,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 214.36174296937804
-        }
-      },
-      {
-        "account_address": "0x00aea72d025ae2f361afacb86cd58aaadaa7bd4a961cc56fb0f3d8087476babd",
-        "volumeTotal": 211.81004538701,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 185.75587278485142,
-          "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 26.0541726021586
-        }
-      },
-      {
-        "account_address": "0x0609e609097fe17dc3d7b9b07c0ea8be2fdabf6bcacf7fd444502df14b2276a4",
-        "volumeTotal": 209.79418488114374,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 209.79418488114374
-        }
-      },
-      {
-        "account_address": "0x04cd52d9fbd36c9c62f5a06f6182522874bdf6b099d50d671dc04ffe22878202",
-        "volumeTotal": 208.78443199999515,
-        "volumePairs": {
-          "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 208.78443199999515
-        }
-      }
-    ]
+[
+  {
+    "account_address": "0x0778a36227a2fd4639dffd18b860fe0253509f6e560e67eab463f5ee28856564",
+    "tvlTotal": 8280.110966951033,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 42.618421240110386,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 8237.492545710922
+    },
+    "score": 161641113613.7629,
+    "since": 1685688788
   },
-  "errCode": 0,
-  "errMessage": "success"
-}
+  {
+    "account_address": "0x0542e5a7fd356dc359d840a892bd6e0b8b14e85db95fe968b5ea1048fed68198",
+    "tvlTotal": 196.48688015338007,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 196.48688015338007
+    },
+    "score": 3835736904.1941,
+    "since": 1687499715
+  },
+  {
+    "account_address": "0x0145905627706018c3778f895545b650729b951e1f33f172c389b56e77903812",
+    "tvlTotal": 174.11658212178435,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 174.11658212178435
+    },
+    "score": 3399032006.0331,
+    "since": 1688041696
+  },
+  {
+    "account_address": "0x017f32adaa52ff2477f7a6b1b0467458a9c107f9f253b8ef7dd2ac3382bece33",
+    "tvlTotal": 113.9578818147845,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 113.9578818147845
+    },
+    "score": 2224641439.1722,
+    "since": 1685954108
+  },
+  {
+    "account_address": "0x0138aefdb281051e0cb93199bc88f133c2ba83cbd50fe6fc984b5588b087917c",
+    "tvlTotal": 110.31757078530548,
+    "tvlPairs": {
+      "0x19357ed018933c3f75a23e2fdda59e766e04f82e207c9cb0a2ff167a7c9e103": 6.509509042906814e-10,
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": -0.004340038549791134,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 76.90989231717424,
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 33.360603,
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.051415506030088744
+    },
+    "score": 2153579130.3223,
+    "since": 1684060243
+  },
+  {
+    "account_address": "0x060901ddf95d2b3c4028250fcb37d6404c4afea061b05941721555e0a159f809",
+    "tvlTotal": 110.28213317794443,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 110.28213317794443
+    },
+    "score": 2152886889.2284,
+    "since": 1684335177
+  },
+  {
+    "account_address": "0x006ac838b7ab404683f8bc3c936de4eec89b5f345ca79abb2a73b55338d4ab7d",
+    "tvlTotal": 104.25661544166887,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 104.25661544166887
+    },
+    "score": 2035257195.0855,
+    "since": 1685701287
+  },
+  {
+    "account_address": "0x05f08a4750d85aaa1fa3dfd636a27fea7c271154c1c2dcc61f0c0afc40b45469",
+    "tvlTotal": 104.10909677149549,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 104.10909677149549
+    },
+    "score": 2032379579.1346,
+    "since": 1684060884
+  },
+  {
+    "account_address": "0x018354c021fc99ee95a6e3cd9de01b3c559f65f51deda05ab11f02d7c395bc1d",
+    "tvlTotal": 71.60910335853,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 71.60910335853
+    },
+    "score": 1397923197.9873,
+    "since": 1688215279
+  },
+  {
+    "account_address": "0x025563bb59ca174a3bc57678c0f7010302b0a6cdebe851b844a1d6fb3550b2f1",
+    "tvlTotal": 69.90568114357455,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 31.51215862467526,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 38.3935225188993
+    },
+    "score": 1364672842.1828,
+    "since": 1684144521
+  },
+  {
+    "account_address": "0x00397b60dd93e697e57900c987644887a118e883935e2bff3cb3321ce53c26e2",
+    "tvlTotal": 66.8658045283438,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 27.970427430705847,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 38.89537709763796
+    },
+    "score": 1305328225.2044,
+    "since": 1685933381
+  },
+  {
+    "account_address": "0x023b5dc593db07b4f78672b182cd40c1aee72ad2ba7bc09ef559a671ccdfbae8",
+    "tvlTotal": 60.59694349997862,
+    "tvlPairs": {
+      "0x215d01e29721eb6ab10bbed2d15c33f168fa9e7587c071596cc72784bb74992": 60.59694349997862
+    },
+    "score": 1182951170.7344,
+    "since": 1684178153
+  },
+  {
+    "account_address": "0x00728ea60b62e9b3138ce7aa69d682298f9b048713f50c6309a887d561d3572a",
+    "tvlTotal": 55.951393277577424,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 55.951393277577424
+    },
+    "score": 1092262285.6466,
+    "since": 1684317079
+  },
+  {
+    "account_address": "0x07b5ddf67fad836ba72f4f7cacbfd3b23ff041c79cda1e445a3f31121f650f10",
+    "tvlTotal": 50.02211865455854,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 50.02211865455854
+    },
+    "score": 976513442.2567,
+    "since": 1684064707
+  },
+  {
+    "account_address": "0x0636aac618f6fb69ea32326e1bb44b341ffa168f2b58d33bc2e3328bd09ca47e",
+    "tvlTotal": 46.656678545267894,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 46.656678545267894
+    },
+    "score": 910813482.4561,
+    "since": 1685811125
+  },
+  {
+    "account_address": "0x02da6505fbfeee21dc89caba87c26a7fc17ee30ca7cf32c78e57e7ed44f0abd7",
+    "tvlTotal": 40.87492346911009,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 40.87492346911009
+    },
+    "score": 797944273.8689,
+    "since": 1686122984
+  },
+  {
+    "account_address": "0x054c518d91b2f0575c1aa7d22cf313ba0d0628136ac206280aae52ac7d19dff3",
+    "tvlTotal": 39.197355935212315,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 39.197355935212315
+    },
+    "score": 765195495.5984,
+    "since": 1685810151
+  },
+  {
+    "account_address": "0x04dc5fee69a89ccf3fbab58ea86025296bc568e04c5e2ce946947d04a99a9e57",
+    "tvlTotal": 38.27144001843655,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 38.27144001843655
+    },
+    "score": 747120815.0642,
+    "since": 1684316781
+  },
+  {
+    "account_address": "0x01f77e8d283ab062c70c82d5f8e61566a504034ab97b48035183739b7b7c52dc",
+    "tvlTotal": 36.68150228211836,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 36.68150228211836
+    },
+    "score": 716082752.0772,
+    "since": 1684165086
+  },
+  {
+    "account_address": "0x0326bd18c3bf3b448099293b4baadb856bdf216f9208f0d894a7dbf601f2141e",
+    "tvlTotal": 31.738570603230965,
+    "tvlPairs": {
+      "0x36a2d6b95a315ff6d1269a62d50f5c2e392b9979b2748ba8b4ce2e14688b26d": 0.19488449999998375,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 31.543686103230982
+    },
+    "score": 619588029.0123,
+    "since": 1685933092
+  },
+  {
+    "account_address": "0x058b108f188dd9dc8eda363066c78321e4dd862fe77fe7131276819b0be19b5d",
+    "tvlTotal": 31.11540268909865,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 31.11540268909865
+    },
+    "score": 607423316.3668,
+    "since": 1684300072
+  },
+  {
+    "account_address": "0x03a073f07a2a6946be17ae5d5861c6adf8e45bf243a485c5e890473d22400761",
+    "tvlTotal": 30.732618225451397,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 30.732618225451397
+    },
+    "score": 599950218.0088,
+    "since": 1685933521
+  },
+  {
+    "account_address": "0x07b711dcb92f74c695e0fb93af8602b35027663b12f1bd819d03cb1ba9d84cd2",
+    "tvlTotal": 30.584267605622713,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 30.584267605622713
+    },
+    "score": 597054174.9169,
+    "since": 1685933466
+  },
+  {
+    "account_address": "0x06cd900483ae03600d0596f78be7f299ffe6a650eab5529d51d4e2d5f45871ba",
+    "tvlTotal": 30.500888477168317,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 30.500888477168317
+    },
+    "score": 595426480.0057,
+    "since": 1685933521
+  },
+  {
+    "account_address": "0x061ae95ef242ce6a57d15ebd6fe7737f06a472172f64284c291fb7b2f42964b6",
+    "tvlTotal": 30.300792023927876,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 30.300792023927876
+    },
+    "score": 591520941.5004,
+    "since": 1684061928
+  },
+  {
+    "account_address": "0x0726cd9d151f9ecb088ae6308085e38a9e36c47f2c41b1b6c7b96691a69f2ec8",
+    "tvlTotal": 29.751605773450223,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 29.751605773450223
+    },
+    "score": 580799274.5346,
+    "since": 1685933041
+  },
+  {
+    "account_address": "0x04beaae093164845351e0f2c4e346749304be17639cd642d690365308d04566a",
+    "tvlTotal": 29.749660992290217,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 29.749660992290217
+    },
+    "score": 580761309.2734,
+    "since": 1685933739
+  },
+  {
+    "account_address": "0x0133daa36431ba76e504921b12f2952a64b89e63c2967e13be117c6b9f74b97d",
+    "tvlTotal": 29.68020962612242,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 29.68020962612242
+    },
+    "score": 579405506.7196,
+    "since": 1685933466
+  },
+  {
+    "account_address": "0x07409d7d83bf4d4c8b5ff1b1a988ea794ef8bd02496130b296c626af52fbe212",
+    "tvlTotal": 27.665339399286793,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 27.665339399286793
+    },
+    "score": 540071855.6092,
+    "since": 1686191142
+  },
+  {
+    "account_address": "0x06cf64d18cea3ac3f8c240102737946755d72b68231d4a75279f38eda1e8dc60",
+    "tvlTotal": 26.780287117954998,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 26.780287117954998
+    },
+    "score": 522793785.199,
+    "since": 1687586308
+  },
+  {
+    "account_address": "0x06fda1834bf52a5eb5027e8622b73e317d53a3a70520203839094c6c46ba23b5",
+    "tvlTotal": 26.753768000085,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 26.753768000085
+    },
+    "score": 522275875.8226,
+    "since": 1688253621
+  },
+  {
+    "account_address": "0x01e59dff972616ab5d7999669587548f319c802344d48cba855492f53de5d56a",
+    "tvlTotal": 26.282297588917842,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 26.282297588917842
+    },
+    "score": 513072737.1525,
+    "since": 1686073605
+  },
+  {
+    "account_address": "0x0030f1a49d04815a72c237a0fbd45df06d1794f8c6da75792c833f4721dbf617",
+    "tvlTotal": 25.425594717372427,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 25.425594717372427
+    },
+    "score": 496348518.665,
+    "since": 1686121709
+  },
+  {
+    "account_address": "0x0786c35c6e6f086a1df75bacadb2533250b2c98bd7b7f3db3659d4a3e3f0d4b7",
+    "tvlTotal": 23.13901675443,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 23.13901675443
+    },
+    "score": 451710282.388,
+    "since": 1688211849
+  },
+  {
+    "account_address": "0x074226396afa5d5e7f369e9ab4f538799cfd423baa5bc7b6e54aebda804c21b4",
+    "tvlTotal": 22.277057212540388,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 22.277057212540388
+    },
+    "score": 434883443.6474,
+    "since": 1688108179
+  },
+  {
+    "account_address": "0x0186a606a0adcc0da32572e90389666c0a4165de35fe4e6dc81f40364ded83fb",
+    "tvlTotal": 21.92044704604,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 21.92044704604
+    },
+    "score": 427922418.2584,
+    "since": 1685882337
+  },
+  {
+    "account_address": "0x02dbdfc2f875a5bb13597ec2a8f846622dceb44568fb4c1b99ce4b7051f9dae2",
+    "tvlTotal": 21.045398528058026,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 21.045398528058026
+    },
+    "score": 410839599.3606,
+    "since": 1687776289
+  },
+  {
+    "account_address": "0x0206f939ac36c53a0bc361e02e80d270707e3c0f9f405369d10c67f15bcab9b4",
+    "tvlTotal": 20.9717425739766,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 20.9717425739766
+    },
+    "score": 409401927.8887,
+    "since": 1686889617
+  },
+  {
+    "account_address": "0x068127ab02d624a7f9f8ba21281a7a74136af62b988e1cbc32ca307b900daf53",
+    "tvlTotal": 20.738445960153825,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 20.738445960153825
+    },
+    "score": 404848123.64,
+    "since": 1684904788
+  },
+  {
+    "account_address": "0x0369d61612abb454722a3cca2197efea87cd77502e14cb0d96dd8695d2c6b20e",
+    "tvlTotal": 20.47627352646426,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 20.47627352646426
+    },
+    "score": 399729805.5607,
+    "since": 1686120184
+  },
+  {
+    "account_address": "0x035947329d5666cf31ea4d3a3978a7458a97a8bed77bd054c980a07cf5b6c56d",
+    "tvlTotal": 19.903787712319996,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 19.903787712319996
+    },
+    "score": 0,
+    "since": 1687928629
+  },
+  {
+    "account_address": "0x00d95f9283d9e825b9f0c01bc011aaad8f4c655afd9a5bf66ade1f29464084db",
+    "tvlTotal": 17.160336058669895,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 10.784152168925,
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 6.376183889744895
+    },
+    "score": 0,
+    "since": 1685879466
+  },
+  {
+    "account_address": "0x0010fa0386dc01fae60bae35f96ced727f080c92f2872a45295ccd446e8a2c63",
+    "tvlTotal": 16.538499509771498,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 16.538499509771498
+    },
+    "score": 0,
+    "since": 1684193547
+  },
+  {
+    "account_address": "0x00a8e171eb74c890a8a439cb1de614d4905d292386155fe13b7f6f88158e4906",
+    "tvlTotal": 16.276229326340157,
+    "tvlPairs": {
+      "0x215d01e29721eb6ab10bbed2d15c33f168fa9e7587c071596cc72784bb74992": 5.446648528965492,
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 10.829580797374664
+    },
+    "score": 0,
+    "since": 1687880733
+  },
+  {
+    "account_address": "0x014078259c66dd8bd2ab2d2436911bc6f6048c1e2042b8f3635dcac0f23b90ca",
+    "tvlTotal": 15.766213353299193,
+    "tvlPairs": {
+      "0x215d01e29721eb6ab10bbed2d15c33f168fa9e7587c071596cc72784bb74992": 15.766213353299193
+    },
+    "score": 0,
+    "since": 1686031690
+  },
+  {
+    "account_address": "0x066dbfdd91473fe441d39f8f3a805587b3292d5bf9c2c193aeb91de361cf6f11",
+    "tvlTotal": 15.271245772995632,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 15.271245772995632
+    },
+    "score": 0,
+    "since": 1685868416
+  },
+  {
+    "account_address": "0x0227e540f11941b44fa17087106874b0704c0f311beddf82b0617e8d782f26c4",
+    "tvlTotal": 15.144986389482211,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 15.144986389482211
+    },
+    "score": 0,
+    "since": 1687778940
+  },
+  {
+    "account_address": "0x072c106103fccd9dc972e0658e71307f178efb0ea0fb9711a136e461371fe5da",
+    "tvlTotal": 13.332764618548598,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 7.226157671979802,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 6.106606946568796
+    },
+    "score": 0,
+    "since": 1687729187
+  },
+  {
+    "account_address": "0x0634fbe897f44c99f9171b820f9b0cb21a91c6964e98d6219219d346aa4fd8d8",
+    "tvlTotal": 12.235111964286535,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 12.235111964286535
+    },
+    "score": 0,
+    "since": 1688289788
+  },
+  {
+    "account_address": "0x00300fce5c32f311351504a26ccb506356dd0005e1cb9119d1f3aaa1a15dc594",
+    "tvlTotal": 11.331444549999514,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 11.331444549999514
+    },
+    "score": 0,
+    "since": 1686022369
+  },
+  {
+    "account_address": "0x021842513248b971672090c225fc0550d04f25729a939b5be2cb4bd7bd8b3448",
+    "tvlTotal": 11.167338590299154,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 11.167338590299154
+    },
+    "score": 0,
+    "since": 1684149320
+  },
+  {
+    "account_address": "0x04323432120caf7a6d29e7788043dea423f78771940961dbd1e135854f44aec9",
+    "tvlTotal": 11.142443680600739,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 11.142443680600739
+    },
+    "score": 0,
+    "since": 1686053658
+  },
+  {
+    "account_address": "0x026b54c987ba0e8b0dec597988a2f3987bbfc5b1a606d74ccbdf2963ff17a27c",
+    "tvlTotal": 10.786322066996817,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 10.786322066996817
+    },
+    "score": 0,
+    "since": 1684405599
+  },
+  {
+    "account_address": "0x042a9cb0a6896d8be5535ed90e5eb95d78c86e594e79dcd90b11eeeddc1068af",
+    "tvlTotal": 10.524068699189176,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 10.524068699189176
+    },
+    "score": 0,
+    "since": 1686623927
+  },
+  {
+    "account_address": "0x04aaae3aeb2fb1234e55b333cc3a19f506fd8579a4cab60c3c4479e17b3a2590",
+    "tvlTotal": 10.4603647594018,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 10.4603647594018
+    },
+    "score": 0,
+    "since": 1686321147
+  },
+  {
+    "account_address": "0x0283455708325fb286aea74ea36af5eb4b0f9865bd9607c689f961df3ad36c50",
+    "tvlTotal": 10.263247729346404,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 10.263247729346404
+    },
+    "score": 0,
+    "since": 1685779236
+  },
+  {
+    "account_address": "0x014d7f8647e5ba3ef2237ebd2236730367ed7d0b3a4ddc90e013bde2573f2d77",
+    "tvlTotal": 10.194830981950734,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 10.194830981950734
+    },
+    "score": 0,
+    "since": 1688125086
+  },
+  {
+    "account_address": "0x03b585955ed7d67a842192df8b8003737204d84a04258cf566e7e679a5ac8882",
+    "tvlTotal": 10.147303234692572,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 10.147303234692572
+    },
+    "score": 0,
+    "since": 1688082483
+  },
+  {
+    "account_address": "0x078f44afc170fd664bfd670504a96e73ebcf5f1c890c36817110431ae63ad2dc",
+    "tvlTotal": 10.0872059635816,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 10.0872059635816
+    },
+    "score": 0,
+    "since": 1688193322
+  },
+  {
+    "account_address": "0x038a5757ecce0b8c4fc0da8bdb2e049f0b41923bf702eaec889718bff850bb62",
+    "tvlTotal": 9.208827936638333,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 9.208827936638333
+    },
+    "score": 0,
+    "since": 1686123424
+  },
+  {
+    "account_address": "0x05b96ff3e205c6c03df8138047966ccc7cbeef5b71855686e4004aa74b8c1bd0",
+    "tvlTotal": 8.35219140943337,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 2.166807000085,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 6.185384409348369
+    },
+    "score": 0,
+    "since": 1685782648
+  },
+  {
+    "account_address": "0x060f6b995aac6a2ff9e10ceb732bff3005427f3bffc257bc219011bd0b148243",
+    "tvlTotal": 8.164044169338272,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 8.164044169338272
+    },
+    "score": 0,
+    "since": 1686142068
+  },
+  {
+    "account_address": "0x0057b07d1a6689f94e7edd93a06e61edaa83a0e3047f42652a57bc187a0fd396",
+    "tvlTotal": 8.132776536500405,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 8.132776536500405
+    },
+    "score": 0,
+    "since": 1684399852
+  },
+  {
+    "account_address": "0x0281c5be127082d8d3b9eec9da86662cb947290679b0b282510236b8dd9f450d",
+    "tvlTotal": 7.625707685247553,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 7.625707685247553
+    },
+    "score": 0,
+    "since": 1685774678
+  },
+  {
+    "account_address": "0x048bef9f1621ffd8801aa52b371373bf6a3d99cfd515270c4a25f18f63c68a6a",
+    "tvlTotal": 7.5926812969775535,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 7.5926812969775535
+    },
+    "score": 0,
+    "since": 1687454534
+  },
+  {
+    "account_address": "0x00a12a63b65ae86cc190081dd29677a155f578aadda1b339a66cb0e5356f7c09",
+    "tvlTotal": 7.528716570576426,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 7.528716570576426
+    },
+    "score": 0,
+    "since": 1687747828
+  },
+  {
+    "account_address": "0x015a51ca776d971860621eeab68fd88cecda98a2356b2ae4bd9d452b27ec9275",
+    "tvlTotal": 6.401152641083273,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 6.401152641083273
+    },
+    "score": 0,
+    "since": 1686989839
+  },
+  {
+    "account_address": "0x05c483b5d6b885c49a6de1db63adb20092c12934480e7d8ed99694a97ebea764",
+    "tvlTotal": 6.174336880439428,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 6.174336880439428
+    },
+    "score": 0,
+    "since": 1684312862
+  },
+  {
+    "account_address": "0x009e0b300868a49a7646e88cfe3df274bebb6f9d5a244aa0b8cad0bd871f4747",
+    "tvlTotal": 6.154252588159665,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 6.154252588159665
+    },
+    "score": 0,
+    "since": 1687456048
+  },
+  {
+    "account_address": "0x050a238f09f1888ac0b6875bf14f4154164b191788244e4c50697c3583a03d54",
+    "tvlTotal": 6.1061261234467725,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 6.1061261234467725
+    },
+    "score": 0,
+    "since": 1685885012
+  },
+  {
+    "account_address": "0x03dc23451a670b77d19ca14117b4a576e75189e0de64a723b3047b452429bc99",
+    "tvlTotal": 5.9974593515950225,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 5.9974593515950225
+    },
+    "score": 0,
+    "since": 1687455151
+  },
+  {
+    "account_address": "0x02b0880b046c3c031e353a987e6898a94d673810837a4e7a46c51c2de61d90f0",
+    "tvlTotal": 5.373443014253269,
+    "tvlPairs": {
+      "0x215d01e29721eb6ab10bbed2d15c33f168fa9e7587c071596cc72784bb74992": 5.373443014253269
+    },
+    "score": 0,
+    "since": 1685088653
+  },
+  {
+    "account_address": "0x0541a09f23f6b18ebcc8f292709361ce7535bee7f9bb0bb33b393051a39fe4bf",
+    "tvlTotal": 5.367919217305923,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 5.367919217305923
+    },
+    "score": 0,
+    "since": 1687769164
+  },
+  {
+    "account_address": "0x0066a5b1151365baff67276a108c2e4b3abbc283b80b0e5b7748495e0eb7aefb",
+    "tvlTotal": 5.2618566638576105,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 5.2618566638576105
+    },
+    "score": 0,
+    "since": 1684737102
+  },
+  {
+    "account_address": "0x074b1c900e5111ae3a32c21cd29581766e6f3861d3d5c08cfb08129b1b433107",
+    "tvlTotal": 5.12335036457038,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 5.12335036457038
+    },
+    "score": 0,
+    "since": 1687992754
+  },
+  {
+    "account_address": "0x075e0577cffd86454ebb32470885b269aa8cdf76e66ba8bd9dd055ea4fd6c580",
+    "tvlTotal": 5.107979596476364,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 5.107979596476364
+    },
+    "score": 0,
+    "since": 1687865527
+  },
+  {
+    "account_address": "0x01dc7a6cb18cefc272550027ef512d49e661b003399579be5fff2fe443fc2223",
+    "tvlTotal": 4.341784157722606,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 4.341784157722606
+    },
+    "score": 0,
+    "since": 1684760655
+  },
+  {
+    "account_address": "0x07d9c356fa9b090d443665408badcba3f16f6bafc50b6e0f8f36383191a13f19",
+    "tvlTotal": 4.200778417243181,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 4.200778417243181
+    },
+    "score": 0,
+    "since": 1684893774
+  },
+  {
+    "account_address": "0x02b4d4d8af33bc815b89654ea4a3ecf2b1042002dde297117be5d06aeae763f6",
+    "tvlTotal": 4.018282714698993,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 4.018282714698993
+    },
+    "score": 0,
+    "since": 1688304965
+  },
+  {
+    "account_address": "0x07fb03ca18ab2192733c4e190181949989fbb63e62bffc575177b52addc7649d",
+    "tvlTotal": 3.9118234744134273,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.9118234744134273
+    },
+    "score": 0,
+    "since": 1684107755
+  },
+  {
+    "account_address": "0x038d361289bfd3150272d97ea98d2286c891276cea0143976489666b8bcb4f8d",
+    "tvlTotal": 3.8454339999998375,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.8454339999998375
+    },
+    "score": 0,
+    "since": 1685756105
+  },
+  {
+    "account_address": "0x0260d9ff8d3baea7ba3a33808457effbc08bc65d2333bb220733295ac5f9428f",
+    "tvlTotal": 3.7556189936906352,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.7556189936906352
+    },
+    "score": 0,
+    "since": 1688024193
+  },
+  {
+    "account_address": "0x05a5924d8d6a99e23c28471e331f51f6f4560b571e767c7056f4cdb6d5381fe0",
+    "tvlTotal": 3.7495781123641994,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.7495781123641994
+    },
+    "score": 0,
+    "since": 1687678127
+  },
+  {
+    "account_address": "0x01a544de12dd3a14e2d69265f9409a50e3ca11c4894437186793a30e0560672c",
+    "tvlTotal": 3.5951999999998376,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.5951999999998376
+    },
+    "score": 0,
+    "since": 1686840176
+  },
+  {
+    "account_address": "0x078cc682340589a0df6397523d32e484d68ab0bbc78fa8c0e021474925e33c1e",
+    "tvlTotal": 3.3811949999998374,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.3811949999998374
+    },
+    "score": 0,
+    "since": 1684153784
+  },
+  {
+    "account_address": "0x03e7c7c1a686df5857d76fdf3fe293afe24b37813fe584298f70f5190f428aee",
+    "tvlTotal": 3.343410131512819,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.343410131512819
+    },
+    "score": 0,
+    "since": 1686123945
+  },
+  {
+    "account_address": "0x06af9e6d2633bd23d8252b2a2fe78eb16af62edae795ce5d1212aa0dea8efedb",
+    "tvlTotal": 3.3132063990517784,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.3132063990517784
+    },
+    "score": 0,
+    "since": 1686726641
+  },
+  {
+    "account_address": "0x06d7da465110a3cf0c5f88f4dc58347933c7025f4f3a6bea8a0430be1f915bfa",
+    "tvlTotal": 3.1616763173800173,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.1616763173800173
+    },
+    "score": 0,
+    "since": 1687746583
+  },
+  {
+    "account_address": "0x03730dcd96c00164bea23c3a7b379ce1b42b856e471d54bd65b54d3f55dd7e97",
+    "tvlTotal": 3.144383033285629,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.144383033285629
+    },
+    "score": 0,
+    "since": 1684139663
+  },
+  {
+    "account_address": "0x06fbd8725b7688c8649ea270ad57e82b47ad91ab88acfe239372ac11e171da44",
+    "tvlTotal": 3.1329523316114125,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 3.1329523316114125
+    },
+    "score": 0,
+    "since": 1687746583
+  },
+  {
+    "account_address": "0x044543ab3030798b218178907745ab314f416908c49bdea950334da45e5876b1",
+    "tvlTotal": 3.132003870168497,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.132003870168497
+    },
+    "score": 0,
+    "since": 1685869895
+  },
+  {
+    "account_address": "0x0076a183476cad17a8ec22436f8c261fe6e7161b237bf9bad1312d8c8ee644fc",
+    "tvlTotal": 3.1292018735060014,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 3.1292018735060014
+    },
+    "score": 0,
+    "since": 1687746481
+  },
+  {
+    "account_address": "0x06b146357b57c8330556e08be2fe272c0f5c09833b70726caf6e1b83c966628c",
+    "tvlTotal": 3.116689212164137,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.116689212164137
+    },
+    "score": 0,
+    "since": 1687684077
+  },
+  {
+    "account_address": "0x031748dd93e17c1d7af70548bf7dbd7b17f21cf121a895cb2dbffca394e2b9e4",
+    "tvlTotal": 3.043075499999854,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 3.043075499999854
+    },
+    "score": 0,
+    "since": 1684153947
+  },
+  {
+    "account_address": "0x0041e55395040a40c738dd39af364ddb7fb792b70719a53e6cfbefc1de4a295f",
+    "tvlTotal": 2.7406364471867404,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.7406364471867404
+    },
+    "score": 0,
+    "since": 1688026322
+  },
+  {
+    "account_address": "0x040e31d8b43dd7af3705d2274c1f8f45b9a58a8bd6d6430ac771b5a3a6cdc524",
+    "tvlTotal": 2.710120439516327,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.710120439516327
+    },
+    "score": 0,
+    "since": 1688020840
+  },
+  {
+    "account_address": "0x03593b1d3e1b41e424cc9a6ce960d42e9575807f2bffdde12ed060f15db04eaf",
+    "tvlTotal": 2.6077885338031845,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.6077885338031845
+    },
+    "score": 0,
+    "since": 1688290946
+  },
+  {
+    "account_address": "0x00c3e27f86c3c7d951da905235e52d0cdfd0d3aae168d58bd7697978c2793fa7",
+    "tvlTotal": 2.556931315813837,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.556931315813837
+    },
+    "score": 0,
+    "since": 1688031370
+  },
+  {
+    "account_address": "0x00f96df23ed9e516df66d0c74b6e53131fa0e2cff90deb2aede78de07277c14e",
+    "tvlTotal": 2.5546937159152234,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.5546937159152234
+    },
+    "score": 0,
+    "since": 1687990475
+  },
+  {
+    "account_address": "0x07da6e0efec400fe441fc4683e64b8f269373a5fa904b2a19d68976a2640aeaf",
+    "tvlTotal": 2.54019330783571,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.54019330783571
+    },
+    "score": 0,
+    "since": 1688283194
+  },
+  {
+    "account_address": "0x058986e5c92fd30b8c5ec747afb215fb236e1b180c1c444ef65f26e0bcef3739",
+    "tvlTotal": 2.533058499300023,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.533058499300023
+    },
+    "score": 0,
+    "since": 1688095115
+  },
+  {
+    "account_address": "0x00038e8981e92c4c3b51bab7e3e7e435c9580f1ad20b3e2b6a7abc7885751ff9",
+    "tvlTotal": 2.5165304504667354,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.5165304504667354
+    },
+    "score": 0,
+    "since": 1688092027
+  },
+  {
+    "account_address": "0x05fe70be0c5268868704709cefbc92cba11ab0889c0221da74df4f2a16b1b3eb",
+    "tvlTotal": 2.4884567469763503,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.4884567469763503
+    },
+    "score": 0,
+    "since": 1688031063
+  },
+  {
+    "account_address": "0x02883185b3ff9348af902dbf3968291c97849750c465f02582a34f37f3f9aaa1",
+    "tvlTotal": 2.486428316587406,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.486428316587406
+    },
+    "score": 0,
+    "since": 1688115632
+  },
+  {
+    "account_address": "0x021f7196cd168077011698b4368bceb70c19538ba6f962c4ad0d4dcc4a2ad6c9",
+    "tvlTotal": 2.4852200185353617,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.4852200185353617
+    },
+    "score": 0,
+    "since": 1688301161
+  },
+  {
+    "account_address": "0x01d4d880a71cc568da41a3800c7f7bc7dfadf88bb67850572c66814c1806627f",
+    "tvlTotal": 2.469763248252635,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.469763248252635
+    },
+    "score": 0,
+    "since": 1684304453
+  },
+  {
+    "account_address": "0x06f528af877e31d0a560e64c6bb9eb7807c22f0ba901e48276763f479002f40f",
+    "tvlTotal": 2.4346829930305383,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.4346829930305383
+    },
+    "score": 0,
+    "since": 1688107214
+  },
+  {
+    "account_address": "0x070150fdd9a6093bc00098915b0d43e190cd1a329de1d25ca27447adb4e49fa9",
+    "tvlTotal": 2.382072526143802,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.382072526143802
+    },
+    "score": 0,
+    "since": 1687144958
+  },
+  {
+    "account_address": "0x048bb84f71fa4a3084ea751f07b5ab473bd60fc2800a662e2ac39f05532f2350",
+    "tvlTotal": 2.358078164908507,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.358078164908507
+    },
+    "score": 0,
+    "since": 1688102499
+  },
+  {
+    "account_address": "0x0082f40167f9c1b0e5034c93cfe828a25876ad52185eb8a6c4cd110e9724438a",
+    "tvlTotal": 2.3499941515654825,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.3499941515654825
+    },
+    "score": 0,
+    "since": 1685870020
+  },
+  {
+    "account_address": "0x05eba1f7ba3f394379e263e38c8a6149e72a16b385e164dd035f42441a1731f7",
+    "tvlTotal": 2.3290162577517712,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.3290162577517712
+    },
+    "score": 0,
+    "since": 1688126156
+  },
+  {
+    "account_address": "0x06654839bf7fdad75da79db61f59d1cf34891448c50d537c9d0176671123d69d",
+    "tvlTotal": 2.326776975358171,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.326776975358171
+    },
+    "score": 0,
+    "since": 1688103225
+  },
+  {
+    "account_address": "0x0722be77ce8f8dbca319ede2a99c074f7b8bfed5c116bab0598892e0138b1d2d",
+    "tvlTotal": 2.324715477845327,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.324715477845327
+    },
+    "score": 0,
+    "since": 1688108729
+  },
+  {
+    "account_address": "0x07fc677a476fc8421ce72e6db925d45bc617d28c143cd71f98d50dde3acd6d97",
+    "tvlTotal": 2.32433576216604,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.32433576216604
+    },
+    "score": 0,
+    "since": 1688093144
+  },
+  {
+    "account_address": "0x02420cc830a2706a1de81835391d495f88d94e9d6ea592787d222ed9db8d8b75",
+    "tvlTotal": 2.2714301499449303,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.2714301499449303
+    },
+    "score": 0,
+    "since": 1688128627
+  },
+  {
+    "account_address": "0x07099bc255b9b8460ba9f5cdfea4eb26cb0d0208400ddb2755243fdf507f8904",
+    "tvlTotal": 2.2380978256323845,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.2380978256323845
+    },
+    "score": 0,
+    "since": 1687848261
+  },
+  {
+    "account_address": "0x0335255df5e998e6a8ddb6b93e7edac31cf81fd409d88d74585f5b899e270593",
+    "tvlTotal": 2.2374221118189643,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 2.2374221118189643
+    },
+    "score": 0,
+    "since": 1687769164
+  },
+  {
+    "account_address": "0x0578092f1a9413a08f6601bde1e2d7d8fb5e6d64fa605699fccf5e7f83bee770",
+    "tvlTotal": 2.2367696929246907,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 2.2367696929246907
+    },
+    "score": 0,
+    "since": 1687769077
+  },
+  {
+    "account_address": "0x058eaa27f5e676bc2f5fb807b9ae7af8f8e9c298f3342765047428738687d87d",
+    "tvlTotal": 2.227237746487009,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.227237746487009
+    },
+    "score": 0,
+    "since": 1685869937
+  },
+  {
+    "account_address": "0x0494f8b78756b78eeb003e1338341d728e49741a1f4e5f7795efbd59e77dad33",
+    "tvlTotal": 2.219174587999195,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.219174587999195
+    },
+    "score": 0,
+    "since": 1687104306
+  },
+  {
+    "account_address": "0x0423afd668c15aac436fec7aa88c19de9b5f349f643ff6b6798c73d785ab787c",
+    "tvlTotal": 2.1901807511919724,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.1901807511919724
+    },
+    "score": 0,
+    "since": 1685870138
+  },
+  {
+    "account_address": "0x0300d52dd2f52855c41239c85576c13864e3b26ce73e45abb2e594ecf0508c96",
+    "tvlTotal": 2.1667162914136617,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.1667162914136617
+    },
+    "score": 0,
+    "since": 1685870059
+  },
+  {
+    "account_address": "0x00f207011589acf62fa1579d508885aa79de4df9175b88193a47d8daef0c1953",
+    "tvlTotal": 2.1639766460299037,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.1639766460299037
+    },
+    "score": 0,
+    "since": 1686436899
+  },
+  {
+    "account_address": "0x05288a6b9d6285d2440bc860a98cf964b89eb5b7970c373f2cafa8b57848fc7d",
+    "tvlTotal": 2.154919652523736,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.154919652523736
+    },
+    "score": 0,
+    "since": 1685873818
+  },
+  {
+    "account_address": "0x0753edee1dd088e4468efa3b6e550d10185ea633d0ef0df82e137d898b397dbb",
+    "tvlTotal": 2.1469062070533727,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.1469062070533727
+    },
+    "score": 0,
+    "since": 1686437679
+  },
+  {
+    "account_address": "0x02fab14fc017fe9dbf6996846acbbcedc3fba4a6adf6a86d82c7361763634c41",
+    "tvlTotal": 2.1411480562489,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 2.1411480562489
+    },
+    "score": 0,
+    "since": 1685964610
+  },
+  {
+    "account_address": "0x0384bb24166176c468dc103da45fd54946e39d328a379252f70d66b32cfcf718",
+    "tvlTotal": 2.1408191074858496,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 2.1408191074858496
+    },
+    "score": 0,
+    "since": 1686840055
+  },
+  {
+    "account_address": "0x00c50b097066cbf5ae6e20a10ce9bd50cbdaed605ad79cf9e166f6af79e41fff",
+    "tvlTotal": 2.1042439156967436,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.1042439156967436
+    },
+    "score": 0,
+    "since": 1687769164
+  },
+  {
+    "account_address": "0x02d2f7cace1bd26e191a36d0d8e1b77f2499e25256b0ac0bd5f417efed7c724a",
+    "tvlTotal": 2.1042254635313475,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.1042254635313475
+    },
+    "score": 0,
+    "since": 1687769164
+  },
+  {
+    "account_address": "0x02562d776bd624839ce56a4e1ac430ba6494be3b4a2d15aeaa4e0be866ad7ecb",
+    "tvlTotal": 2.0942083667868836,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0942083667868836
+    },
+    "score": 0,
+    "since": 1685873729
+  },
+  {
+    "account_address": "0x02b54f065c15f7cd1d35ed3d5ef7a7f7b076d3320d3e23e095f981abbfcc3754",
+    "tvlTotal": 2.070228328457009,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 2.070228328457009
+    },
+    "score": 0,
+    "since": 1685963343
+  },
+  {
+    "account_address": "0x02f107197b29ae3d4ea81c3763becbd671ac8c693b2aacccb20cf681e7685e73",
+    "tvlTotal": 2.064067102997278,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.064067102997278
+    },
+    "score": 0,
+    "since": 1688112374
+  },
+  {
+    "account_address": "0x0291d268ecb9e7485b0560afb8966b29d9981ddaf5760342833eb8796b91a4f7",
+    "tvlTotal": 2.0607628657670665,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0607628657670665
+    },
+    "score": 0,
+    "since": 1688110421
+  },
+  {
+    "account_address": "0x036af878072f51217fa3359dd875891be29d5cb6ef365d3eb1e9afb83e7973f9",
+    "tvlTotal": 2.0539782752367164,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0539782752367164
+    },
+    "score": 0,
+    "since": 1687747123
+  },
+  {
+    "account_address": "0x065412a07c8701d8ce6b329f7ae7c60cc68ade66cff1771f5f14d67eb414a8c9",
+    "tvlTotal": 2.0539782752367164,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0539782752367164
+    },
+    "score": 0,
+    "since": 1687747123
+  },
+  {
+    "account_address": "0x041e046227a6e7237f1edbf223cd415ec48b27da82f5ec182e96666b52df87ee",
+    "tvlTotal": 2.0539782752367164,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0539782752367164
+    },
+    "score": 0,
+    "since": 1687747123
+  },
+  {
+    "account_address": "0x02f814f6537210594cb1a2440bc5a272463313454c365dd6d39ba7c66f797a2a",
+    "tvlTotal": 2.0536394821812225,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0536394821812225
+    },
+    "score": 0,
+    "since": 1685873639
+  },
+  {
+    "account_address": "0x0727b88732df6c8501537defec55495a2d86854c73852966465c8f0f9b2487c8",
+    "tvlTotal": 2.050625736019016,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 2.050625736019016
+    },
+    "score": 0,
+    "since": 1688104943
+  },
+  {
+    "account_address": "0x07e055bf85464a46fd71948a72b0c14d2c5fb6a2998f699aaff004033032487b",
+    "tvlTotal": 2.041115135589494,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.041115135589494
+    },
+    "score": 0,
+    "since": 1685781912
+  },
+  {
+    "account_address": "0x07c64b7b5b4256518ee6d3b7c153c65426d852d491ed89e581c158c3579ef78d",
+    "tvlTotal": 2.03735604883269,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.03735604883269
+    },
+    "score": 0,
+    "since": 1687755398
+  },
+  {
+    "account_address": "0x066c7e499b5ab61adb0655527163fef54fc6e7fce441872316ed06d6c755bdce",
+    "tvlTotal": 2.0354298142275162,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 2.0354298142275162
+    },
+    "score": 0,
+    "since": 1685886824
+  },
+  {
+    "account_address": "0x044a46773f5fc136fadab129f9a11e3b068129f2d7aa68b0f1ed4431c4f5318a",
+    "tvlTotal": 2.0335897954442306,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0335897954442306
+    },
+    "score": 0,
+    "since": 1685873639
+  },
+  {
+    "account_address": "0x04acf57fb506197874d0f9f42705c86e2bd5c5609323b881282e08b18cbfe91f",
+    "tvlTotal": 2.031183194882849,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.031183194882849
+    },
+    "score": 0,
+    "since": 1685874338
+  },
+  {
+    "account_address": "0x007506de8fafc710ecff05a5a59e5f0bba86fb194ca96648314fc3bce9ffcd56",
+    "tvlTotal": 2.028955102175067,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.028955102175067
+    },
+    "score": 0,
+    "since": 1685441558
+  },
+  {
+    "account_address": "0x0396f3bc704a03f20d783fd286060d56515a5a7159e17f5f66e7fc6368260c2d",
+    "tvlTotal": 2.0256994566191615,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0256994566191615
+    },
+    "score": 0,
+    "since": 1685869100
+  },
+  {
+    "account_address": "0x07a01ea4d947fcd54bf97461ba0650f2b54424d8a5e08ef65e59614cd5d0fb76",
+    "tvlTotal": 2.0247690284200432,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0247690284200432
+    },
+    "score": 0,
+    "since": 1685869071
+  },
+  {
+    "account_address": "0x013a2b9b9026099d2694a3686ccc7f1ba162cde15b7823edc88fdb9e28847072",
+    "tvlTotal": 2.0247690284200432,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 2.0247690284200432
+    },
+    "score": 0,
+    "since": 1685869029
+  },
+  {
+    "account_address": "0x016a3a24edb421fae2b92fb96adc876b6576e28ab15aec7df77f17391107055d",
+    "tvlTotal": 1.955911225226837,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.955911225226837
+    },
+    "score": 0,
+    "since": 1684087584
+  },
+  {
+    "account_address": "0x075245dda1c3bc48b9462de37b0dab109785d5c4819e10bc1f17b553d4b3f3bf",
+    "tvlTotal": 1.8957154999999188,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.8957154999999188
+    },
+    "score": 0,
+    "since": 1686147092
+  },
+  {
+    "account_address": "0x0112e5f1a618c8e83c7e3f98116efabf8f2bc86d0c09457036675cc0c1c14cbe",
+    "tvlTotal": 1.8729129081153866,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 1.8729129081153866
+    },
+    "score": 0,
+    "since": 1687775261
+  },
+  {
+    "account_address": "0x04a459aa0fcd835ed5bd6031419f1493df7f068201ee5d2a3e85531b6469fd61",
+    "tvlTotal": 1.6329350999429382,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.6329350999429382
+    },
+    "score": 0,
+    "since": 1687768408
+  },
+  {
+    "account_address": "0x05a9bce8b8e2db06e45cdcb983093a9a8f8221578e532e08b8d5eed1d394d1aa",
+    "tvlTotal": 1.6184256439129936,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.6184256439129936
+    },
+    "score": 0,
+    "since": 1687748538
+  },
+  {
+    "account_address": "0x015b382333f71b69fb5534abbfde006b2b7f2af861be8c0ccf23c710fc1d2d7b",
+    "tvlTotal": 1.6042678516280384,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 1.6042678516280384
+    },
+    "score": 0,
+    "since": 1685933572
+  },
+  {
+    "account_address": "0x040f4b980b8c9c80facc328638403a1c0d17e477e0acea4297f4eea919b4d510",
+    "tvlTotal": 1.4621980807609876,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.4621980807609876
+    },
+    "score": 0,
+    "since": 1685874405
+  },
+  {
+    "account_address": "0x006b323c9ea11c0e377aa24748a54141d80d4a6451f467f92bb53ac47a80c6ba",
+    "tvlTotal": 1.4492296511993576,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.4492296511993576
+    },
+    "score": 0,
+    "since": 1687768559
+  },
+  {
+    "account_address": "0x061fdcfbdacbb7ee34e9ca545bf0ab7d8bd0640c96a5110c4c61651fdfffd912",
+    "tvlTotal": 1.4288177124500698,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.4288177124500698
+    },
+    "score": 0,
+    "since": 1687768408
+  },
+  {
+    "account_address": "0x05a2a9f1d7707448d760b0a5ad7b336bd6a7c16896c3d52a63d05633f99824e8",
+    "tvlTotal": 1.4237646362709557,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.4237646362709557
+    },
+    "score": 0,
+    "since": 1687748538
+  },
+  {
+    "account_address": "0x07265774f59f6294ea7fe8b3b64e97a1bc06b454cb1c65ba9e183546da4276de",
+    "tvlTotal": 1.4200671737271082,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.4200671737271082
+    },
+    "score": 0,
+    "since": 1687748538
+  },
+  {
+    "account_address": "0x018157063cecda27cee84a31784efa81d66258183880059b7096a505d6617cab",
+    "tvlTotal": 1.3806390646187077,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.3806390646187077
+    },
+    "score": 0,
+    "since": 1685879177
+  },
+  {
+    "account_address": "0x035a027661d143f28e686418e286d5913c4d32545ceab276c4fc5408999992a4",
+    "tvlTotal": 1.2577722036791261,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.2577722036791261
+    },
+    "score": 0,
+    "since": 1687746934
+  },
+  {
+    "account_address": "0x0526a71b0535c2d79496352a3088ef296ccbe8bfc08827d0a9fe6894d1c829ae",
+    "tvlTotal": 1.2216275179573692,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.2216275179573692
+    },
+    "score": 0,
+    "since": 1687876537
+  },
+  {
+    "account_address": "0x05ddd066f5e8d8630710783f01423e57f003da0c90bf1da96c8abc2f17f4ddd5",
+    "tvlTotal": 1.2056945626756401,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 1.2056945626756401
+    },
+    "score": 0,
+    "since": 1685988916
+  },
+  {
+    "account_address": "0x024cd576824039a6b85868d68b203b0962bfab2eccdcd8bf3a484f406b09dee0",
+    "tvlTotal": 1.180011130360743,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.180011130360743
+    },
+    "score": 0,
+    "since": 1687844196
+  },
+  {
+    "account_address": "0x0374dee9d75cc6791d4b699a5a5abfae34bfcedf9024a1f77c742615ae536cef",
+    "tvlTotal": 1.155786240547056,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.155786240547056
+    },
+    "score": 0,
+    "since": 1687746934
+  },
+  {
+    "account_address": "0x013104aa2d855b22001a80e7d2299311b8318579ed2cee15b0f996786a18d71e",
+    "tvlTotal": 1.1557128620185724,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.1557128620185724
+    },
+    "score": 0,
+    "since": 1687746808
+  },
+  {
+    "account_address": "0x06ee153d0cdf1b398f521065b0244da0c11f5d0aa94832c1b000b561f7c68950",
+    "tvlTotal": 1.1180616265352152,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.1180616265352152
+    },
+    "score": 0,
+    "since": 1685873907
+  },
+  {
+    "account_address": "0x079e2d82067e016763e1a4190decc94ee9564f5262c81b83787023053981b474",
+    "tvlTotal": 1.112536692321357,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.36347304381907586,
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.34159728384553445,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.4074663646567467
+    },
+    "score": 0,
+    "since": 1688291093
+  },
+  {
+    "account_address": "0x01f413fa009043f8820a5f93171d693010e4ec3df5d5a81babcd33a9f6d47937",
+    "tvlTotal": 1.0558389355164355,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0558389355164355
+    },
+    "score": 0,
+    "since": 1685878894
+  },
+  {
+    "account_address": "0x069bc4668bc0255068f74cc87811e1012725116d01e1f2a7bc820ea328658b57",
+    "tvlTotal": 1.051803545890302,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.051803545890302
+    },
+    "score": 0,
+    "since": 1687766502
+  },
+  {
+    "account_address": "0x06bdc888e566650b4e72b449f5223d96c5503a2b8b84fb16130181ae7478f3aa",
+    "tvlTotal": 1.0488434485723346,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0488434485723346
+    },
+    "score": 0,
+    "since": 1684144178
+  },
+  {
+    "account_address": "0x062897a23c3767896d53e89a29014d8dccf1b18701a23e67b27a0f07f7b5bd1b",
+    "tvlTotal": 1.0441066546840982,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.0441066546840982
+    },
+    "score": 0,
+    "since": 1687766502
+  },
+  {
+    "account_address": "0x03e3abfe660c3ed59ebe79042da0d88c004a2517d15686eb40de1a66d3d224c7",
+    "tvlTotal": 1.0437515406048405,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.0437515406048405
+    },
+    "score": 0,
+    "since": 1687766502
+  },
+  {
+    "account_address": "0x0674b29aedb4f6cb01e2364593d9aab1e60e3c9f5bc7aa9926bd6eae96c3aba6",
+    "tvlTotal": 1.0416297189556858,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0416297189556858
+    },
+    "score": 0,
+    "since": 1684743664
+  },
+  {
+    "account_address": "0x07a28362c7f07b1382b346b9c9f5162584dfecdd08013da29c5c28b9a00b048c",
+    "tvlTotal": 1.0405859330848577,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0405859330848577
+    },
+    "score": 0,
+    "since": 1685780742
+  },
+  {
+    "account_address": "0x024b854ac442c2f6629be322f2f9b6f17829d305acae4c8d1bc4fa5c70d2fefe",
+    "tvlTotal": 1.0405859330848577,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0405859330848577
+    },
+    "score": 0,
+    "since": 1685780803
+  },
+  {
+    "account_address": "0x07a193f26318e56f90e51220793dd4ab6b7752d7ccdf3feea2a0fe557f98ed05",
+    "tvlTotal": 1.0300190930897157,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.3434848318300905,
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.28311032558438953,
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.4034239356752357
+    },
+    "score": 0,
+    "since": 1688292690
+  },
+  {
+    "account_address": "0x01d2c98958a05d5f412a5982e21a89e4da1b1eed96c6fa007d4b2fbf0be76e97",
+    "tvlTotal": 1.0203293063579908,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0203293063579908
+    },
+    "score": 0,
+    "since": 1685780529
+  },
+  {
+    "account_address": "0x02e43bdfcfadc675c64e2e12d1cc8047fa15e2940bae4d1e1594428a16d81b2f",
+    "tvlTotal": 1.016050514210021,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.016050514210021
+    },
+    "score": 0,
+    "since": 1685868985
+  },
+  {
+    "account_address": "0x0274d5bd275681e5ffe97ce8a0a21f87c0b6151549063b8e6206bb3fcb4b69ba",
+    "tvlTotal": 1.0153844804430068,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0153844804430068
+    },
+    "score": 0,
+    "since": 1685878632
+  },
+  {
+    "account_address": "0x05ef7d0b873efefe4ea54c6650545dd1746ab43c0a7b09a4c60ed65c8ba7f7b3",
+    "tvlTotal": 1.0105968487552206,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 1.0105968487552206
+    },
+    "score": 0,
+    "since": 1686195927
+  },
+  {
+    "account_address": "0x0168e26808cc57135386e08102621840c637b0dc99729c12684ed718bde3a628",
+    "tvlTotal": 1.0095767763291104,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0095767763291104
+    },
+    "score": 0,
+    "since": 1687766591
+  },
+  {
+    "account_address": "0x067a53a2be35a86c7343147d9058e54b70f4d42c0d54d26a45f9667c3368bdc1",
+    "tvlTotal": 1.003542736136077,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.003542736136077
+    },
+    "score": 0,
+    "since": 1687766591
+  },
+  {
+    "account_address": "0x03de672bfe31ef99270e1ba7d675b60d94ed5d831b6c89e6f8f9555022a91a01",
+    "tvlTotal": 1.0026090165352783,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 1.0026090165352783
+    },
+    "score": 0,
+    "since": 1687766591
+  },
+  {
+    "account_address": "0x00487592e7b3f427270304c5cca260dd3d1f6df1315b67a5bab9dfcecfc6e5a7",
+    "tvlTotal": 0.9868511361001358,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.9868511361001358
+    },
+    "score": 0,
+    "since": 1685878728
+  },
+  {
+    "account_address": "0x07e9f3308b5f30bd415ae9749e7743ce4a1f805e07bf4414a1919f64f423bef7",
+    "tvlTotal": 0.934088910447532,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.934088910447532
+    },
+    "score": 0,
+    "since": 1685878701
+  },
+  {
+    "account_address": "0x023c93dad5120fca666a1572cfddfe39874563867cb3b98aa0c27d26f18d437c",
+    "tvlTotal": 0.8942241768162407,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.8942241768162407
+    },
+    "score": 0,
+    "since": 1685868955
+  },
+  {
+    "account_address": "0x02aaa8b57127154c78fec1667f1a942cfc0e95d3d51cb3611a37d88f031df0a9",
+    "tvlTotal": 0.8886584636084316,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.8886584636084316
+    },
+    "score": 0,
+    "since": 1686213362
+  },
+  {
+    "account_address": "0x0234eaf6dc8da65b710ac6256c15a7c9def71689ddb4ba2257d3efef6a21e75c",
+    "tvlTotal": 0.8615739772640101,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.8615739772640101
+    },
+    "score": 0,
+    "since": 1685874156
+  },
+  {
+    "account_address": "0x056845fe9c814aa199c33a4af547dd03ad35b63791c3d5312076551eaf5fb414",
+    "tvlTotal": 0.8529624253338779,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.8529624253338779
+    },
+    "score": 0,
+    "since": 1685874432
+  },
+  {
+    "account_address": "0x03316031e59324c69b68bc8c36f4ecc2467ac4fe4c1a01f9d8cb8b79ab2c6a6b",
+    "tvlTotal": 0.826074789951087,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.826074789951087
+    },
+    "score": 0,
+    "since": 1685780627
+  },
+  {
+    "account_address": "0x04a87b514af7aaf9fe7edbac63bf2a6f0effeac6539f0e440211daa41595607e",
+    "tvlTotal": 0.8247422094252854,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.8247422094252854
+    },
+    "score": 0,
+    "since": 1686105254
+  },
+  {
+    "account_address": "0x03a2e3e1d824c59a0675b78e11fe459cf4a20c1e13797d2f7c3d7e3b02ab30c1",
+    "tvlTotal": 0.7110128939670433,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.7110128939670433
+    },
+    "score": 0,
+    "since": 1685874308
+  },
+  {
+    "account_address": "0x0468cfa0754068658a0fca10a666a7d6429276736419ef3431250cb8addfb5c4",
+    "tvlTotal": 0.68004351111997,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.68004351111997
+    },
+    "score": 0,
+    "since": 1687846109
+  },
+  {
+    "account_address": "0x0253148fc443e0b58b753a0476dc758d4ba31d28e6a650873bae0b77165400b6",
+    "tvlTotal": 0.667044649047048,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.667044649047048
+    },
+    "score": 0,
+    "since": 1686223744
+  },
+  {
+    "account_address": "0x05a5964fa074614f0122a38dbd1470da091198c7379897ce9ceded8976ddad86",
+    "tvlTotal": 0.6519116540167271,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.6519116540167271
+    },
+    "score": 0,
+    "since": 1687643821
+  },
+  {
+    "account_address": "0x037c00a9d89e76ee8048e1d9b81325948cd979d4b0242a45519679de2a6656f8",
+    "tvlTotal": 0.6091533361122292,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.6091533361122292
+    },
+    "score": 0,
+    "since": 1685878843
+  },
+  {
+    "account_address": "0x00b2904d5557b35819aaeaab03a0d0181af2437fe879de4d559b075592d69160",
+    "tvlTotal": 0.6091054696847246,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.6091054696847246
+    },
+    "score": 0,
+    "since": 1685879144
+  },
+  {
+    "account_address": "0x07cbc1e323021a532fbf170bc5699195b5b2976696b72b077c1e93638bdef8d3",
+    "tvlTotal": 0.5997595023689429,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.5997595023689429
+    },
+    "score": 0,
+    "since": 1688264566
+  },
+  {
+    "account_address": "0x03004fab5e58307f2c788e7bf6bf770c2e09edd1476e25b9d43b350c36793f13",
+    "tvlTotal": 0.5988601146857813,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.5988601146857813
+    },
+    "score": 0,
+    "since": 1686017612
+  },
+  {
+    "account_address": "0x05ef71ad3524e77849d48e608b2c06ff62a0fa335166bd27eb1950ef89ef458a",
+    "tvlTotal": 0.5953506393225259,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.5953506393225259
+    },
+    "score": 0,
+    "since": 1686194683
+  },
+  {
+    "account_address": "0x04168cdbc8977e318f2b566be47321150060640fee7399a0556cc52d417917fb",
+    "tvlTotal": 0.578595524542487,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.578595524542487
+    },
+    "score": 0,
+    "since": 1686015411
+  },
+  {
+    "account_address": "0x02fa403172923a80a1b48ab58f43154c8b39229475a403a1213d23629d80b8b2",
+    "tvlTotal": 0.5648407832062965,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.5648407832062965
+    },
+    "score": 0,
+    "since": 1685938683
+  },
+  {
+    "account_address": "0x03502c4fa5e6c99874e522555b6bb91445124c5a11fc6ed7fb4dab28cdb58fba",
+    "tvlTotal": 0.5377935234806996,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.5377935234806996
+    },
+    "score": 0,
+    "since": 1686134408
+  },
+  {
+    "account_address": "0x00130780790bc8e680668a753abab6d3433bd027b3ba7c15ff86da82a37e7d36",
+    "tvlTotal": 0.531862783217046,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.1635659648931886,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.36829681832385747
+    },
+    "score": 0,
+    "since": 1685942288
+  },
+  {
+    "account_address": "0x03fbe18c7020123807038c8d1b684ff2a5c1c1f8f08f3f04c59b376226230c3c",
+    "tvlTotal": 0.5202932234621468,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.5202932234621468
+    },
+    "score": 0,
+    "since": 1685780742
+  },
+  {
+    "account_address": "0x0181d0cf16c27229b11ea0c94aef6d73a53c6f465898277b9ad7c03b744736bc",
+    "tvlTotal": 0.5167352943941558,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.5167352943941558
+    },
+    "score": 0,
+    "since": 1686190285
+  },
+  {
+    "account_address": "0x07c99fd93b92dea1dc3198400682044cbbdc2d5931498725d9ddcd97f3fce6d1",
+    "tvlTotal": 0.5140370640715729,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.5140370640715729
+    },
+    "score": 0,
+    "since": 1686207502
+  },
+  {
+    "account_address": "0x056f3e70442f439d03d31bad6b02dfb22e5c05df927736fc40e5d588752e41d7",
+    "tvlTotal": 0.5117297850191627,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.5117297850191627
+    },
+    "score": 0,
+    "since": 1686024096
+  },
+  {
+    "account_address": "0x06741ab05702648cfd76cbcc1aff4cbc73eaaadd720949d4665c74bf26353f95",
+    "tvlTotal": 0.49659693883782713,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.49659693883782713
+    },
+    "score": 0,
+    "since": 1686216586
+  },
+  {
+    "account_address": "0x06f643894dc6cf856ea5e9a5619d7067e8b2446611a66b6c4e7bac052c9932b7",
+    "tvlTotal": 0.48526714581548397,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.48526714581548397
+    },
+    "score": 0,
+    "since": 1686219691
+  },
+  {
+    "account_address": "0x000b8d45d763ced1bff33efdadda252840ee44aed2b885f0f53525fb5ebcd413",
+    "tvlTotal": 0.4569112934504396,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.06938337951132939,
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.38752791393911024
+    },
+    "score": 0,
+    "since": 1685949544
+  },
+  {
+    "account_address": "0x05bbeb2765d41cc447a9f7bc9ff2ebe9ce6753d3148077793a8968e7eae08b9e",
+    "tvlTotal": 0.4480888837917306,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.4480888837917306
+    },
+    "score": 0,
+    "since": 1684174777
+  },
+  {
+    "account_address": "0x058e64a78d115008296cba39c15b795c60d22f61be9f73422e72b6cff054dd05",
+    "tvlTotal": 0.43111570428926493,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.43111570428926493
+    },
+    "score": 0,
+    "since": 1686192908
+  },
+  {
+    "account_address": "0x06d493038ec5fbd7c432ffe34208322c3119a7449e0454b5e676449a5a6cd403",
+    "tvlTotal": 0.41204486480089403,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.41204486480089403
+    },
+    "score": 0,
+    "since": 1686108776
+  },
+  {
+    "account_address": "0x058b2f99aa08d084a7a311bd004ba8529f1403fd3527d88e9c171ab366f63ea3",
+    "tvlTotal": 0.4117394574849399,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.4117394574849399
+    },
+    "score": 0,
+    "since": 1686013943
+  },
+  {
+    "account_address": "0x035ea55b6751626644584818bfb94b524dfc96201007748a1b62a7faee1d6f9c",
+    "tvlTotal": 0.4096083908777103,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.4096083908777103
+    },
+    "score": 0,
+    "since": 1686120184
+  },
+  {
+    "account_address": "0x00507cdc5d760c8e0d4b2f8514d37c9c22676256ea30b34ba63218e50b573082",
+    "tvlTotal": 0.4087550074356353,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.4087550074356353
+    },
+    "score": 0,
+    "since": 1688210446
+  },
+  {
+    "account_address": "0x0575b96c8afe769cc4f50fc0aa998f09511fc2eace485d2cf94c883ff9ce8663",
+    "tvlTotal": 0.40797593721442893,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.40797593721442893
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x0313889ba1f518c8204f9e9332d29c8d816e13deff93c6ec307b2e3c22ecd704",
+    "tvlTotal": 0.3918000872020817,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.3918000872020817
+    },
+    "score": 0,
+    "since": 1688020580
+  },
+  {
+    "account_address": "0x0090ccd0daced9dca3c7c7aaf74bbe862b90cce88c1611816a451caae95aba1e",
+    "tvlTotal": 0.3856895320106676,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.3856895320106676
+    },
+    "score": 0,
+    "since": 1684916318
+  },
+  {
+    "account_address": "0x078377c7c3bab21f80785f257c7d7a136111dbc91559674d76993dc0466eced0",
+    "tvlTotal": 0.3819704999999838,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.3819704999999838
+    },
+    "score": 0,
+    "since": 1688103225
+  },
+  {
+    "account_address": "0x02631e21f240925acb059b1a4210aff49e9b529dcd94402754dcdf0f5978f089",
+    "tvlTotal": 0.3819704999999838,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.3819704999999838
+    },
+    "score": 0,
+    "since": 1688103225
+  },
+  {
+    "account_address": "0x01d07865071a32a1ebf73ff55671d94fde0ac0bcb9e74404e0d974b676367c5b",
+    "tvlTotal": 0.37355238805711166,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.37355238805711166
+    },
+    "score": 0,
+    "since": 1686025985
+  },
+  {
+    "account_address": "0x03d76e694293ebc4c9c8bd36eb7f0df5ac5c7a2b3c104f01690b6a373ea39531",
+    "tvlTotal": 0.36849054941477877,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.36849054941477877
+    },
+    "score": 0,
+    "since": 1685965576
+  },
+  {
+    "account_address": "0x06225eb0ca68cb60c62dc442095459263987894b1937c28f88c7f88018f0fc7a",
+    "tvlTotal": 0.32687499468075043,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.32687499468075043
+    },
+    "score": 0,
+    "since": 1686034709
+  },
+  {
+    "account_address": "0x004dfbbe6f599400cd9a9580da9fe8abfa918e93942f1d7b5f320f639e4a41e0",
+    "tvlTotal": 0.3249265682589382,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.3249265682589382
+    },
+    "score": 0,
+    "since": 1685878728
+  },
+  {
+    "account_address": "0x01701cef5f430cc714e86ff5bc901999a3145b9d75b270b2be7504ab27dc6fe1",
+    "tvlTotal": 0.30947297839633625,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.30947297839633625
+    },
+    "score": 0,
+    "since": 1686227082
+  },
+  {
+    "account_address": "0x0624ee693acdbc1e0e5add773bbcbe706f0ac21fe551c64cb2f38e1a235d9713",
+    "tvlTotal": 0.30842183837511694,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.30842183837511694
+    },
+    "score": 0,
+    "since": 1686206232
+  },
+  {
+    "account_address": "0x023351bfc602e2ebebe0d3e3fcf0913e64ee01d2b38138ba9b57772eef2ae830",
+    "tvlTotal": 0.30610471963090463,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.30610471963090463
+    },
+    "score": 0,
+    "since": 1687620421
+  },
+  {
+    "account_address": "0x0007ad8d404188491e8133e2716b926c36b87dfc411e282f449a46347f2037aa",
+    "tvlTotal": 0.30218523981849993,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.30218523981849993
+    },
+    "score": 0,
+    "since": 1685939139
+  },
+  {
+    "account_address": "0x00e0076e7cc6d8fcaea22df2e4727ec4f11bfa52a77d342bf996f6f78bad9714",
+    "tvlTotal": 0.28009767715429934,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.28009767715429934
+    },
+    "score": 0,
+    "since": 1686036734
+  },
+  {
+    "account_address": "0x07750a0f729d033371cd3e48bf7a9fe52fb64623954a899b667bf004fdef837a",
+    "tvlTotal": 0.2789240069303234,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.2789240069303234
+    },
+    "score": 0,
+    "since": 1686204391
+  },
+  {
+    "account_address": "0x028be9c6480bd942f42a8dd6ca559af96206208ce57ab42bb9c6172267c16426",
+    "tvlTotal": 0.2661317856581986,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2661317856581986
+    },
+    "score": 0,
+    "since": 1685963773
+  },
+  {
+    "account_address": "0x03807364e634404e3cbf4e3800eadc2f3a2fb50c8884b285080f2fd2ff535c83",
+    "tvlTotal": 0.26579531604443624,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.26579531604443624
+    },
+    "score": 0,
+    "since": 1685939244
+  },
+  {
+    "account_address": "0x0425f27c8d39421408a8882947269d42621e02e651019c70cbdfcc06c392304d",
+    "tvlTotal": 0.2641711994006998,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2641711994006998
+    },
+    "score": 0,
+    "since": 1686141408
+  },
+  {
+    "account_address": "0x009de8fa6ae2283733ff9cccd3481621c1ccfcceacd4fe6f72251cf4b991cfbf",
+    "tvlTotal": 0.2594167393153109,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.2594167393153109
+    },
+    "score": 0,
+    "since": 1687720969
+  },
+  {
+    "account_address": "0x002fe06faaa65131c197575f483029e9aecb54ce419fc0930d624b84c652ff10",
+    "tvlTotal": 0.25935328697246185,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.25935328697246185
+    },
+    "score": 0,
+    "since": 1686044641
+  },
+  {
+    "account_address": "0x01f321b14ce7b15f6e27bd75180df53d28db8104a208abfb15d2b2d06ad38bf4",
+    "tvlTotal": 0.25580810634379963,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.25580810634379963
+    },
+    "score": 0,
+    "since": 1686118111
+  },
+  {
+    "account_address": "0x06eab57801357950a25ce7fe7e2a9308175c93b2ea3dab86a278742a7661e50d",
+    "tvlTotal": 0.24757339245951826,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.24757339245951826
+    },
+    "score": 0,
+    "since": 1687124428
+  },
+  {
+    "account_address": "0x04220ab6a963dbe688f1bfec1260d3ca63de5fc4f98d4422ef045db15cf8ca46",
+    "tvlTotal": 0.24528288188264535,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.24528288188264535
+    },
+    "score": 0,
+    "since": 1685938903
+  },
+  {
+    "account_address": "0x01429b842b07eaa972b1dbdb83db44e9f6e0e2e534e2bb0789cdac4d2d0f29e1",
+    "tvlTotal": 0.24384191132965116,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.24384191132965116
+    },
+    "score": 0,
+    "since": 1685968386
+  },
+  {
+    "account_address": "0x004d88d6f642ec5c8689cfc6b8645069d662c94f5c805a448145e1d44c7e4031",
+    "tvlTotal": 0.24174655339324108,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.24174655339324108
+    },
+    "score": 0,
+    "since": 1688215180
+  },
+  {
+    "account_address": "0x06890f86a6db0bbe620f3a329ebecb594f8e3e3bfff8ae00ac77b68b54e7f854",
+    "tvlTotal": 0.22926506434663543,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.22926506434663543
+    },
+    "score": 0,
+    "since": 1684966912
+  },
+  {
+    "account_address": "0x05a4aedd5e51ed11239c31ffca903b02cacb67b3fa8867d80dc16bfc26908cc2",
+    "tvlTotal": 0.22490357512760112,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.22490357512760112
+    },
+    "score": 0,
+    "since": 1685939346
+  },
+  {
+    "account_address": "0x031e2d69715c554d8797599373f38b2e651ba9844ba6c905fc5fa17260073486",
+    "tvlTotal": 0.22490041970967845,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.22490041970967845
+    },
+    "score": 0,
+    "since": 1686135818
+  },
+  {
+    "account_address": "0x00f1669d1651ce04f98c5a69a81194d4cc87b095e8a4f3a99dd24caee79f98f1",
+    "tvlTotal": 0.22484264172575807,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.22484264172575807
+    },
+    "score": 0,
+    "since": 1685938829
+  },
+  {
+    "account_address": "0x029d14971c3c49b9fc99d94b42e1a6936ff6485557498a2a5cb2043eacfbcf8d",
+    "tvlTotal": 0.21126245901526397,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.21126245901526397
+    },
+    "score": 0,
+    "since": 1684748935
+  },
+  {
+    "account_address": "0x0453bdf2efe1895c600c091c566f4cc09bdaef94b1755534d3d79f5585a6e2c0",
+    "tvlTotal": 0.20845076530391066,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20845076530391066
+    },
+    "score": 0,
+    "since": 1686221876
+  },
+  {
+    "account_address": "0x04caed72f5116af0bf64e0298ff515661c299be6b01b543a01a0846a7f3de66e",
+    "tvlTotal": 0.2073396654173872,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2073396654173872
+    },
+    "score": 0,
+    "since": 1687840956
+  },
+  {
+    "account_address": "0x00b8dc3a47266f568d75059480d98436abf42b8b3acc6df540706c817236af86",
+    "tvlTotal": 0.20509652056791539,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20509652056791539
+    },
+    "score": 0,
+    "since": 1687990807
+  },
+  {
+    "account_address": "0x01eabb585f42dc777f31f3d07cafa7bcd5ceb53936e05bb7bff073e768f62ca4",
+    "tvlTotal": 0.20445770395498447,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.20445770395498447
+    },
+    "score": 0,
+    "since": 1685938185
+  },
+  {
+    "account_address": "0x054be5f721b942048feb72c354cdc463b84f830c6cfdd65797562d1d2208372a",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x0616e6e332ce542d3d0deec117d13d4833e4794c5c7efbdc2426155ad272ebc0",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x04741a99324b81c1628aa53067ad4bcdf076089fb4b90755d91fc9737965c91b",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x0063c02d915c88b9cadc66baa084da47960c48a9b80f14ac861f1eab60772d24",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x03297f3404eaa80d54ee80b01bebdd5c24664ea4024f1e1ecaf90dfad6fe6ff9",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x02c5090a9a236e6c73b9817bc55a0228a87432320e4a998013d37e6e2d372f95",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x0208741c67c633994f29d2f0b27fcd5aeea2579488aee095b02115578298e2d8",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x06dbafa5257cf669b41672de396c1b61c37162f8c64bae6cb123adf8b57ab0f7",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x04f63b11990f609c2906d355210f34e708738fbc1951e1833b64175f7f264fe2",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x0733d0ae7a5a86dcd921d6803f74b65ce2e91d35b36017aed87bc0931340026d",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x05a64f12b004d1c15926aae842c6215378f7cf24dfc5daf2dc774428883bc953",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x024e3dcfc46adef8d574dfd0cf746497cf65250ce9117ea43f27281197d56e5c",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x02528c804ecac58c03905d449c58a9cd73412381431aa28be9f0f8a6f0edd22e",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x009007fdc05ce8ff6d8b46277d0b198ba8cf604cedf3151fbcdbfaef8e648fb1",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x06eda0c89d6230e5298637dde2c3f90f7a4782325241fa2c4aaa85e84f89231a",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x015ed9ccc301dd0e33c1302d617d2381d42e241075eacef70070298d47b81cd9",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x06b103607d38674a4c1341289c6df91eebf78860ff2916088f402739469f54f7",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x0785b356ba202aa68b173abf20a1933bfda56840a3e6e29726a940c24da275cc",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x03c57fce05b7a04f18cf88e065a628d94b2cf855bbfa1647526179642fb7a07d",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x035d654299867eef877a002902e43f9021aee0d4102c14255781b0c5321ebf95",
+    "tvlTotal": 0.20423940447632033,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423940447632033
+    },
+    "score": 0,
+    "since": 1688294810
+  },
+  {
+    "account_address": "0x03c092e67aa878707fec9b4ed8f1edc884635f5b7dc22d645e0735f5067816af",
+    "tvlTotal": 0.20423027567172064,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423027567172064
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x00804d334426d7dc18c61857c0883b62db18f13b6109261ccdf809a08ea016dc",
+    "tvlTotal": 0.20423027567172064,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20423027567172064
+    },
+    "score": 0,
+    "since": 1688291702
+  },
+  {
+    "account_address": "0x00fd12f78391b74bdd8a6e0c3c38ffa18673fc237ad707b016c10837539ba22d",
+    "tvlTotal": 0.20416780620909836,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20416780620909836
+    },
+    "score": 0,
+    "since": 1685958336
+  },
+  {
+    "account_address": "0x05c538cffae1dd4003ba41ba399b5d410fad1348c3fcb03378d19e2259735d53",
+    "tvlTotal": 0.20409238749286657,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20409238749286657
+    },
+    "score": 0,
+    "since": 1687769077
+  },
+  {
+    "account_address": "0x0690c346334e98ca691e236aae5c54a7d48b62ba29d8086574a8248b34e5bfe8",
+    "tvlTotal": 0.2038595327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2038595327381086
+    },
+    "score": 0,
+    "since": 1688291491
+  },
+  {
+    "account_address": "0x07ff4b7bb71b4a67c2885b2e4d5bda6cfcebd4b1a1faf3fc0d4681a7987fc6bd",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x04d2df3958f2df048dea649abd7727464fddbf26b07aaa156c06257376e7867e",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291648
+  },
+  {
+    "account_address": "0x07f223e43513b45df19ed08e8a4c2b2023cea326ed118b5f722bb0635edc93c8",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x05be756d02d76da5f48de9c01e2c00b3f4016cc155e2f6d8d1500490dc65f0d3",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291648
+  },
+  {
+    "account_address": "0x069e6dd28a020d7ba9238111873293c3f18482a95cc7dcab76f270f0fd571022",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x009a2bad9d168859ffeb00dbe5e2b4b232aac3bab35d9982e11ac7d40f5edbd0",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291589
+  },
+  {
+    "account_address": "0x02a0eb223d37c10fd436bec27fab1963c657218c98d2c12f8038975feca1b36d",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x01ed1077d8fb06c43ca0f37f288a3faa040d0aa38c696b5355d904f7491bab2b",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x00af15387e1ead532d4c74e68893f596203affacab64769660cf4cc757cb738e",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291648
+  },
+  {
+    "account_address": "0x00cd19b8565fe23277a788c30c7ec566be5f9f49fe212a2280f68b590e63fcd9",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x042005bc7bee09449ac2447030fa4adaa2ea04f95d1521c6d27642ecbef56d8f",
+    "tvlTotal": 0.2037365327381086,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2037365327381086
+    },
+    "score": 0,
+    "since": 1688291537
+  },
+  {
+    "account_address": "0x05485d315086560a7575b12361b8569164e9fbe70a1e75d67744eb5b2404b8ed",
+    "tvlTotal": 0.20371751301683244,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20371751301683244
+    },
+    "score": 0,
+    "since": 1688291849
+  },
+  {
+    "account_address": "0x0264d436129955fabd14fcabe856e74de01851fee32781a4add605f4ebb971dd",
+    "tvlTotal": 0.20371751301683244,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20371751301683244
+    },
+    "score": 0,
+    "since": 1688291849
+  },
+  {
+    "account_address": "0x012584dcbbc537ed7561c51c9e224a4d057506c8a3d10a8e0f6821800390f81f",
+    "tvlTotal": 0.20371751301683244,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20371751301683244
+    },
+    "score": 0,
+    "since": 1688291849
+  },
+  {
+    "account_address": "0x0711360235f2b40ebbe24b80121257d417df006ebd7547e1c766bfbbdc8d031d",
+    "tvlTotal": 0.20361453273810862,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20361453273810862
+    },
+    "score": 0,
+    "since": 1688291702
+  },
+  {
+    "account_address": "0x06a8cefcb12cdc77f248dcc9d623425910652a8c885a86e71a58b399cc04aa27",
+    "tvlTotal": 0.20361453273810862,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20361453273810862
+    },
+    "score": 0,
+    "since": 1688291702
+  },
+  {
+    "account_address": "0x054c4be509094dc772c4a1a558c5660939b775562dd996d29e57623cca46cf39",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x0682ebd417c45f6f6ac03517330831f2f9ec7517620dfa1c97b33f097f81e3f3",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x05daad6600ca3e9d452deedd8838f870d2d711c5be4011a861d8dab3e58dd8b7",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x07f92739fbe0eaa1f2e2f7cfa63eb8cbccfa116b7055aecdc8d9a46bd5c96d76",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x01174d3ecf8ca122e743283c8bb56d7c17283158d19d69cdc550526782dababa",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x07971ce054ed54956ca9623687595f8ac1b5a4b6e1b4def33730cfbaa5c8ebda",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x028133067e9049279c8fe0ce61014aad68f41649d66c39a0fffba322830adf4f",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x07cc7623e8ac54f7d0e84c808db9bb7a27e3d702c12f8a8595cb4873c95200f0",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274443
+  },
+  {
+    "account_address": "0x029f2ef996106d7f9d4ad117a5b321c8b3141966e480c5308253f7dc48036676",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x041485d4b5a0d90a654d12418436f701c7b2a6031532c34172c35c9d606bb716",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x06e6f6511c93307c4da649ef1f285d18bedcea3610a6fa9114f63be542178e96",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274443
+  },
+  {
+    "account_address": "0x0251b8698e56b02cbdb1be08ed142912698365b83f2dbbf7e4ded1765bc73930",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x0320a3a5e22f208f925e724538a0f4e212b2e7aaa98db4898570f1981f07d394",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x06f611637be66784cc9262b4b2c5edf5c4155f4f3cff8d0f81f1c178e005a430",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x01b0d048799b2ffd44415e5f24501bcd900ef222477a48adff3ea66737b56947",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274535
+  },
+  {
+    "account_address": "0x012ce7c7a3053f5dae9e224df6fbeb4f3e2a0bebab6474578ab910ca03ddc0eb",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x04f9ab436fc93093cf3b9974b6cab973927df79069dcb8e571f74cf73fb883d4",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x051042b0380f3e66c6e93c8d5036b177cc06b100ce6fbc553e6a90a8c970b812",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x018ed8cd6bc14a4d3d0ecc075ffd30fa88baba55627939165f8b27ef9aa57d56",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x00d384575603b2650fe89a1139e97c14ddf70fff7a95cba6ef8d33e9031650a8",
+    "tvlTotal": 0.2029621794793046,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2029621794793046
+    },
+    "score": 0,
+    "since": 1688274378
+  },
+  {
+    "account_address": "0x00d81a439ce11adcb7784ce6b08ad9f6457d81563fa3970b710687669ec7e05b",
+    "tvlTotal": 0.202826259025,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 0.202826259025
+    },
+    "score": 0,
+    "since": 1685938903
+  },
+  {
+    "account_address": "0x04fcb6a5a5968cdf6994806d09ad46ea7fbe5a00d0f3edac3bca24dcf321c665",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x02a0a9ba2b41f960185d6165440dbbb52c1732ec56984ec135de93ab6bd52cd2",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x0052c4730d787b2106790efbbcc6647547b215d37a2d8ddd6fad4f9b4129514f",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x0032b8dddc759031064f98631132df309c295ef416fabe27f2b2aedc1de9c4fc",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x03d25ec9407d17b6b2483ac855bf46cab2286542e411fae3312ca63b6f8b3260",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x07e448de21d8d8fe808f3ad4fa452431d4d81d23415f8c50265ea464e743a61a",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x003ba773018d5246d1010275a4ca0703a348128f8fb109e3fc0feaed239bc5a3",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x0414865ba1aeb9b67fe07f87686d4650fdc49160300d487021a801613992a969",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x01dbd30f6c4a187f43102768d36c4b70b02c69dcf0501bd13a6964959deec0a9",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x03f6c9b9c6654b1631c5c3c6cee84dc5d66862857db62990d9abe72010331ac1",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x0225dceede6cf3249a9122b62ae516631fa617d68a8ed78e40c4e324e4f7a574",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315622
+  },
+  {
+    "account_address": "0x04d923ba5d0856fbbe52fe092e43f9051c0cb263bd8c2b10c3c23506946ff1b7",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x07f8ab574fda33ce412ccf4b104446f73725f8e810008b20542931cea2f411de",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x0494b302bfc87ecd4b42c3bac933ea5068344d2a25c689f1104faf9d49a140d2",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x05a86714cce343962f4874c4a7d686fb7caf547c844e9670d4ad1bd8b79afffa",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x052b01c38e09d8fd8bd0f9e291765bbaeca4299221854ca53bef98c186a1d3ae",
+    "tvlTotal": 0.20271354051771256,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20271354051771256
+    },
+    "score": 0,
+    "since": 1688315748
+  },
+  {
+    "account_address": "0x021cf1ad8968aea1e108fe1152dde20b2caf6bb9972cadc59c2bbb8a6e726720",
+    "tvlTotal": 0.20145715987899998,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20145715987899998
+    },
+    "score": 0,
+    "since": 1685939244
+  },
+  {
+    "account_address": "0x010d3b2083808d1b43c1b879d68e0ffd1973ae09aa12bc647e5fb76c27bd673d",
+    "tvlTotal": 0.2011992384380648,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.2011992384380648
+    },
+    "score": 0,
+    "since": 1687691352
+  },
+  {
+    "account_address": "0x00a49662e980093577a7c4a35b8971a66a78f8136d0899b3f80e81d47e534281",
+    "tvlTotal": 0.20112879506535647,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.20112879506535647
+    },
+    "score": 0,
+    "since": 1687900229
+  },
+  {
+    "account_address": "0x00909640c650953559ed99a4feca04dcf5f42970a92616f61bf13fa5dc2f23b9",
+    "tvlTotal": 0.192147166825,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": 0.192147166825
+    },
+    "score": 0,
+    "since": 1684345884
+  },
+  {
+    "account_address": "0x01df57d15ce567494637a231c7b5c493481a07a8235d063ae698fe8bf311542f",
+    "tvlTotal": 0.1615863886402762,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.1615863886402762
+    },
+    "score": 0,
+    "since": 1687869332
+  },
+  {
+    "account_address": "0x038aa31007fd5c6ec51640615b8d5257de5c79b611c010a2a213073ba1f72a13",
+    "tvlTotal": 0.15611425234260784,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.15611425234260784
+    },
+    "score": 0,
+    "since": 1688190078
+  },
+  {
+    "account_address": "0x015a24dd18a55c01664057f7b706f0d5454cf3574b9a74e3c308422a9ae96a02",
+    "tvlTotal": 0.13997948799214793,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.13997948799214793
+    },
+    "score": 0,
+    "since": 1688208865
+  },
+  {
+    "account_address": "0x02da36d70cf574227d89d084dae81da89c17f25c0a2648604d25d96d4486c0ac",
+    "tvlTotal": 0.13802563733171336,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.13802563733171336
+    },
+    "score": 0,
+    "since": 1688207902
+  },
+  {
+    "account_address": "0x06068715f1cb1b3b4e883a5d7dd5eb8e46e1fa59a9eb77493563b391f85f3fba",
+    "tvlTotal": 0.13605717217921726,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.13605717217921726
+    },
+    "score": 0,
+    "since": 1688188662
+  },
+  {
+    "account_address": "0x05afb71477b9094b1afe8ac5689c97612538f595786479ef4288acf57fee5490",
+    "tvlTotal": 0.13276368205990158,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.13276368205990158
+    },
+    "score": 0,
+    "since": 1687407390
+  },
+  {
+    "account_address": "0x03111778dd6cf200c46659291837809794ae4c38832dd29422d1d84c6c74bdc6",
+    "tvlTotal": 0.13107366497203085,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.13107366497203085
+    },
+    "score": 0,
+    "since": 1688205919
+  },
+  {
+    "account_address": "0x001ca2ca4dc13eb622f536f1d9b35d1026c57290eb147e3cf4917ae99689707d",
+    "tvlTotal": 0.1290141088596577,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.1290141088596577
+    },
+    "score": 0,
+    "since": 1688265328
+  },
+  {
+    "account_address": "0x004ede44e7dd10740b84426d9c95fa61024eccdcf6e4666063fbaf0c94d702bc",
+    "tvlTotal": 0.12816666323659112,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.12816666323659112
+    },
+    "score": 0,
+    "since": 1688207198
+  },
+  {
+    "account_address": "0x034b37340186f355ed704328b7bac923e461eea48b9ae5c3cfb6c3c562d2307e",
+    "tvlTotal": 0.11528626305418348,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.11528626305418348
+    },
+    "score": 0,
+    "since": 1688208723
+  },
+  {
+    "account_address": "0x0111c5193d18014c3bcb3c1128fb90248bb3465e87132e57048ffbec8ea09480",
+    "tvlTotal": 0.11441849513929014,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.11441849513929014
+    },
+    "score": 0,
+    "since": 1687102854
+  },
+  {
+    "account_address": "0x071a33305b7a243e3de1683ade2d156f0efdd2158c6a2995b7b8256d2f37049c",
+    "tvlTotal": 0.11287033753520094,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.11287033753520094
+    },
+    "score": 0,
+    "since": 1688267334
+  },
+  {
+    "account_address": "0x07a33804b498072e80e696c84ace6380df7e3b59c845a11bf9ef65ef57f62f5c",
+    "tvlTotal": 0.10977278280080696,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.10977278280080696
+    },
+    "score": 0,
+    "since": 1688267068
+  },
+  {
+    "account_address": "0x0625540be928020590d4a4e4a9593cd2e08aec2bf8a9ee5eb41f1f59fcf91f8e",
+    "tvlTotal": 0.10062768942373909,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.10062768942373909
+    },
+    "score": 0,
+    "since": 1688254707
+  },
+  {
+    "account_address": "0x04552f4f660848a8789361c04255c9ae56076d393151896e23508543e26758b1",
+    "tvlTotal": 0.0945260598467712,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0945260598467712
+    },
+    "score": 0,
+    "since": 1686963181
+  },
+  {
+    "account_address": "0x04c86d09244aa944e1b3f90175ef09ac8d48fe326cb4813e43df373994a2ca20",
+    "tvlTotal": 0.05893266579916201,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.05893266579916201
+    },
+    "score": 0,
+    "since": 1687758014
+  },
+  {
+    "account_address": "0x064213c55dc30201811b963a292004d98fa330b05c4bde793dafd8a1399f02b3",
+    "tvlTotal": 0.05777193191576302,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.05777193191576302
+    },
+    "score": 0,
+    "since": 1686648430
+  },
+  {
+    "account_address": "0x053f7b4c0d64755f1f589fd1a076ce2bd12a24ab37962a8a8f50c89a16ef89a6",
+    "tvlTotal": 0.05368691863981212,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.05368691863981212
+    },
+    "score": 0,
+    "since": 1686980447
+  },
+  {
+    "account_address": "0x03731c5ec3407db8f3cfa44fb50f0c18e3493eb9e40e2c4bed90f68bc83f969b",
+    "tvlTotal": 0.042289588656331034,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.042289588656331034
+    },
+    "score": 0,
+    "since": 1688209824
+  },
+  {
+    "account_address": "0x076fab9755daa3c001ee7df61a7331f0e45428d4b202c2e73c336fe5a0d00b28",
+    "tvlTotal": 0.03831224541672615,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.03831224541672615
+    },
+    "score": 0,
+    "since": 1685454205
+  },
+  {
+    "account_address": "0x04faaed7dbcdcb5b3e0d5ef87655fe79b5e6e7421972a92e7714090ac60be982",
+    "tvlTotal": 0.03139491008259654,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.03139491008259654
+    },
+    "score": 0,
+    "since": 1687088819
+  },
+  {
+    "account_address": "0x00f781c6b53012d405d3b7cbb03cb1900457b060cf981c32a71e601642c57f9b",
+    "tvlTotal": 0.02934033190848595,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.02934033190848595
+    },
+    "score": 0,
+    "since": 1687166406
+  },
+  {
+    "account_address": "0x01d7b82e7510ba8704400cdbe5be63fda2ec5cf5bfd06ec6e57e534fb6b859af",
+    "tvlTotal": 0.01574393849382094,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.01574393849382094
+    },
+    "score": 0,
+    "since": 1686819630
+  },
+  {
+    "account_address": "0x06f51e35529e5078bef1249d92fdc1cc0b4225d028922e7fd26e948ee40806a4",
+    "tvlTotal": 0.008287965548280596,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.008287965548280596
+    },
+    "score": 0,
+    "since": 1686369761
+  },
+  {
+    "account_address": "0x030a6e27b5d05fc12cd2cb9ce57027107fcb9cb274bac72106d3031f5deda68b",
+    "tvlTotal": 0.005141821207852167,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.005141821207852167
+    },
+    "score": 0,
+    "since": 1684751257
+  },
+  {
+    "account_address": "0x03cc86ce3c71831bfebb20b5e4361726a9755dd73f76ac45df61a91616d831e6",
+    "tvlTotal": 0.001958193139839342,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0.001958193139839342
+    },
+    "score": 0,
+    "since": 1686360596
+  },
+  {
+    "account_address": "0x000c93aa58e6a81844bafcf06ba85ecc79f4e65d51b8e9f69ace8fa2a59f131c",
+    "tvlTotal": 0.0005149562250021944,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.0005149562250021944
+    },
+    "score": 0,
+    "since": 1684230427
+  },
+  {
+    "account_address": "0x06a9ed97d61c9ce5d9cd261e8cff457543c0162b679e427c6f3d74fe7d931846",
+    "tvlTotal": 0.00022098121500135903,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.00022098121500135903
+    },
+    "score": 0,
+    "since": 1684243906
+  },
+  {
+    "account_address": "0x00c101f50df8c5f19c665f7fc42a1102a57c6bf5a56791464a6d0846f64a5724",
+    "tvlTotal": 0.00008899243500160026,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.00008899243500160026
+    },
+    "score": 0,
+    "since": 1684236970
+  },
+  {
+    "account_address": "0x031e28faabf896572e465459dfd99797bd78311ce332beb55d354af28c42974d",
+    "tvlTotal": 0.000046996005002242214,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.000046996005002242214
+    },
+    "score": 0,
+    "since": 1684251952
+  },
+  {
+    "account_address": "0x03e8de84dc71ee563f947efe6da4373779a55ae455322e5312128f87a4aada9d",
+    "tvlTotal": 0.000031997280002471484,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.000031997280002471484
+    },
+    "score": 0,
+    "since": 1684239996
+  },
+  {
+    "account_address": "0x041cdadfced7224adc4b567f4efdfdb1eb236d2788c758aab06fad0e674a3c87",
+    "tvlTotal": 0.000023997960001409524,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.000023997960001409524
+    },
+    "score": 0,
+    "since": 1684232597
+  },
+  {
+    "account_address": "0x0375f2c041d8553b5f9dde73470a2b061a85c6464bc4080f81aa5c63bb855645",
+    "tvlTotal": 0.00002299804500083269,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.00002299804500083269
+    },
+    "score": 0,
+    "since": 1684245273
+  },
+  {
+    "account_address": "0x04b9977b4b6fe36aba57af4725b6ca78b885673211d18c4b815b73766b06ea6d",
+    "tvlTotal": 0.000012998895003946132,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.000012998895003946132
+    },
+    "score": 0,
+    "since": 1684225981
+  },
+  {
+    "account_address": "0x0762129ecef8aa5bb557276a0a6fde011f2e4d622e15ce6f3b509b2fe50f4598",
+    "tvlTotal": 0.000012998895003946132,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.000012998895003946132
+    },
+    "score": 0,
+    "since": 1684219050
+  },
+  {
+    "account_address": "0x05fc5f083e1067d0e5b7b0e428179349a0b1d29881731ebb6140b41e0065f156",
+    "tvlTotal": 0.000006999405000485126,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.000006999405000485126
+    },
+    "score": 0,
+    "since": 1684247209
+  },
+  {
+    "account_address": "0x02f34380a9c78d4688aed145fbac43469c3ecabe269e3e56de0ea6295d3ebfc4",
+    "tvlTotal": 0.0000032237072149499113,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.0000032237072149499113
+    },
+    "score": 0,
+    "since": 1687482936
+  },
+  {
+    "account_address": "0x068166d83c6a8cfa5a34e6748c2a990a8c4fb4a165debcf3704bc2261119efd0",
+    "tvlTotal": 0.0000029702355703875583,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.0000029702355703875583
+    },
+    "score": 0,
+    "since": 1687783373
+  },
+  {
+    "account_address": "0x06fb160200e592b3567db73cf399c83582057cbb4e5a015a18d0adb9c01ec6ec",
+    "tvlTotal": 0.0000028455660521231607,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.0000028455660521231607
+    },
+    "score": 0,
+    "since": 1687435259
+  },
+  {
+    "account_address": "0x06f5aa2afaaaa1fa545202271ce5d9bdcf8c8db4eb01d4b1918726370b6c15fe",
+    "tvlTotal": 0.000002756004228388065,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.000002756004228388065
+    },
+    "score": 0,
+    "since": 1684137216
+  },
+  {
+    "account_address": "0x02a426468c4fcdeb487af096b4eb90f8c6e8d7aa4981fe25417afb447a44027d",
+    "tvlTotal": 0.0000024917294609849705,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.0000024917294609849705
+    },
+    "score": 0,
+    "since": 1686316204
+  },
+  {
+    "account_address": "0x01fdaa34a2abc8a9e7bc97e13bb1d465e40e676384970747a53b66f82e2b16fa",
+    "tvlTotal": 0.00000248121434509585,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.00000248121434509585
+    },
+    "score": 0,
+    "since": 1687525749
+  },
+  {
+    "account_address": "0x074f5e329da4a91bc77d2931a4bc39e515cb1abddf9b3ed634dd73622fef6bbd",
+    "tvlTotal": 0.0000021295890029193743,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000021295890029193743
+    },
+    "score": 0,
+    "since": 1685008219
+  },
+  {
+    "account_address": "0x03c8ac4b0bcc205f0fa95eaebc49ef1eacc5a2e103235892ed54d442221d62bf",
+    "tvlTotal": 0.000002097795785971357,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.000002097795785971357
+    },
+    "score": 0,
+    "since": 1684237888
+  },
+  {
+    "account_address": "0x022477f66e4abc46dd3dbeb481ad5866dd8de791671f815d4c353ca0bda66514",
+    "tvlTotal": 0.0000020681581602843835,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000020681581602843835
+    },
+    "score": 0,
+    "since": 1685948493
+  },
+  {
+    "account_address": "0x05a8f0e0953a2e59a254131cc8a7fb0ee7fdd88302f345714302787050883759",
+    "tvlTotal": 0.0000020654521222240874,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000020654521222240874
+    },
+    "score": 0,
+    "since": 1686200871
+  },
+  {
+    "account_address": "0x07df95e5017b759ffff2d7a5f8cf9b72142ecc235b9c527a7c6f580b50db766f",
+    "tvlTotal": 0.000002062853596385139,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.000002062853596385139
+    },
+    "score": 0,
+    "since": 1686289380
+  },
+  {
+    "account_address": "0x003d6c22d3cecaef337f7d98446eed96b749287de65df6dce312a6659038ec49",
+    "tvlTotal": 0.0000020322510536630034,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000020322510536630034
+    },
+    "score": 0,
+    "since": 1684310959
+  },
+  {
+    "account_address": "0x07a508caa468be806a9ab9f1963d5b032b1983c8be4ea692c75e3fb3834c3434",
+    "tvlTotal": 0.000002006569996382268,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.000002006569996382268
+    },
+    "score": 0,
+    "since": 1684245997
+  },
+  {
+    "account_address": "0x00fb8322d852bd7befb54fab3600ff2c396e0ddbedc74bf25e56b59c63a26089",
+    "tvlTotal": 0.000002005337007560115,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.000002005337007560115
+    },
+    "score": 0,
+    "since": 1684154779
+  },
+  {
+    "account_address": "0x05ef932462ce7b2da6a8ec59aa13c1525e26f4f78678050bacf120925e976b1d",
+    "tvlTotal": 0.0000019484472844055745,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000019484472844055745
+    },
+    "score": 0,
+    "since": 1684248677
+  },
+  {
+    "account_address": "0x06b6c93df290e949caf8213d04ce3c3412ea25396aa39d60c60c2fc9e274f8e5",
+    "tvlTotal": 0.0000019284959478227393,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000019284959478227393
+    },
+    "score": 0,
+    "since": 1684241040
+  },
+  {
+    "account_address": "0x060dbce2a98774d3570eff567cf9d95eee09a85ac3be20085aa8631ba62a14fa",
+    "tvlTotal": 0.0000019030954376830778,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000019030954376830778
+    },
+    "score": 0,
+    "since": 1684249738
+  },
+  {
+    "account_address": "0x039ad1236e63d2f22602a7d473845ff91a9ba9c3f0625c9b1084bb7855c1eda3",
+    "tvlTotal": 0.0000019022739721208382,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000019022739721208382
+    },
+    "score": 0,
+    "since": 1684249123
+  },
+  {
+    "account_address": "0x06bb5c73b07d66f96785433cdf052093bf6df2713d7212ba403e676599467314",
+    "tvlTotal": 0.0000018844514215743402,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000018844514215743402
+    },
+    "score": 0,
+    "since": 1684146232
+  },
+  {
+    "account_address": "0x05ba697e5779bcbf65d47f79f8c627762f42d94e0e9333552555c205c5ba5457",
+    "tvlTotal": 0.0000018663927221496124,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000018663927221496124
+    },
+    "score": 0,
+    "since": 1687746664
+  },
+  {
+    "account_address": "0x060b97c2509ebf0d2ce00539b49b3feece01fe0c24615959952a00e2ee9929cc",
+    "tvlTotal": 0.0000018185551908800335,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000018185551908800335
+    },
+    "score": 0,
+    "since": 1684218656
+  },
+  {
+    "account_address": "0x06cc9b7ccb9116ead8713ec79ee4b3211eafffb9ae2bdfd441fdec83b3bdaba3",
+    "tvlTotal": 0.00000181832970014284,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.00000181832970014284
+    },
+    "score": 0,
+    "since": 1684229577
+  },
+  {
+    "account_address": "0x064c95c46eaea46d2fa05db12dede9e6570a0e01bf4dcb7ebc496b3e6466d2ba",
+    "tvlTotal": 0.000001804216953615878,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.000001804216953615878
+    },
+    "score": 0,
+    "since": 1684222328
+  },
+  {
+    "account_address": "0x05fcc6c2adc640a1a9efc7905dd9a5051aa511f57c772aef85f6fd3877830acd",
+    "tvlTotal": 0.0000018013829787832947,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000018013829787832947
+    },
+    "score": 0,
+    "since": 1684220474
+  },
+  {
+    "account_address": "0x0730bb6397dd22e2591533a2401ecd37eedcf4c0e4e53cb598e3d9f4f0a7af57",
+    "tvlTotal": 0.0000017949800437122576,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000017949800437122576
+    },
+    "score": 0,
+    "since": 1684224692
+  },
+  {
+    "account_address": "0x055501679716f9aef36f54a373bd891bfc667983b15216f8b2c867259a3484ce",
+    "tvlTotal": 0.0000017933913341039442,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000017933913341039442
+    },
+    "score": 0,
+    "since": 1684126347
+  },
+  {
+    "account_address": "0x025a6fca4bf7fc5e162b46f8970414a0d598bb14d200183e680ff7dd7ea1ffd3",
+    "tvlTotal": 0.0000017748453338128911,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000017748453338128911
+    },
+    "score": 0,
+    "since": 1684198783
+  },
+  {
+    "account_address": "0x022c692523a44f4f0ce5afbd32b6274280ef265d5043e37954f94e040fd526a5",
+    "tvlTotal": 0.0000017706688595353626,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000017706688595353626
+    },
+    "score": 0,
+    "since": 1684220966
+  },
+  {
+    "account_address": "0x067fe3dbcf7bdcb4db59350f83b813912fbdfea4ed9b7585ca9c4791b86be83d",
+    "tvlTotal": 0.0000017664733888977935,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000017664733888977935
+    },
+    "score": 0,
+    "since": 1684219336
+  },
+  {
+    "account_address": "0x00b4602f1a96806b311255769a3c24b1b56ce4984ab9d35c0b31927ccea9ec25",
+    "tvlTotal": 0.0000017175585860229603,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000017175585860229603
+    },
+    "score": 0,
+    "since": 1684216835
+  },
+  {
+    "account_address": "0x04b5e646a2ff68755cd4b6ed5590f669fea02deec4cabfb01b7f79bb625ee4c3",
+    "tvlTotal": 0.0000016851686197583149,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000016851686197583149
+    },
+    "score": 0,
+    "since": 1684120417
+  },
+  {
+    "account_address": "0x00220a347a503ebf510ab3dcf1e6cb854015245c95217584d8d650d3e9eaff6a",
+    "tvlTotal": 0.0000012804484033068775,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000012804484033068775
+    },
+    "score": 0,
+    "since": 1687431403
+  },
+  {
+    "account_address": "0x010671776073d2bfbc8aa7d6dc8d67f4e4f333d0af2ac309b4e178b8e7512da7",
+    "tvlTotal": 0.0000011440101843618322,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000011440101843618322
+    },
+    "score": 0,
+    "since": 1684241527
+  },
+  {
+    "account_address": "0x01762fb7149270c4fe21f749a15a3ee1b8ca9d00c851d5c0f978034371d56a52",
+    "tvlTotal": 0.0000010405536343682797,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0.0000010405536343682797
+    },
+    "score": 0,
+    "since": 1684126230
+  },
+  {
+    "account_address": "0x01a211a22111626293eaf15c721e6bcf307d55d2234e20b367ee65898c4d1ea1",
+    "tvlTotal": 0.000001007887561854659,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.000001007887561854659
+    },
+    "score": 0,
+    "since": 1684139133
+  },
+  {
+    "account_address": "0x07b08b2e0d44c22b03c932bb48c510227c6cad694b698e2ed6acb4b67460fb66",
+    "tvlTotal": 0.0000010000344623506408,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000010000344623506408
+    },
+    "score": 0,
+    "since": 1685954837
+  },
+  {
+    "account_address": "0x00fdcc1984e31b2bf9f0eb45f8423f1f2f23af64e891cbfee22876fe99294b95",
+    "tvlTotal": 0.0000010000247137043061,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000010000247137043061
+    },
+    "score": 0,
+    "since": 1686051803
+  },
+  {
+    "account_address": "0x03713572a37a352dc872fb8e6b0bc297c77fedcae727145aa666287daf85f57f",
+    "tvlTotal": 0.0000010000025998380124,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 0.0000010000025998380124
+    },
+    "score": 0,
+    "since": 1687433564
+  },
+  {
+    "account_address": "0x01486cd3935462f672a22ea133764b6891f95e291b49eea42ebb0c9ba78f3721",
+    "tvlTotal": 7.551949856576812e-7,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 7.551949856576812e-7
+    },
+    "score": 0,
+    "since": 1684198783
+  },
+  {
+    "account_address": "0x07ff8b4fb87fe746c0e2cf9f3e331c3d034d195a41bb55d2fef2e5db492ce818",
+    "tvlTotal": 7.436447404529645e-7,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 7.436447404529645e-7
+    },
+    "score": 0,
+    "since": 1684120335
+  },
+  {
+    "account_address": "0x06e132d76181bb08b0fd1408d3058917d80a171fbe2fe07d2369888212495bb6",
+    "tvlTotal": 6.342739240494666e-7,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": 6.342739240494666e-7
+    },
+    "score": 0,
+    "since": 1684216969
+  },
+  {
+    "account_address": "0x06f13e4f6b48046781d2ae0aeffcbf8ad828ff4655ffbed8880331897119b1b8",
+    "tvlTotal": 2.0605739337042905e-13,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 2.0605739337042905e-13
+    },
+    "score": 0,
+    "since": 1684246604
+  },
+  {
+    "account_address": "0x0730bd6b8968402deca9cc8b3e98b89fa09049ffe7b4932d63deaf1a7a45f5b1",
+    "tvlTotal": 7.105427357601002e-15,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 7.105427357601002e-15
+    },
+    "score": 0,
+    "since": 1684252518
+  },
+  {
+    "account_address": "0x025bf7b302188edb92f32f5954d0ca30a8d64abe3886fd63490b8b3e0217bef7",
+    "tvlTotal": 0,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0
+    },
+    "score": 0,
+    "since": 1684249933
+  },
+  {
+    "account_address": "0x06c24c6829f8a4a8e4dfe2f628b83a991d9aae919836e6826bc24be0fa3656cd",
+    "tvlTotal": 0,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0
+    },
+    "score": 0,
+    "since": 1684226471
+  },
+  {
+    "account_address": "0x00073b1e07c4d83aca39e9597dc9ee4f97d4e735728f851198e1fb777fcbab10",
+    "tvlTotal": 0,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": 0
+    },
+    "score": 0,
+    "since": 1684238379
+  },
+  {
+    "account_address": "0x0146b3f5179f461782e3e710af52774dcf33e5d2ccbfe45513f06d4d334e9a7f",
+    "tvlTotal": 0,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0
+    },
+    "score": 0,
+    "since": 1684225143
+  },
+  {
+    "account_address": "0x01bbe9a4d8e8fecaf910a5b05150dd06c8f1899edf8b0ce064c6563ea0a74de3",
+    "tvlTotal": 0,
+    "tvlPairs": {
+      "0x5ca0a96e4593741c8bd9fb5ab270716371898c4746278b8ceecedb6a6a85a2d": 0
+    },
+    "score": 0,
+    "since": 1687036806
+  },
+  {
+    "account_address": "0x02bdee64d0256c6ab4ad48a1028a63767a437b74e4e97a69e09766268a6edf60",
+    "tvlTotal": 0,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0
+    },
+    "score": 0,
+    "since": 1684248839
+  },
+  {
+    "account_address": "0x0756044f7232ad7ffc18aba7a22aa1d1bd2c244ef06ca6e429908b716b8f50e9",
+    "tvlTotal": 0,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": 0
+    },
+    "score": 0,
+    "since": 1684228365
+  },
+  {
+    "account_address": "0x0101aed5ba4c8889a0c3a1d34d28a8f03eb064b8473cbeb903126ba9d2680834",
+    "tvlTotal": -0.0000033723312533595617,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": -0.0000033723312533595617
+    },
+    "score": 0,
+    "since": 1685863273
+  },
+  {
+    "account_address": "0x058ad7850b89da0119f59f141c1c4b0ab2de4699567d0448500866fe6504db0d",
+    "tvlTotal": -0.000053638559761370885,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.000053638559761370885
+    },
+    "score": 0,
+    "since": 1687677987
+  },
+  {
+    "account_address": "0x03a75340be9897caa17aa5598dce2b49a2e5a046fc8a3fd7c4d8a21e14dec410",
+    "tvlTotal": -0.00015570200880432594,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.00015570200880432594
+    },
+    "score": 0,
+    "since": 1688204464
+  },
+  {
+    "account_address": "0x0277832f7e8f26adf9289b23c2d0ca28537c14d3b89d512053dfd8459cd4581d",
+    "tvlTotal": -0.00020398266000043463,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": -0.00020398266000043463
+    },
+    "score": 0,
+    "since": 1684243631
+  },
+  {
+    "account_address": "0x03b6359e0515f02baf699a7af198dae4254b3e8e6cffde6450048357a32cef3e",
+    "tvlTotal": -0.0002155200194229323,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.0002155200194229323
+    },
+    "score": 0,
+    "since": 1687425512
+  },
+  {
+    "account_address": "0x072f33e2aa014dc10c8526945a9efd947cba1e675d054d24d51578ec2041ab6d",
+    "tvlTotal": -0.0003014815969182294,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.0003014815969182294
+    },
+    "score": 0,
+    "since": 1687430548
+  },
+  {
+    "account_address": "0x07ca7cd71deffe38d305c523a4e472d7d321ecc6f8f7bb4a577cf56cb8222ad1",
+    "tvlTotal": -0.00046996004999755314,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": -0.00046996004999755314
+    },
+    "score": 0,
+    "since": 1684230054
+  },
+  {
+    "account_address": "0x035f2c6b586c36024c14757d8044f2e648cc330e307d48335b1951c90afbfe7b",
+    "tvlTotal": -0.000739021510639315,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.000739021510639315
+    },
+    "score": 0,
+    "since": 1687408531
+  },
+  {
+    "account_address": "0x0667db25f28a5bfe76853fc340337924adc08d9a56811bb3adce9a0f83036afe",
+    "tvlTotal": -0.0007576442421863838,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.0007576442421863838
+    },
+    "score": 0,
+    "since": 1687436132
+  },
+  {
+    "account_address": "0x050c680d1ca1a74b8b9c52c97ac2821715eba96cdfb9eb59351d081b7edd1818",
+    "tvlTotal": -0.0016649211769932393,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.0016649211769932393
+    },
+    "score": 0,
+    "since": 1687435678
+  },
+  {
+    "account_address": "0x07d41c6cf7c45aa360dab651f6a0da2ab3094c8d2978760e0bec63a93ab2631b",
+    "tvlTotal": -0.001948844999997888,
+    "tvlPairs": {
+      "0x7aa42b5e89d957f9d07cb4f634af43a72b7b85d457cf43f0275c5e619795a12": -0.001948844999997888
+    },
+    "score": 0,
+    "since": 1686213591
+  },
+  {
+    "account_address": "0x058e1ffb7c987755a0e83928782c1ef4bfe4df6495e000e09c19b6af55ef7246",
+    "tvlTotal": -0.0048556258805705355,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.0048556258805705355
+    },
+    "score": 0,
+    "since": 1687683194
+  },
+  {
+    "account_address": "0x00824e1b42c3e05bf5213cac1d312b52c6dbf477abe6e49cbf85a9ecd2a8cdb3",
+    "tvlTotal": -0.006608438225001123,
+    "tvlPairs": {
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": -0.006608438225001123
+    },
+    "score": 0,
+    "since": 1688036137
+  },
+  {
+    "account_address": "0x0637e36b6627a10337c01cacc2293b675f3e300af756683135a5a03542f35a6a",
+    "tvlTotal": -0.007528630965242478,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": -0.007528630965242478
+    },
+    "score": 0,
+    "since": 1687379339
+  },
+  {
+    "account_address": "0x058df8a23eceb4cab10c56834d38d4c45a01684016d417a6baaf17226e422be2",
+    "tvlTotal": -0.00939465255458316,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.00939465255458316
+    },
+    "score": 0,
+    "since": 1687702307
+  },
+  {
+    "account_address": "0x07c2b792ef44b7ad5b91da0de2c9838a7ef36216c43788628b8adbfeeabcab20",
+    "tvlTotal": -0.012712777552762233,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.012712777552762233
+    },
+    "score": 0,
+    "since": 1687851178
+  },
+  {
+    "account_address": "0x00cbe00ad40028491bb0db0222a5f3d02f8a8567807a5027b656eeb19fb28cb8",
+    "tvlTotal": -0.016496678702219825,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.016496678702219825
+    },
+    "score": 0,
+    "since": 1686413397
+  },
+  {
+    "account_address": "0x06fc4663a6f1b5fa3a65da09cef433bf3efbe0e3f8dc72af49bbbcadc8c727b9",
+    "tvlTotal": -0.016924679144904253,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.016924679144904253
+    },
+    "score": 0,
+    "since": 1685883736
+  },
+  {
+    "account_address": "0x037cfafd11cad5a5ff952924644bd0284ecfc2bd78bf0f206403b32271f5157d",
+    "tvlTotal": -0.03090108939964331,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.03090108939964331
+    },
+    "score": 0,
+    "since": 1686053448
+  },
+  {
+    "account_address": "0x06f7ac0d141129e6469f5f5a42582ecd75012c086c1eed32cc05ee8c3d4fd0a8",
+    "tvlTotal": -0.04402849729326519,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.04402849729326519
+    },
+    "score": 0,
+    "since": 1685883949
+  },
+  {
+    "account_address": "0x054019c3119fb8a29b9f42ae245a2e44df0bae047326103d44cc62c92e2a6138",
+    "tvlTotal": -0.04749531677507335,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.04749531677507335
+    },
+    "score": 0,
+    "since": 1686044165
+  },
+  {
+    "account_address": "0x06809cad5bd63669ccd757c2dd001cc1895563e0b83d166d09a638e984f50b4d",
+    "tvlTotal": -0.05878671823746284,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": -0.05878671823746284
+    },
+    "score": 0,
+    "since": 1686200732
+  },
+  {
+    "account_address": "0x026f63391a82a5499c663a97e23de17427bdb2e4276d52989e2b0d6d6e8c3f06",
+    "tvlTotal": -0.08032932794179004,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.08032932794179004
+    },
+    "score": 0,
+    "since": 1687576652
+  },
+  {
+    "account_address": "0x02c2282e0356a2909db3157572e821bf2a54da60b3e1e4fd43b4d978dcd70077",
+    "tvlTotal": -0.09160866660547207,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.09160866660547207
+    },
+    "score": 0,
+    "since": 1685784258
+  },
+  {
+    "account_address": "0x00f5a258c45f41381e9e9b0c62d24db716f6a4febc4a15f29bb09806fddebb58",
+    "tvlTotal": -0.11038927436867851,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.11038927436867851
+    },
+    "score": 0,
+    "since": 1686113124
+  },
+  {
+    "account_address": "0x02c91978a947ddb41a71bff08d47873326b20d60b7ba5a076429dfed2ebd9a44",
+    "tvlTotal": -0.11380697232719683,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": -0.11380697232719683
+    },
+    "score": 0,
+    "since": 1686039240
+  },
+  {
+    "account_address": "0x0738577b6268d5591064e0708f0bce01eb5a25381089ff0286ee4440dfbcc25e",
+    "tvlTotal": -0.12793926649070997,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": -0.12793926649070997
+    },
+    "score": 0,
+    "since": 1685792792
+  },
+  {
+    "account_address": "0x01a4d3c8c2b1614e8461d289166cbaa1097d404a58a2002a8f588e6ad8b5ec24",
+    "tvlTotal": -0.1402863583551266,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.1402863583551266
+    },
+    "score": 0,
+    "since": 1686369932
+  },
+  {
+    "account_address": "0x02398da40dd1f6c31c9542547dd604258436eb083c39f2a89372cc05e7ef8f5e",
+    "tvlTotal": -0.1704383832451768,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.1704383832451768
+    },
+    "score": 0,
+    "since": 1685782234
+  },
+  {
+    "account_address": "0x02daf9fc94952d09dea4510976de30e301f1e759b98e7ade91f9d602961a5ba0",
+    "tvlTotal": -0.17230721634998325,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": -0.17230721634998325
+    },
+    "score": 0,
+    "since": 1685793355
+  },
+  {
+    "account_address": "0x01d400ce6e64c29af9769f42a5179a88852f68ec6e1c5524cdc5525411fd7de7",
+    "tvlTotal": -0.2906734184728208,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": -0.2906734184728208
+    },
+    "score": 0,
+    "since": 1685683415
+  },
+  {
+    "account_address": "0x04c180ac2f3502688ea991da04f6a827868b3985068e74eeb6e39657dddb4165",
+    "tvlTotal": -0.315216903937511,
+    "tvlPairs": {
+      "0x6530c6d6bee06898faf2362de56d2ce7dcbb234f5318f495d12dd7ad5db1841": -0.315216903937511
+    },
+    "score": 0,
+    "since": 1686893408
+  },
+  {
+    "account_address": "0x039c597b71458c84906c8ade7f855b82d4212aca8b9d17d39a8c855ab1e222b0",
+    "tvlTotal": -0.33635083770573715,
+    "tvlPairs": {
+      "0x1834bbbcb2e4d69aab350ada67a3ccc2b596e10e7ed1fad1da5d1bd2700b1f9": -0.33635083770573715
+    },
+    "score": 0,
+    "since": 1687320096
+  },
+  {
+    "account_address": "0x02b56acff314812f90a03163903712d984ce08e631aa4e1d85c7fb2568d305bf",
+    "tvlTotal": -0.6244556936709387,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -0.6244556936709387
+    },
+    "score": 0,
+    "since": 1686206400
+  },
+  {
+    "account_address": "0x00b348865387455f6a74bc3ef63583d18b14a7aadea116bdc1588956a8e35c1f",
+    "tvlTotal": -2.700361684385502,
+    "tvlPairs": {
+      "0x215d01e29721eb6ab10bbed2d15c33f168fa9e7587c071596cc72784bb74992": -2.700361684385502
+    },
+    "score": 0,
+    "since": 1684261084
+  },
+  {
+    "account_address": "0x0022f1cf31bee6197477e940d170d55f824b9b36b51a94b1b302271d4b154b1e",
+    "tvlTotal": -2.970008417585859,
+    "tvlPairs": {
+      "0x69d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d": -1.7167563916257222,
+      "0x538365162a3017d5e03caa3ee87305694694c03e232625ba635b1de2f45bb05": -1.253252025960137
+    },
+    "score": 0,
+    "since": 1684304099
+  },
+  {
+    "account_address": "0x06e64515010558343c951131913396c6999c5fead88246bb289a8e2c87bf67e9",
+    "tvlTotal": -3.1179083372528886,
+    "tvlPairs": {
+      "0x4d2d46f3a9037c4a13e42f3f0ab0975431b4ee41cd1027a63a9902fc8aa47f5": -3.1179083372528886
+    },
+    "score": 0,
+    "since": 1685933000
+  }
+]
