@@ -674,4 +674,10 @@ export class AnalyticsService {
       }
 
   }
+
+  async takeSnapshot(timestamp:number,json_content) {
+    return await this.repoSnapshot.insert({
+      content:json_content
+    })
+  }
 }

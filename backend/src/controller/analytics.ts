@@ -72,4 +72,11 @@ export default function (router: KoaRouter<DefaultState, Context>) {
       const volumes = await analyticsService.getVolumeByAccount()
       restful.json({ volumes })
   })
+
+  router.get('analytics/take_top_tvl_accounts', async ({ restful }) => {
+      const tvls = await analyticsService.getTVLsByAccount(1000000000)
+      const dateStamp = new Date(new Date().toLocaleDateString()).getTime();
+      const insert = await analyticsService.takeSnapshot(dateStamp,tvls)
+      restful.json({ tvls })
+  })
 }
