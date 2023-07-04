@@ -104,32 +104,44 @@ export default function (router: KoaRouter<DefaultState, Context>) {
       restful.json({ tvls })
   })
 
-    router.get('analytics/rank_tvl_accounts', async ({ restful,request }) => {
-
+  router.get('analytics/rank_tvl_accounts', async ({ restful,request }) => {
         const params = plainToInstance(
             class {
                 account_address: string
             },
             request.query
         )
-
         const rank = await analyticsService.getRankTVLsByAccount(params.account_address)
         restful.json({ rank })
-    })
+  })
 
-    router.get('analytics/rank_volume_accounts', async ({ restful,request }) => {
-
+  router.get('analytics/rank_volume_accounts', async ({ restful,request }) => {
         const params = plainToInstance(
             class {
                 account_address: string
             },
             request.query
         )
-
         const rank = await analyticsService.getRankVolumeByAccount(params.account_address)
         restful.json({ rank })
+  })
+
+    router.get('analytics/get_snapshots', async ({ restful,request }) => {
+        const params = plainToInstance(
+            class {
+                page: number
+            },
+            request.query
+        )
+
+        const snapshots = await analyticsService.getSnapshotTVLsByAccount()
+
+        restful.json({
+            page: params.page,
+            limit:25,
+            tvls:snapshots.slice((params.page-1)*25,params.page*25),
+        })
+
     })
-
-
 
 }

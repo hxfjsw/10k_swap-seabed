@@ -1,6 +1,11 @@
 import { Column, Entity, Index, PrimaryGeneratedColumn } from 'typeorm'
 import { CommonEntity } from './common'
-import {GetBlockResponse} from "starknet";
+
+interface SnapshotContent {
+    account_address:string
+    tvlTotal:number,
+    score:number,
+}
 
 @Entity()
 export class Snapshot extends CommonEntity {
@@ -9,5 +14,5 @@ export class Snapshot extends CommonEntity {
     id: number
 
     @Column('json')
-    content: GetBlockResponse
+    content: SnapshotContent[]
 }
