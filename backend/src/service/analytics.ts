@@ -871,10 +871,10 @@ export class AnalyticsService {
 
     async getSnapshotTVLsByAccount() {
         const snapshots = await this.repoSnapshot.find({
-            order: { created_at: 'ASC' },
+            order: {created_at: 'ASC'},
         });
 
-        interface tvl{
+        interface tvl {
             account_address: string
             score: number
             tvlTotal: number
@@ -899,12 +899,18 @@ export class AnalyticsService {
             }
         }
 
-        let result:tvl[] = [];
+        let result: tvl[] = [];
         for (let key in tvls) {
             result.push(tvls[key]);
         }
 
-        result.sort((a, b) => b.score - a.score);
+        result.sort((a, b) => {
+            if (a.score == b.score) {
+                return b.tvlTotal - a.tvlTotal;
+            } else {
+                return b.score - a.score
+            }
+        });
 
         return result;
     }
